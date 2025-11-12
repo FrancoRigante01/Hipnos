@@ -1,0 +1,308 @@
+---
+// Componente para mostrar el resultado de la interpretación
+---
+
+<div id="dreamResult" class="dream-result-container hidden">
+  <div class="result-background" id="resultBackground"></div>
+  
+  <div class="result-content">
+    <div class="result-header">
+      <h3 class="result-keyword" id="resultKeyword"></h3>
+      <p class="result-symbolism" id="resultSymbolism"></p>
+    </div>
+    
+    <div class="result-body">
+      <p class="result-interpretation" id="resultInterpretation"></p>
+    </div>
+
+    <div class="result-footer">
+      <p class="result-dream-text" id="resultDreamText"></p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .dream-result-container {
+    position: relative;
+    padding: 2.5rem;
+    border-radius: 20px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: all 0.5s ease;
+    animation: fadeInUp 0.6s ease;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .result-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    opacity: 0.3;
+    transition: all 0.8s ease;
+  }
+
+  /* Patrones de fondo */
+  .result-background.waves {
+    background: 
+      radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 80% 80%, rgba(147, 197, 253, 0.3) 0%, transparent 50%);
+    animation: waveMotion 8s ease-in-out infinite;
+  }
+
+  .result-background.clouds {
+    background: 
+      radial-gradient(ellipse at 30% 40%, rgba(167, 139, 250, 0.3) 0%, transparent 60%),
+      radial-gradient(ellipse at 70% 70%, rgba(196, 181, 253, 0.3) 0%, transparent 60%);
+    animation: cloudFloat 10s ease-in-out infinite;
+  }
+
+  .result-background.geometric {
+    background: 
+      linear-gradient(45deg, rgba(245, 158, 11, 0.1) 25%, transparent 25%),
+      linear-gradient(-45deg, rgba(245, 158, 11, 0.1) 25%, transparent 25%);
+    background-size: 40px 40px;
+    animation: geometricShift 15s linear infinite;
+  }
+
+  .result-background.organic {
+    background: 
+      radial-gradient(circle at 40% 60%, rgba(34, 197, 94, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 60% 30%, rgba(134, 239, 172, 0.3) 0%, transparent 50%);
+    animation: organicPulse 7s ease-in-out infinite;
+  }
+
+  .result-background.flames {
+    background: 
+      radial-gradient(ellipse at 50% 100%, rgba(220, 38, 38, 0.4) 0%, transparent 50%),
+      radial-gradient(ellipse at 30% 80%, rgba(249, 115, 22, 0.4) 0%, transparent 50%);
+    animation: flameFlicker 3s ease-in-out infinite;
+  }
+
+  .result-background.peaks {
+    background: 
+      linear-gradient(135deg, rgba(120, 113, 108, 0.2) 0%, transparent 70%),
+      linear-gradient(-135deg, rgba(168, 162, 158, 0.2) 0%, transparent 70%);
+    animation: peakShimmer 12s ease-in-out infinite;
+  }
+
+  .result-background.stars {
+    background: 
+      radial-gradient(circle at 20% 30%, rgba(107, 33, 168, 0.3) 0%, transparent 40%),
+      radial-gradient(circle at 80% 70%, rgba(76, 29, 149, 0.3) 0%, transparent 40%),
+      radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 20%);
+    animation: starTwinkle 5s ease-in-out infinite;
+  }
+
+  .result-background.floral {
+    background: 
+      radial-gradient(circle at 25% 25%, rgba(74, 222, 128, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(187, 247, 208, 0.3) 0%, transparent 50%);
+    animation: floralGrow 9s ease-in-out infinite;
+  }
+
+  .result-background.portal {
+    background: 
+      radial-gradient(circle at 50% 50%, rgba(234, 179, 8, 0.4) 0%, transparent 60%);
+    animation: portalSpin 6s linear infinite;
+  }
+
+  .result-background.reflection {
+    background: 
+      linear-gradient(180deg, rgba(148, 163, 184, 0.3) 0%, rgba(203, 213, 225, 0.1) 100%);
+    animation: reflectionShine 8s ease-in-out infinite;
+  }
+
+  .result-background.rain {
+    background: 
+      linear-gradient(180deg, transparent 0%, rgba(59, 130, 246, 0.1) 100%);
+    animation: rainFall 4s linear infinite;
+  }
+
+  .result-background.scales {
+    background: 
+      radial-gradient(circle at 30% 40%, rgba(20, 184, 166, 0.3) 0%, transparent 40%),
+      radial-gradient(circle at 70% 60%, rgba(94, 234, 212, 0.3) 0%, transparent 40%);
+    animation: scalesSlither 10s ease-in-out infinite;
+  }
+
+  .result-background.radiance {
+    background: 
+      radial-gradient(circle at 50% 50%, rgba(251, 191, 36, 0.5) 0%, transparent 70%);
+    animation: radianceGlow 4s ease-in-out infinite;
+  }
+
+  .result-background.feathers {
+    background: 
+      radial-gradient(ellipse at 40% 30%, rgba(124, 58, 237, 0.3) 0%, transparent 50%),
+      radial-gradient(ellipse at 60% 70%, rgba(221, 214, 254, 0.3) 0%, transparent 50%);
+    animation: featherFloat 11s ease-in-out infinite;
+  }
+
+  /* Animaciones */
+  @keyframes waveMotion {
+    0%, 100% { transform: translateX(0) scale(1); }
+    50% { transform: translateX(10px) scale(1.05); }
+  }
+
+  @keyframes cloudFloat {
+    0%, 100% { transform: translate(0, 0); }
+    50% { transform: translate(15px, -10px); }
+  }
+
+  @keyframes geometricShift {
+    0% { background-position: 0 0; }
+    100% { background-position: 40px 40px; }
+  }
+
+  @keyframes organicPulse {
+    0%, 100% { transform: scale(1); opacity: 0.3; }
+    50% { transform: scale(1.1); opacity: 0.4; }
+  }
+
+  @keyframes flameFlicker {
+    0%, 100% { transform: scaleY(1) scaleX(1); }
+    25% { transform: scaleY(1.05) scaleX(0.98); }
+    50% { transform: scaleY(0.98) scaleX(1.02); }
+    75% { transform: scaleY(1.02) scaleX(0.99); }
+  }
+
+  @keyframes peakShimmer {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 0.3; }
+  }
+
+  @keyframes starTwinkle {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.5; }
+  }
+
+  @keyframes floralGrow {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+  }
+
+  @keyframes portalSpin {
+    0% { transform: rotate(0deg) scale(1); }
+    100% { transform: rotate(360deg) scale(1); }
+  }
+
+  @keyframes reflectionShine {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.5; }
+  }
+
+  @keyframes rainFall {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 50px; }
+  }
+
+  @keyframes scalesSlither {
+    0%, 100% { transform: translateX(0); }
+    50% { transform: translateX(8px); }
+  }
+
+  @keyframes radianceGlow {
+    0%, 100% { transform: scale(1); opacity: 0.5; }
+    50% { transform: scale(1.1); opacity: 0.6; }
+  }
+
+  @keyframes featherFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .result-content {
+    position: relative;
+    z-index: 1;
+  }
+
+  .result-header {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .result-keyword {
+    font-size: 2rem;
+    font-weight: 300;
+    color: #f1f5f9;
+    margin: 0 0 0.5rem 0;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+  }
+
+  .result-symbolism {
+    font-size: 1rem;
+    color: #cbd5e1;
+    margin: 0;
+    font-style: italic;
+    font-weight: 300;
+  }
+
+  .result-body {
+    margin-bottom: 1.5rem;
+  }
+
+  .result-interpretation {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #e2e8f0;
+    margin: 0;
+    font-weight: 300;
+  }
+
+  .result-footer {
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .result-dream-text {
+    font-size: 0.9rem;
+    color: #94a3b8;
+    margin: 0;
+    font-style: italic;
+    line-height: 1.6;
+  }
+
+  .result-dream-text::before {
+    content: '"';
+    color: rgba(167, 139, 250, 0.5);
+  }
+
+  .result-dream-text::after {
+    content: '"';
+    color: rgba(167, 139, 250, 0.5);
+  }
+
+  @media (max-width: 768px) {
+    .dream-result-container {
+      padding: 1.5rem;
+    }
+
+    .result-keyword {
+      font-size: 1.6rem;
+    }
+
+    .result-interpretation {
+      font-size: 1rem;
+    }
+  }
+</style>

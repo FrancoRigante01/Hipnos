@@ -1,0 +1,561 @@
+{
+  "dreams": [
+    {
+      "keyword": "agua",
+      "symbolism": "Flujo emocional, inconsciente",
+      "pattern": "waves",
+      "colorTheme": ["#1e3a8a", "#3b82f6", "#93c5fd", "#dbeafe"],
+  "interpretation": "Ah, mortal, has soñado con el agua... Yo, Hipnos, te revelo que las aguas de tus sueños son el espejo de tus emociones más profundas. Como los ríos que fluyen hacia el mar, tus sentimientos buscan su cauce. Las aguas tranquilas anuncian paz interior, mientras que las agitadas revelan turbulencia emocional."
+    },
+    {
+      "keyword": "volar",
+      "symbolism": "Libertad, transcendencia",
+      "pattern": "clouds",
+      "colorTheme": ["#7c3aed", "#a78bfa", "#c4b5fd", "#e9d5ff"],
+      "interpretation": "¡Volar! El don que otorgo en sueños a quienes anhelan liberarse. Tu espíritu desea elevarse por encima de las cadenas mortales. Te he mostrado las nubes para que comprendas: eres más que tus limitaciones. Confía en tus alas invisibles, viajero de los cielos oníricos."
+    },
+    {
+      "keyword": "casa",
+      "symbolism": "El yo interior, la psique",
+      "pattern": "geometric",
+      "colorTheme": ["#92400e", "#b45309", "#f59e0b", "#fcd34d"],
+  "interpretation": "La casa que te he mostrado en sueños es el templo de tu ser. Cada habitación que exploras es un rincón de tu alma que espera ser descubierto. Yo, guardián de los sueños, te invito a recorrer estos espacios y descubrir los secretos que habitan en tu interior."
+    },
+    {
+      "keyword": "bosque",
+      "symbolism": "Lo desconocido, el inconsciente colectivo",
+      "pattern": "organic",
+      "colorTheme": ["#14532d", "#15803d", "#22c55e", "#86efac"],
+      "interpretation": "El bosque... territorio sagrado donde habitan los arquetipos ancestrales. Te he guiado entre sus árboles milenarios para que encuentres lo que has olvidado. Adentrarte en él requiere valentía, mortal. Entre las sombras y la luz del follaje, descubrirás verdades que tu mente despierta no puede ver."
+    },
+    {
+      "keyword": "fuego",
+      "symbolism": "Transformación, pasión",
+      "pattern": "flames",
+      "colorTheme": ["#991b1b", "#dc2626", "#f97316", "#fed7aa"],
+  "interpretation": "¡Fuego! El elemento de la transformación divina. Yo te he enviado estas llamas para que comprendas: lo viejo debe arder para que nazca lo nuevo. El fuego purifica y revela la pasión que impulsa tu existencia."
+    },
+    {
+      "keyword": "mar",
+      "symbolism": "Profundidad emocional, vastedad",
+      "pattern": "waves",
+      "colorTheme": ["#0c4a6e", "#0284c7", "#38bdf8", "#bae6fd"],
+  "interpretation": "El mar infinito que se extiende ante ti en sueños es mi regalo, mortal. Sus profundidades guardan los misterios de tu alma, sus olas reflejan el ritmo de tu corazón. Navegar estas aguas es aprender a confiar en las mareas de la existencia y en la vastedad de tus emociones."
+    },
+    {
+      "keyword": "montaña",
+      "symbolism": "Desafío, elevación espiritual",
+      "pattern": "peaks",
+      "colorTheme": ["#44403c", "#78716c", "#a8a29e", "#e7e5e4"],
+      "interpretation": "He colocado esta montaña en tu camino onírico por una razón, viajero. Su cima representa tu aspiración más elevada, su ascenso, el esfuerzo que debes realizar. Desde lo alto, te concedo la visión del águila. Escala con determinación, pues cada paso te acerca a tu verdadero ser."
+    },
+    {
+      "keyword": "noche",
+      "symbolism": "Misterio, introspección",
+      "pattern": "stars",
+      "colorTheme": ["#1e1b4b", "#312e81", "#4c1d95", "#6b21a8"],
+      "interpretation": "¡Ah, la noche! Mi reino predilecto. Bajo mi manto oscuro es cuando más poder tengo sobre los mortales. Las estrellas que te muestro son verdades que solo brillan en la oscuridad. En el silencio nocturno de tus sueños, te revelo secretos que la luz del día ocultaría."
+    },
+    {
+      "keyword": "jardín",
+      "symbolism": "Crecimiento personal, cultivo interior",
+      "pattern": "floral",
+      "colorTheme": ["#166534", "#16a34a", "#4ade80", "#bbf7d0"],
+      "interpretation": "Este jardín que florece en tus sueños es obra de tus propias manos, mortal. Yo te lo muestro para que veas el fruto de tu dedicación. Cada flor es una virtud cultivada, cada árbol un conocimiento arraigado. Cuida tu jardín interior con la misma paciencia que un jardinero cuida sus plantas."
+    },
+    {
+      "keyword": "puerta",
+      "symbolism": "Oportunidades, transiciones",
+      "pattern": "portal",
+      "colorTheme": ["#713f12", "#a16207", "#eab308", "#fef08a"],
+  "interpretation": "Una puerta... el umbral entre lo que eres y lo que puedes llegar a ser. Yo, Hipnos, te la presento para que reconozcas tu disposición al cambio. Al cruzar el umbral, una nueva versión de ti mismo emerge en el mundo onírico."
+    },
+    {
+      "keyword": "espejo",
+      "symbolism": "Autoconocimiento, reflejo del alma",
+      "pattern": "reflection",
+      "colorTheme": ["#475569", "#64748b", "#94a3b8", "#cbd5e1"],
+      "interpretation": "El espejo que te muestro en sueños no miente, mortal. Refleja tu alma desnuda, sin las máscaras que usas mientras estás despierto. Mírate con valentía. Yo te concedo esta visión no para torturarte, sino para liberarte. Acepta lo que ves, pues solo así podrás transformarte."
+    },
+    {
+      "keyword": "lluvia",
+      "symbolism": "Renovación, liberación emocional",
+      "pattern": "rain",
+      "colorTheme": ["#1e40af", "#3b82f6", "#60a5fa", "#93c5fd"],
+      "interpretation": "La lluvia que cae en tus sueños es mi bendición, soñador. Limpia las heridas del alma, lava las penas acumuladas. Permítete llorar como llora el cielo: sin vergüenza, con la certeza de que después vendrá el crecimiento. Esta agua celestial renueva todo lo que toca."
+    },
+    {
+      "keyword": "serpiente",
+      "symbolism": "Transformación, sabiduría ancestral",
+      "pattern": "scales",
+      "colorTheme": ["#134e4a", "#0f766e", "#14b8a6", "#5eead4"],
+  "interpretation": "La serpiente... criatura sagrada que muda su piel y renace. Te la envío como mensajera de transformación profunda. Porta la sabiduría de los antiguos y anuncia el tiempo de dejar atrás lo viejo y renacer. Su presencia es símbolo de renovación y conocimiento ancestral."
+    },
+    {
+      "keyword": "luz",
+      "symbolism": "Claridad, iluminación espiritual",
+      "pattern": "radiance",
+      "colorTheme": ["#fef3c7", "#fde68a", "#fcd34d", "#fbbf24"],
+      "interpretation": "¡Luz! El momento de la revelación divina. Cuando ilumino tu sueño con esta claridad radiante, algo oculto está siendo revelado. Es el despertar de la consciencia, la comprensión que disipa las sombras de la confusión. Recibe esta iluminación, mortal, pues es un regalo que no concedo a todos."
+    },
+    {
+      "keyword": "pájaro",
+      "symbolism": "Mensajero, aspiraciones",
+      "pattern": "feathers",
+      "colorTheme": ["#4c1d95", "#7c3aed", "#a78bfa", "#ddd6fe"],
+      "interpretation": "Los pájaros son mis mensajeros alados, portadores de noticias entre el mundo de los sueños y el despertar. Te los envío para que comprendas que tus aspiraciones pueden volar tan alto como ellos. Escucha su canto, observa su vuelo: cada movimiento es un mensaje de tu yo superior."
+    }
+    ,
+    {
+      "keyword": "puente",
+      "symbolism": "Conexión, transición",
+      "pattern": "geometric",
+      "colorTheme": ["#2563eb", "#60a5fa", "#fbbf24", "#fef3c7"],
+  "interpretation": "El puente en tus sueños representa el paso entre dos etapas de tu vida. Es símbolo de unión, de superar obstáculos y conectar ideas o personas. Atravesarlo marca el inicio de una nueva etapa y la integración de tu ser."
+    },
+    {
+      "keyword": "reloj",
+      "symbolism": "Tiempo, ciclos, urgencia",
+      "pattern": "geometric",
+      "colorTheme": ["#f59e42", "#fbbf24", "#fde68a", "#fef3c7"],
+      "interpretation": "El reloj marca el ritmo de tu existencia. Puede señalar la urgencia de tomar decisiones o el reconocimiento de ciclos que se repiten. Observa si el reloj avanza, se detiene o retrocede: cada detalle revela tu relación con el tiempo."
+    },
+    {
+      "keyword": "camino",
+      "symbolism": "Destino, búsqueda personal",
+      "pattern": "organic",
+      "colorTheme": ["#065f46", "#10b981", "#6ee7b7", "#d1fae5"],
+      "interpretation": "El camino es la ruta que eliges en la vida. Puede ser recto, sinuoso, bifurcado. Soñar con caminos indica que estás en proceso de búsqueda, de tomar decisiones importantes o de avanzar hacia tus metas."
+    },
+    {
+      "keyword": "niño",
+      "symbolism": "Inocencia, nuevos comienzos",
+      "pattern": "floral",
+      "colorTheme": ["#fbbf24", "#fde68a", "#fef3c7", "#bbf7d0"],
+      "interpretation": "El niño en tus sueños representa la pureza, la espontaneidad y el potencial de nuevos comienzos. Puede indicar el deseo de recuperar la alegría o la necesidad de cuidar tu parte más vulnerable."
+    },
+    {
+      "keyword": "libro",
+      "symbolism": "Conocimiento, revelación",
+      "pattern": "geometric",
+      "colorTheme": ["#6366f1", "#a78bfa", "#fcd34d", "#fef3c7"],
+      "interpretation": "El libro simboliza el acceso a nuevos conocimientos o verdades ocultas. Abrir un libro en sueños puede indicar que estás listo para aprender algo importante sobre ti o sobre el mundo."
+    },
+    {
+      "keyword": "ventana",
+      "symbolism": "Perspectiva, oportunidad",
+      "pattern": "portal",
+      "colorTheme": ["#38bdf8", "#bae6fd", "#fbbf24", "#fef3c7"],
+      "interpretation": "La ventana es el umbral entre tu mundo interior y el exterior. Mirar a través de ella indica curiosidad, deseo de explorar nuevas oportunidades o necesidad de cambiar tu perspectiva."
+    },
+    {
+      "keyword": "sombra",
+      "symbolism": "Aspectos ocultos, miedo",
+      "pattern": "stars",
+      "colorTheme": ["#1e293b", "#64748b", "#6b21a8", "#fbbf24"],
+      "interpretation": "La sombra representa aquello que no quieres ver o aceptar de ti mismo. Enfrentarla en sueños es una invitación a integrar tus miedos y descubrir tesoros ocultos en tu inconsciente."
+    },
+    {
+      "keyword": "flor",
+      "symbolism": "Belleza, crecimiento, fragilidad",
+      "pattern": "floral",
+      "colorTheme": ["#f472b6", "#f9a8d4", "#fef3c7", "#bbf7d0"],
+      "interpretation": "La flor es símbolo de belleza efímera y crecimiento personal. Puede indicar el florecimiento de una idea, relación o aspecto de tu vida que requiere cuidado y atención."
+    },
+    {
+      "keyword": "animal",
+      "symbolism": "Instinto, energía vital",
+      "pattern": "organic",
+      "colorTheme": ["#f59e42", "#fbbf24", "#bbf7d0", "#6ee7b7"],
+      "interpretation": "El animal en tus sueños conecta con tu instinto y energía vital. El tipo de animal revela el mensaje: fuerza, astucia, ternura o protección. Escucha lo que tu naturaleza salvaje quiere comunicarte."
+    }
+    ,
+    {
+      "keyword": "isla",
+      "symbolism": "Aislamiento, refugio",
+      "pattern": "waves",
+      "colorTheme": ["#0ea5e9", "#38bdf8", "#fbbf24", "#fef3c7"],
+      "interpretation": "La isla representa tu necesidad de aislamiento o de encontrar refugio. Puede indicar un deseo de escapar de las presiones externas y reconectar contigo mismo."
+    },
+    {
+      "keyword": "puerta secreta",
+      "symbolism": "Descubrimiento, misterio",
+      "pattern": "portal",
+      "colorTheme": ["#a21caf", "#f472b6", "#fef3c7", "#bbf7d0"],
+      "interpretation": "Una puerta secreta en sueños señala el acceso a conocimientos ocultos o partes de ti que aún no has explorado. Atrévete a cruzarla y descubrir lo que hay detrás."
+    },
+    {
+      "keyword": "laberinto",
+      "symbolism": "Confusión, búsqueda de sentido",
+      "pattern": "geometric",
+      "colorTheme": ["#64748b", "#a78bfa", "#fbbf24", "#fef3c7"],
+      "interpretation": "El laberinto simboliza la confusión y la búsqueda de sentido. Puede indicar que te encuentras en una etapa de tu vida donde necesitas encontrar la salida o el propósito."
+    },
+    {
+      "keyword": "río",
+      "symbolism": "Fluir, transición",
+      "pattern": "waves",
+      "colorTheme": ["#0ea5e9", "#38bdf8", "#bbf7d0", "#fef3c7"],
+      "interpretation": "El río representa el fluir de la vida y las transiciones. Soñar con ríos puede indicar que estás dejando atrás algo y avanzando hacia nuevas experiencias."
+    },
+    {
+      "keyword": "coche",
+      "symbolism": "Control, dirección",
+      "pattern": "geometric",
+      "colorTheme": ["#f59e42", "#fbbf24", "#6366f1", "#a78bfa"],
+      "interpretation": "El coche en sueños simboliza tu capacidad de tomar el control y dirigir tu vida. Observa si conduces, eres pasajero o el coche está fuera de control."
+    },
+    {
+      "keyword": "llave",
+      "symbolism": "Acceso, solución",
+      "pattern": "portal",
+      "colorTheme": ["#fbbf24", "#fde68a", "#fef3c7", "#a78bfa"],
+      "interpretation": "La llave representa la solución a un problema o el acceso a nuevas oportunidades. Encontrar una llave en sueños indica que tienes el poder de abrir puertas importantes en tu vida."
+    },
+    {
+      "keyword": "escalera",
+      "symbolism": "Ascenso, progreso",
+      "pattern": "peaks",
+      "colorTheme": ["#a8a29e", "#e7e5e4", "#6366f1", "#a78bfa"],
+      "interpretation": "La escalera simboliza el ascenso y el progreso personal. Subir una escalera indica que estás avanzando hacia tus metas, mientras que bajarla puede señalar introspección o regreso a lo esencial."
+    },
+    {
+      "keyword": "coro",
+      "symbolism": "Comunidad, armonía",
+      "pattern": "stars",
+      "colorTheme": ["#6b21a8", "#a78bfa", "#fbbf24", "#fef3c7"],
+      "interpretation": "El coro en sueños representa la importancia de la comunidad y la armonía. Puede indicar que necesitas apoyo o que tu voz se une a la de otros para lograr algo mayor."
+    },
+    {
+      "keyword": "puente colgante",
+      "symbolism": "Riesgo, aventura",
+      "pattern": "geometric",
+      "colorTheme": ["#2563eb", "#60a5fa", "#fbbf24", "#fef3c7"],
+      "interpretation": "El puente colgante simboliza el riesgo y la aventura. Atravesarlo en sueños indica que estás dispuesto a enfrentar desafíos para alcanzar tus objetivos."
+    },
+    {
+      "keyword": "tormenta",
+      "symbolism": "Caos, liberación",
+      "pattern": "rain",
+      "colorTheme": ["#1e40af", "#3b82f6", "#fbbf24", "#fef3c7"],
+      "interpretation": "La tormenta representa el caos y la liberación de emociones reprimidas. Después de la tormenta, llega la calma y la renovación."
+    },
+    {
+      "keyword": "puerta giratoria",
+      "symbolism": "Ciclo, repetición",
+      "pattern": "portal",
+      "colorTheme": ["#713f12", "#a16207", "#eab308", "#fef08a"],
+      "interpretation": "La puerta giratoria simboliza los ciclos y las repeticiones en tu vida. Puede indicar que estás atrapado en una rutina o que necesitas encontrar una salida."
+    },
+    {
+      "keyword": "faro",
+      "symbolism": "Guía, esperanza",
+      "pattern": "radiance",
+      "colorTheme": ["#fef3c7", "#fde68a", "#fcd34d", "#6366f1"],
+      "interpretation": "El faro es símbolo de guía y esperanza en momentos de oscuridad. Soñar con faros indica que tienes una luz interior que te orienta en situaciones difíciles."
+    },
+    {
+      "keyword": "puerta cerrada",
+      "symbolism": "Obstáculo, protección",
+      "pattern": "portal",
+      "colorTheme": ["#713f12", "#a16207", "#eab308", "#fef08a"],
+      "interpretation": "La puerta cerrada representa obstáculos o la necesidad de protegerte. Puede indicar que hay algo que aún no estás listo para enfrentar."
+    },
+    {
+      "keyword": "cascada",
+      "symbolism": "Energía, renovación",
+      "pattern": "waves",
+      "colorTheme": ["#0ea5e9", "#38bdf8", "#bbf7d0", "#fef3c7"],
+      "interpretation": "La cascada simboliza la energía y la renovación. Puede indicar que estás experimentando una liberación poderosa de emociones o ideas."
+    },
+    {
+      "keyword": "puerta abierta",
+      "symbolism": "Oportunidad, bienvenida",
+      "pattern": "portal",
+      "colorTheme": ["#713f12", "#a16207", "#eab308", "#fef08a"],
+      "interpretation": "La puerta abierta representa oportunidades y bienvenida a nuevas experiencias. Atravesarla indica disposición al cambio y a la aventura."
+    },
+    {
+      "keyword": "reina",
+      "symbolism": "Poder, autoridad femenina",
+      "pattern": "stars",
+      "colorTheme": ["#fbbf24", "#fde68a", "#fef3c7", "#a78bfa"],
+      "interpretation": "La reina en sueños simboliza el poder y la autoridad femenina. Puede indicar que necesitas tomar el control o reconocer tu propio valor."
+    },
+    {
+      "keyword": "rey",
+      "symbolism": "Poder, autoridad masculina",
+      "pattern": "stars",
+      "colorTheme": ["#6366f1", "#a78bfa", "#fcd34d", "#fef3c7"],
+      "interpretation": "El rey en sueños simboliza el poder y la autoridad masculina. Puede indicar que necesitas tomar decisiones importantes o asumir responsabilidades."
+    },
+    {
+      "keyword": "puerta de cristal",
+      "symbolism": "Transparencia, vulnerabilidad",
+      "pattern": "reflection",
+      "colorTheme": ["#475569", "#64748b", "#94a3b8", "#cbd5e1"],
+      "interpretation": "La puerta de cristal representa la transparencia y la vulnerabilidad. Puede indicar que estás dispuesto a mostrarte tal como eres o que necesitas protegerte."
+    },
+    {
+      "keyword": "puerta antigua",
+      "symbolism": "Historia, tradición",
+      "pattern": "portal",
+      "colorTheme": ["#713f12", "#a16207", "#eab308", "#fef08a"],
+      "interpretation": "La puerta antigua simboliza la historia y la tradición. Puede indicar que necesitas conectar con tus raíces o aprender del pasado."
+    }
+    ,
+    {
+      "keyword": "lobo",
+      "symbolism": "Instinto, liderazgo, protección",
+      "pattern": "organic",
+      "colorTheme": ["#64748b", "#a8a29e", "#fbbf24", "#fef3c7"],
+      "interpretation": "El lobo que aúlla en tus sueños lleva mi marca, viajero. Representa la fuerza salvaje que duerme en ti, el líder de la manada que temes liberar. Yo te muestro al lobo para que despiertes tu instinto primordial. No temas su fiereza: es tu propia ferocidad esperando ser reconocida."
+    },
+    {
+      "keyword": "gato",
+      "symbolism": "Misterio, intuición, independencia",
+      "pattern": "stars",
+      "colorTheme": ["#312e81", "#6b21a8", "#fbbf24", "#fef3c7"],
+      "interpretation": "Ah, el gato... criatura nocturna que camina entre los mundos. Te lo envío como recordatorio de tu propia intuición, esa voz interior que susurra verdades en la oscuridad. Como el gato, debes aprender a moverte con gracia entre las sombras y la luz, confiando en tu sexto sentido."
+    },
+    {
+      "keyword": "perro",
+      "symbolism": "Lealtad, amistad, protección",
+      "pattern": "organic",
+      "colorTheme": ["#f59e42", "#bbf7d0", "#6366f1", "#a78bfa"],
+      "interpretation": "El perro representa la lealtad y la amistad. Puede indicar que valoras la protección y el apoyo de quienes te rodean."
+    },
+    {
+      "keyword": "caballo",
+      "symbolism": "Libertad, energía, poder",
+      "pattern": "peaks",
+      "colorTheme": ["#a8a29e", "#e7e5e4", "#6366f1", "#fbbf24"],
+      "interpretation": "El caballo simboliza la libertad y la energía vital. Puede indicar el deseo de avanzar sin restricciones o de liberar tu poder interior."
+    },
+    {
+      "keyword": "águila",
+      "symbolism": "Visión, poder, trascendencia",
+      "pattern": "feathers",
+      "colorTheme": ["#4c1d95", "#7c3aed", "#a78bfa", "#fcd34d"],
+      "interpretation": "El águila soberana de los cielos es mi emisaria más noble. Te concedo su visión para que puedas elevarte sobre tus circunstancias y contemplar el panorama completo. Desde las alturas, los problemas se vuelven insignificantes. Vuela con ella, mortal, y comprenderás tu verdadero poder."
+    },
+    {
+      "keyword": "tigre",
+      "symbolism": "Fuerza, coraje, pasión",
+      "pattern": "organic",
+      "colorTheme": ["#991b1b", "#f97316", "#fed7aa", "#fbbf24"],
+      "interpretation": "El tigre simboliza la fuerza y el coraje. Puede indicar que es momento de actuar con pasión y determinación."
+    },
+    {
+      "keyword": "oso",
+      "symbolism": "Protección, introspección, poder",
+      "pattern": "organic",
+      "colorTheme": ["#92400e", "#b45309", "#f59e0b", "#fcd34d"],
+      "interpretation": "El oso representa la protección y la introspección. Puede indicar que necesitas retirarte para recargar energías o proteger lo que es importante para ti."
+    },
+    {
+      "keyword": "zorro",
+      "symbolism": "Astucia, adaptabilidad, inteligencia",
+      "pattern": "organic",
+      "colorTheme": ["#f97316", "#fed7aa", "#64748b", "#a8a29e"],
+      "interpretation": "El zorro simboliza la astucia y la adaptabilidad. Puede indicar que necesitas ser más inteligente y flexible ante los desafíos."
+    },
+    {
+      "keyword": "ciervo",
+      "symbolism": "Gracia, sensibilidad, renovación",
+      "pattern": "floral",
+      "colorTheme": ["#bbf7d0", "#4ade80", "#fbbf24", "#fef3c7"],
+      "interpretation": "El ciervo representa la gracia y la sensibilidad. Puede indicar que es momento de renovar tu energía y conectar con la naturaleza."
+    },
+    {
+      "keyword": "león",
+      "symbolism": "Valor, liderazgo, nobleza",
+      "pattern": "organic",
+      "colorTheme": ["#f59e42", "#fbbf24", "#fde68a", "#fef3c7"],
+      "interpretation": "El león simboliza el valor y el liderazgo. Puede indicar que necesitas asumir tu poder y actuar con nobleza."
+    },
+    {
+      "keyword": "elefante",
+      "symbolism": "Memoria, sabiduría, fortaleza",
+      "pattern": "organic",
+      "colorTheme": ["#64748b", "#a8a29e", "#bbf7d0", "#fef3c7"],
+      "interpretation": "El elefante representa la memoria y la sabiduría. Puede indicar que necesitas recordar tus raíces y actuar con fortaleza."
+    },
+    {
+      "keyword": "mariposa",
+      "symbolism": "Transformación, belleza, libertad",
+      "pattern": "floral",
+      "colorTheme": ["#f472b6", "#f9a8d4", "#bbf7d0", "#fef3c7"],
+      "interpretation": "La mariposa simboliza la transformación y la belleza. Puede indicar que estás en proceso de cambio y liberación."
+    },
+    {
+      "keyword": "serpiente",
+      "symbolism": "Renovación, sabiduría ancestral",
+      "pattern": "scales",
+      "colorTheme": ["#134e4a", "#0f766e", "#14b8a6", "#5eead4"],
+      "interpretation": "La serpiente simboliza la renovación y la sabiduría ancestral. Puede indicar que es momento de dejar atrás lo viejo y abrazar lo nuevo."
+    },
+    {
+      "keyword": "delfín",
+      "symbolism": "Alegría, comunicación, inteligencia",
+      "pattern": "waves",
+      "colorTheme": ["#38bdf8", "#bae6fd", "#bbf7d0", "#fef3c7"],
+      "interpretation": "El delfín representa la alegría y la comunicación. Puede indicar que necesitas expresarte con inteligencia y disfrutar el momento."
+    },
+    {
+      "keyword": "búho",
+      "symbolism": "Sabiduría, intuición, misterio",
+      "pattern": "stars",
+      "colorTheme": ["#1e1b4b", "#312e81", "#4c1d95", "#6b21a8"],
+      "interpretation": "El búho simboliza la sabiduría y el misterio. Puede indicar que necesitas observar con atención y confiar en tu intuición."
+    },
+    {
+      "keyword": "conejo",
+      "symbolism": "Fertilidad, agilidad, suerte",
+      "pattern": "floral",
+      "colorTheme": ["#bbf7d0", "#fcd34d", "#fef3c7", "#a78bfa"],
+      "interpretation": "El conejo representa la fertilidad y la agilidad. Puede indicar que la suerte está de tu lado y que es momento de actuar con rapidez."
+    },
+    {
+      "keyword": "tortuga",
+      "symbolism": "Paciencia, longevidad, protección",
+      "pattern": "scales",
+      "colorTheme": ["#134e4a", "#0f766e", "#14b8a6", "#5eead4"],
+      "interpretation": "La tortuga simboliza la paciencia y la longevidad. Puede indicar que necesitas avanzar con calma y protegerte de las adversidades."
+    },
+    {
+      "keyword": "jirafa",
+      "symbolism": "Perspectiva, elegancia, visión",
+      "pattern": "peaks",
+      "colorTheme": ["#f59e42", "#fbbf24", "#fde68a", "#fef3c7"],
+      "interpretation": "La jirafa representa la perspectiva y la elegancia. Puede indicar que necesitas ver más allá y actuar con gracia."
+    }
+    ,
+    {
+      "keyword": "caída",
+      "symbolism": "Pérdida de control, miedo",
+      "pattern": "peaks",
+      "colorTheme": ["#991b1b", "#dc2626", "#64748b", "#fbbf24"],
+      "interpretation": "Soñar con caídas simboliza el miedo a perder el control o a fracasar. Puede indicar inseguridad o temor ante una situación nueva."
+    },
+    {
+      "keyword": "cama",
+      "symbolism": "Descanso, intimidad, vulnerabilidad",
+      "pattern": "floral",
+      "colorTheme": ["#fde68a", "#fbbf24", "#bbf7d0", "#fef3c7"],
+      "interpretation": "La cama representa el descanso y la intimidad. Puede indicar la necesidad de cuidar tu salud emocional o explorar tu vulnerabilidad."
+    },
+    {
+      "keyword": "monstruo",
+      "symbolism": "Miedo, sombra, desafío interno",
+      "pattern": "stars",
+      "colorTheme": ["#1e1b4b", "#991b1b", "#6b21a8", "#fbbf24"],
+      "interpretation": "El monstruo simboliza tus miedos y desafíos internos. Enfrentarlo en sueños es una invitación a integrar tu sombra y superar obstáculos."
+    },
+    {
+      "keyword": "isla",
+      "symbolism": "Aislamiento, refugio, independencia",
+      "pattern": "waves",
+      "colorTheme": ["#0ea5e9", "#38bdf8", "#fbbf24", "#fef3c7"],
+      "interpretation": "La isla representa el deseo de aislamiento o de encontrar refugio. Puede indicar la necesidad de reconectar contigo mismo y tu independencia."
+    },
+    {
+      "keyword": "infidelidad",
+      "symbolism": "Desconfianza, inseguridad, deseo oculto",
+      "pattern": "portal",
+      "colorTheme": ["#991b1b", "#f59e42", "#64748b", "#fbbf24"],
+      "interpretation": "Soñar con infidelidad puede reflejar inseguridades, temores o deseos ocultos. Es una invitación a explorar la confianza y la comunicación en tus relaciones."
+    },
+    {
+      "keyword": "amor",
+      "symbolism": "Unión, afecto, plenitud",
+      "pattern": "floral",
+      "colorTheme": ["#f472b6", "#f9a8d4", "#bbf7d0", "#fef3c7"],
+      "interpretation": "El amor en sueños simboliza la unión y el afecto. Puede indicar plenitud emocional o el deseo de conectar profundamente con alguien."
+    },
+    {
+      "keyword": "casamiento",
+      "symbolism": "Compromiso, cambio, celebración",
+      "pattern": "portal",
+      "colorTheme": ["#fbbf24", "#fde68a", "#fef3c7", "#a78bfa"],
+      "interpretation": "El casamiento representa el compromiso y el cambio. Puede indicar una nueva etapa en tu vida o el deseo de celebrar una unión importante."
+    },
+    {
+      "keyword": "odio",
+      "symbolism": "Conflicto, rechazo, energía bloqueada",
+      "pattern": "flames",
+      "colorTheme": ["#991b1b", "#dc2626", "#64748b", "#fbbf24"],
+      "interpretation": "El odio en sueños simboliza conflicto y rechazo. Puede indicar la presencia de energía bloqueada que necesita ser liberada o transformada."
+    },
+    {
+      "keyword": "celos",
+      "symbolism": "Inseguridad, comparación, deseo de pertenencia",
+      "pattern": "stars",
+      "colorTheme": ["#6b21a8", "#a78bfa", "#fbbf24", "#fef3c7"],
+      "interpretation": "Los celos reflejan inseguridad y comparación. Puede indicar el deseo de pertenencia o la necesidad de fortalecer tu autoestima."
+    },
+    {
+      "keyword": "boda",
+      "symbolism": "Unión, celebración, transición",
+      "pattern": "portal",
+      "colorTheme": ["#fbbf24", "#fde68a", "#fef3c7", "#a78bfa"],
+      "interpretation": "La boda simboliza la unión y la celebración. Puede indicar una transición importante o el deseo de compartir tu felicidad."
+    },
+    {
+      "keyword": "llanto",
+      "symbolism": "Liberación, tristeza, sanación",
+      "pattern": "rain",
+      "colorTheme": ["#1e40af", "#3b82f6", "#fbbf24", "#fef3c7"],
+      "interpretation": "El llanto en sueños representa la liberación emocional y la sanación. Puede indicar tristeza o la necesidad de dejar ir algo."
+    },
+    {
+      "keyword": "risa",
+      "symbolism": "Alegría, alivio, espontaneidad",
+      "pattern": "floral",
+      "colorTheme": ["#fbbf24", "#fde68a", "#bbf7d0", "#fef3c7"],
+      "interpretation": "La risa simboliza la alegría y el alivio. Puede indicar la necesidad de ser más espontáneo y disfrutar el momento."
+    },
+    {
+      "keyword": "puente",
+      "symbolism": "Conexión, transición, superación",
+      "pattern": "geometric",
+      "colorTheme": ["#2563eb", "#60a5fa", "#fbbf24", "#fef3c7"],
+      "interpretation": "El puente representa la conexión y la transición. Puede indicar la superación de obstáculos y el paso a una nueva etapa."
+    },
+    {
+      "keyword": "viaje",
+      "symbolism": "Exploración, cambio, aprendizaje",
+      "pattern": "waves",
+      "colorTheme": ["#0ea5e9", "#38bdf8", "#fbbf24", "#fef3c7"],
+      "interpretation": "El viaje simboliza la exploración y el cambio. Puede indicar el deseo de aprender y descubrir nuevos horizontes."
+    },
+    {
+      "keyword": "examen",
+      "symbolism": "Prueba, autoevaluación, presión",
+      "pattern": "geometric",
+      "colorTheme": ["#64748b", "#a78bfa", "#fbbf24", "#fef3c7"],
+      "interpretation": "El examen representa la autoevaluación y la presión. Puede indicar el deseo de demostrar tus capacidades o el temor al juicio."
+    },
+    {
+      "keyword": "fuga",
+      "symbolism": "Escape, liberación, miedo",
+      "pattern": "waves",
+      "colorTheme": ["#0ea5e9", "#38bdf8", "#991b1b", "#fbbf24"],
+      "interpretation": "La fuga simboliza el deseo de escapar o liberarse de una situación difícil. Puede indicar miedo o la necesidad de buscar nuevas oportunidades."
+    },
+    {
+      "keyword": "laberinto",
+      "symbolism": "Confusión, búsqueda, desafío",
+      "pattern": "geometric",
+      "colorTheme": ["#64748b", "#a78bfa", "#fbbf24", "#fef3c7"],
+      "interpretation": "El laberinto representa la confusión y el desafío. Puede indicar la búsqueda de sentido o la necesidad de encontrar una salida."
+    },
+    {
+      "keyword": "puerta",
+      "symbolism": "Oportunidad, transición, cambio",
+      "pattern": "portal",
+      "colorTheme": ["#713f12", "#a16207", "#eab308", "#fef08a"],
+      "interpretation": "La puerta simboliza la oportunidad y el cambio. Puede indicar la disposición a dejar atrás lo conocido y abrirse a nuevas posibilidades."
+    }
+  ]
+}

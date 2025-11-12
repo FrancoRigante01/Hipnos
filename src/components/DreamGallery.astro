@@ -1,0 +1,195 @@
+---
+// Componente para mostrar el archivo de sueños guardados
+---
+
+<div class="dream-gallery-container">
+  <div class="gallery-header">
+    <h2 class="gallery-title">Tu Archivo Onírico</h2>
+    <button id="clearAllBtn" class="clear-all-btn">Borrar todo</button>
+  </div>
+  
+  <div id="dreamGallery" class="dream-gallery">
+    <p class="empty-message">Tu archivo está vacío, mortal. Comparte tus sueños conmigo y guardaré sus interpretaciones aquí.</p>
+  </div>
+</div>
+
+<style>
+  .dream-gallery-container {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .gallery-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .gallery-title {
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #f1f5f9;
+    margin: 0;
+    letter-spacing: 0.5px;
+  }
+
+  .clear-all-btn {
+    padding: 0.5rem 1rem;
+    background: rgba(239, 68, 68, 0.2);
+    border: 1px solid rgba(239, 68, 68, 0.4);
+    border-radius: 8px;
+    color: #fca5a5;
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 300;
+  }
+
+  .clear-all-btn:hover {
+    background: rgba(239, 68, 68, 0.3);
+    border-color: rgba(239, 68, 68, 0.6);
+    color: #fecaca;
+  }
+
+  .dream-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1rem;
+  }
+
+  .empty-message {
+    grid-column: 1 / -1;
+    text-align: center;
+    color: #64748b;
+    font-style: italic;
+    padding: 3rem 1rem;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+
+  .dream-card {
+    background: rgba(15, 23, 42, 0.4);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    border-radius: 12px;
+    padding: 1.25rem;
+    transition: all 0.3s ease;
+    animation: cardFadeIn 0.4s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  @keyframes cardFadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .dream-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: var(--card-color, linear-gradient(90deg, #6366f1, #8b5cf6));
+    opacity: 0.6;
+  }
+
+  .dream-card:hover {
+    background: rgba(15, 23, 42, 0.6);
+    border-color: rgba(148, 163, 184, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.75rem;
+  }
+
+  .card-keyword {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #f1f5f9;
+    margin: 0;
+    text-transform: capitalize;
+  }
+
+  .card-date {
+    font-size: 0.75rem;
+    color: #64748b;
+    white-space: nowrap;
+  }
+
+  .card-symbolism {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    font-style: italic;
+    margin: 0 0 0.75rem 0;
+  }
+
+  .card-dream {
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    line-height: 1.5;
+    margin: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .card-actions {
+    margin-top: 1rem;
+    padding-top: 0.75rem;
+    border-top: 1px solid rgba(148, 163, 184, 0.1);
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .delete-btn {
+    padding: 0.375rem 0.75rem;
+    background: transparent;
+    border: 1px solid rgba(239, 68, 68, 0.3);
+    border-radius: 6px;
+    color: #f87171;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .delete-btn:hover {
+    background: rgba(239, 68, 68, 0.2);
+    border-color: rgba(239, 68, 68, 0.5);
+    color: #fca5a5;
+  }
+
+  @media (max-width: 768px) {
+    .dream-gallery-container {
+      padding: 1.5rem;
+    }
+
+    .gallery-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .dream-gallery {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
