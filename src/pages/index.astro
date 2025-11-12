@@ -12,12 +12,15 @@ import DreamGallery from '../components/DreamGallery.astro';
   <title>Hipnos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="stars"></div>
-  <div class="stars2"></div>
-  <div class="stars3"></div>
+  <div class="mist"></div>
+  <div class="cloud cloud1"></div>
+  <div class="cloud cloud2"></div>
+  <div class="cloud cloud3"></div>
+  <div class="cloud cloud4"></div>
+  <div class="cloud cloud5"></div>
 
   <div class="container">
     <header class="header">
@@ -48,49 +51,101 @@ import DreamGallery from '../components/DreamGallery.astro';
     }
 
     body {
-      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background: linear-gradient(to bottom, #0f172a 0%, #1e293b 50%, #334155 100%);
-      color: #e2e8f0;
+      font-family: 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: linear-gradient(135deg, #2d186c 0%, #1a1a40 60%, #0a0a23 100%);
+      color: #e9e6f6;
       min-height: 100vh;
       position: relative;
       overflow-x: hidden;
     }
 
-    /* Estrellas de fondo animadas */
-    .stars,
-    .stars2,
-    .stars3 {
+    /* Fondo místico de niebla */
+    .mist {
       position: fixed;
       top: 0;
       left: 0;
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      height: 100vh;
       pointer-events: none;
       z-index: 0;
+      background: url('https://www.transparenttextures.com/patterns/clouds.png'), radial-gradient(ellipse at 50% 20%, rgba(163, 148, 255, 0.15) 0%, rgba(0,0,0,0) 70%), radial-gradient(ellipse at 80% 80%, rgba(255, 215, 0, 0.08) 0%, rgba(0,0,0,0) 80%);
+      opacity: 0.7;
+      animation: mistFloat 40s linear infinite alternate;
     }
 
-    .stars {
-      background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="2" height="2"><circle cx="1" cy="1" r="1" fill="white" opacity="0.3"/></svg>') repeat;
-      animation: starsFloat 100s linear infinite;
+    /* Animación de nubes translúcidas */
+    .cloud {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 600px;
+      height: 220px;
+      pointer-events: none;
+      z-index: 1;
+      opacity: 0.7;
+      filter: blur(3px);
+      animation-timing-function: linear;
+    }
+    /* Formas SVG variadas para cada nube */
+    .cloud1 {
+      top: 8vh;
+      left: -600px;
+      background: url('data:image/svg+xml;utf8,<svg width="600" height="220" xmlns="http://www.w3.org/2000/svg"><ellipse cx="150" cy="110" rx="120" ry="60" fill="white" opacity="0.13"/><ellipse cx="320" cy="90" rx="100" ry="50" fill="white" opacity="0.11"/><ellipse cx="480" cy="130" rx="110" ry="55" fill="white" opacity="0.09"/></svg>');
+      animation: cloudMove1 70s linear infinite;
+    }
+    .cloud2 {
+      top: 30vh;
+      left: -600px;
+      background: url('data:image/svg+xml;utf8,<svg width="600" height="220" xmlns="http://www.w3.org/2000/svg"><ellipse cx="200" cy="100" rx="140" ry="70" fill="white" opacity="0.12"/><ellipse cx="400" cy="120" rx="90" ry="45" fill="white" opacity="0.10"/><ellipse cx="500" cy="80" rx="70" ry="35" fill="white" opacity="0.08"/></svg>');
+      animation: cloudMove2 90s linear infinite;
+      opacity: 0.5;
+    }
+    .cloud3 {
+      top: 55vh;
+      left: -600px;
+      background: url('data:image/svg+xml;utf8,<svg width="600" height="220" xmlns="http://www.w3.org/2000/svg"><ellipse cx="100" cy="120" rx="110" ry="55" fill="white" opacity="0.10"/><ellipse cx="300" cy="80" rx="130" ry="65" fill="white" opacity="0.09"/><ellipse cx="520" cy="140" rx="80" ry="40" fill="white" opacity="0.07"/></svg>');
+      animation: cloudMove3 110s linear infinite;
+      opacity: 0.4;
+    }
+    .cloud4 {
+      top: 75vh;
+      left: -600px;
+      background: url('data:image/svg+xml;utf8,<svg width="600" height="220" xmlns="http://www.w3.org/2000/svg"><ellipse cx="250" cy="100" rx="120" ry="60" fill="white" opacity="0.09"/><ellipse cx="400" cy="150" rx="100" ry="50" fill="white" opacity="0.07"/><ellipse cx="550" cy="80" rx="80" ry="40" fill="white" opacity="0.06"/></svg>');
+      animation: cloudMove4 130s linear infinite;
+      opacity: 0.3;
+    }
+    .cloud5 {
+      top: 90vh;
+      left: -600px;
+      background: url('data:image/svg+xml;utf8,<svg width="600" height="220" xmlns="http://www.w3.org/2000/svg"><ellipse cx="100" cy="110" rx="100" ry="50" fill="white" opacity="0.08"/><ellipse cx="300" cy="90" rx="120" ry="60" fill="white" opacity="0.07"/><ellipse cx="500" cy="130" rx="90" ry="45" fill="white" opacity="0.05"/></svg>');
+      animation: cloudMove5 150s linear infinite;
+      opacity: 0.25;
+    }
+    @keyframes cloudMove1 {
+      0% { left: -600px; }
+      100% { left: 100vw; }
+    }
+    @keyframes cloudMove2 {
+      0% { left: -600px; }
+      100% { left: 100vw; }
+    }
+    @keyframes cloudMove3 {
+      0% { left: -600px; }
+      100% { left: 100vw; }
+    }
+    @keyframes cloudMove4 {
+      0% { left: -600px; }
+      100% { left: 100vw; }
+    }
+    @keyframes cloudMove5 {
+      0% { left: -600px; }
+      100% { left: 100vw; }
     }
 
-    .stars2 {
-      background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="3" height="3"><circle cx="1.5" cy="1.5" r="1" fill="white" opacity="0.2"/></svg>') repeat;
-      animation: starsFloat 150s linear infinite;
-    }
-
-    .stars3 {
-      background: transparent url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="4" height="4"><circle cx="2" cy="2" r="1.5" fill="white" opacity="0.1"/></svg>') repeat;
-      animation: starsFloat 200s linear infinite;
-    }
-
-    @keyframes starsFloat {
-      from {
-        transform: translateY(0);
-      }
-      to {
-        transform: translateY(-1000px);
-      }
+    @keyframes mistFloat {
+      0% { filter: blur(0px); }
+      50% { filter: blur(4px); }
+      100% { filter: blur(0px); }
     }
 
     .container {
@@ -99,6 +154,10 @@ import DreamGallery from '../components/DreamGallery.astro';
       padding: 2rem 1rem;
       position: relative;
       z-index: 1;
+      background: rgba(30, 22, 60, 0.7);
+      border-radius: 24px;
+      box-shadow: 0 8px 32px 0 rgba(44, 20, 90, 0.37);
+      border: 1px solid rgba(163, 148, 255, 0.15);
     }
 
     .header {
@@ -108,31 +167,34 @@ import DreamGallery from '../components/DreamGallery.astro';
     }
 
     .main-title {
+      font-family: 'Cinzel', serif;
       font-size: 3.5rem;
-      font-weight: 200;
-      background: linear-gradient(135deg, #f1f5f9 0%, #a78bfa 50%, #6366f1 100%);
+      font-weight: 700;
+      background: linear-gradient(90deg, #e9e6f6 0%, #a390ff 50%, #ffd700 100%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
       margin-bottom: 0.5rem;
       letter-spacing: 2px;
-      animation: titleGlow 4s ease-in-out infinite;
+      text-shadow: 0 0 24px #a390ff, 0 0 48px #ffd700;
+      animation: titleMysticGlow 4s ease-in-out infinite;
     }
 
-    @keyframes titleGlow {
+    @keyframes titleMysticGlow {
       0%, 100% {
-        filter: drop-shadow(0 0 10px rgba(167, 139, 250, 0.3));
+        text-shadow: 0 0 24px #a390ff, 0 0 48px #ffd700;
       }
       50% {
-        filter: drop-shadow(0 0 20px rgba(167, 139, 250, 0.5));
+        text-shadow: 0 0 48px #ffd700, 0 0 24px #a390ff;
       }
     }
 
     .subtitle {
-      font-size: 1.1rem;
-      color: #cbd5e1;
-      font-weight: 300;
+      font-size: 1.2rem;
+      color: #d1c4e9;
+      font-weight: 400;
       font-style: italic;
+      text-shadow: 0 0 8px #a390ff;
     }
 
     .main-content {
@@ -142,20 +204,48 @@ import DreamGallery from '../components/DreamGallery.astro';
     .footer {
       text-align: center;
       padding: 2rem 0;
-      color: #64748b;
-      font-size: 0.9rem;
-      font-weight: 300;
+      color: #a390ff;
+      font-size: 1rem;
+      font-weight: 400;
+      text-shadow: 0 0 8px #ffd700;
+    }
+
+    /* Botones y campos místicos */
+    input, textarea, button {
+      font-family: 'Lato', sans-serif;
+      background: rgba(163, 148, 255, 0.08);
+      border: 1px solid #a390ff;
+      color: #e9e6f6;
+      border-radius: 12px;
+      padding: 0.7em 1em;
+      margin-bottom: 1em;
+      box-shadow: 0 0 8px #a390ff33;
+      transition: box-shadow 0.3s, border-color 0.3s;
+    }
+    input:focus, textarea:focus, button:focus {
+      outline: none;
+      border-color: #ffd700;
+      box-shadow: 0 0 16px #ffd70066;
+    }
+    button {
+      background: linear-gradient(90deg, #a390ff 0%, #ffd700 100%);
+      color: #1a1a40;
+      font-weight: 700;
+      cursor: pointer;
+      text-shadow: 0 0 8px #e9e6f6;
+    }
+    button:hover {
+      box-shadow: 0 0 24px #ffd70099;
+      border-color: #a390ff;
     }
 
     @media (max-width: 768px) {
       .container {
         padding: 1rem;
       }
-
       .main-title {
         font-size: 2.5rem;
       }
-
       .subtitle {
         font-size: 1rem;
       }
