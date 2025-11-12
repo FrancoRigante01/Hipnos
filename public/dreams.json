@@ -13,6 +13,18 @@
       "interpretation": "Ah, mortal, has soñado con el agua... Yo, Hipnos, te revelo que las aguas de tus sueños son el espejo de tus emociones más profundas. Como los ríos que fluyen hacia el mar, tus sentimientos buscan su cauce. Las aguas tranquilas anuncian paz interior, mientras que las agitadas revelan turbulencia emocional. Recuerda que Poseidón, señor de los mares, observa el fluir de tus emociones desde las profundidades."
     },
     {
+      "keyword": "águila",
+      "symbolism": "Visión, poder, trascendencia",
+      "pattern": "feathers",
+      "colorTheme": [
+        "#4c1d95",
+        "#7c3aed",
+        "#a78bfa",
+        "#fcd34d"
+      ],
+      "interpretation": "El águila soberana de los cielos es mi emisaria más noble. Te concedo su visión para que puedas elevarte sobre tus circunstancias y contemplar el panorama completo. Desde las alturas, los problemas se vuelven insignificantes. Vuela con ella, mortal, y comprenderás tu verdadero poder."
+    },
+    {
       "keyword": "amor",
       "symbolism": "Unión, afecto, plenitud",
       "pattern": "floral",
@@ -35,6 +47,42 @@
         "#6ee7b7"
       ],
       "interpretation": "El animal en tus sueños conecta con tu instinto y energía vital. El tipo de animal revela el mensaje: fuerza, astucia, ternura o protección. Escucha lo que tu naturaleza salvaje quiere comunicarte."
+    },
+    {
+      "keyword": "Argentina",
+      "symbolism": "Patria, identidad, desafíos",
+      "pattern": "organic",
+      "colorTheme": [
+        "#22c55e",
+        "#16a34a",
+        "#bbf7d0",
+        "#fef3c7"
+      ],
+      "interpretation": "¡Ah, Argentina! Ese territorio que sueñas es mi espejo favorito: pasiones que arden, voces que no callan. Te la muestro para que veas que tus raíces te anclan pero tu espíritu puede volar. Los desafíos de esa tierra son invitaciones a demostrar la fiereza que llevas dentro."
+    },
+    {
+      "keyword": "Basketball",
+      "symbolism": "Competencia, agilidad, equipo",
+      "pattern": "organic",
+      "colorTheme": [
+        "#f59e42",
+        "#fbbf24",
+        "#fde68a",
+        "#fef3c7"
+      ],
+      "interpretation": "En tus sueños, el basketball representa la danza de la competencia y la agilidad. Como el dios que teje los hilos de la noche, te muestro que cada lanzamiento es una oportunidad de triunfo colectivo. Los rebotes enseñan perseverancia, y el equipo simboliza la armonía necesaria para vencer."
+    },
+    {
+      "keyword": "Boca",
+      "symbolism": "Pasión, rivalidad, identidad",
+      "pattern": "flames",
+      "colorTheme": [
+        "#fbbf24",
+        "#fde68a",
+        "#fef3c7",
+        "#a78bfa"
+      ],
+      "interpretation": "Boca Juniors arde en tus visiones nocturnas como llama eterna de pasión. Esta rivalidad que sueñas refleja tu identidad más profunda. Las victorias en el estadio son metáforas de tus conquistas personales, donde el corazón late con la fuerza de un dios antiguo."
     },
     {
       "keyword": "boda",
@@ -61,6 +109,30 @@
       "interpretation": "El bosque... territorio sagrado donde habitan los arquetipos ancestrales. Te he guiado entre sus árboles milenarios para que encuentres lo que has olvidado. Adentrarte en él requiere valentía, mortal. Artemisa, diosa de los bosques y la caza, te acompaña entre las sombras y la luz del follaje para que descubras verdades ocultas."
     },
     {
+      "keyword": "Brownie",
+      "symbolism": "Indulgencia, dulzura, recompensa",
+      "pattern": "floral",
+      "colorTheme": [
+        "#92400e",
+        "#b45309",
+        "#f59e0b",
+        "#fcd34d"
+      ],
+      "interpretation": "¡Ese brownie caliente! Ofrenda dulce que dejo en tus sueños para recordarte que merecías indulgencia hace tiempo. La recompensa no siempre viene grandiosa; a veces es un bocado oscuro y cremoso que te susurra: 'Descansa, lo hiciste bien, mortal'."
+    },
+    {
+      "keyword": "Buenos Aires",
+      "symbolism": "Vida urbana, cultura, nostalgia",
+      "pattern": "geometric",
+      "colorTheme": [
+        "#64748b",
+        "#a78bfa",
+        "#fbbf24",
+        "#fef3c7"
+      ],
+      "interpretation": "Buenos Aires palpita en tus visiones como corazón que nunca duerme. Yo, que catalogo sueños desde antes del tiempo, veo en sus calles tango de alegrías pasadas y futuros por descubrir. Revisita los rincones olvidados: allí aún respiran tus nostalgias favoritas."
+    },
+    {
       "keyword": "búho",
       "symbolism": "Sabiduría, intuición, misterio",
       "pattern": "stars",
@@ -83,6 +155,18 @@
         "#fbbf24"
       ],
       "interpretation": "El caballo simboliza la libertad y la energía vital. Puede indicar el deseo de avanzar sin restricciones o de liberar tu poder interior."
+    },
+    {
+      "keyword": "caída",
+      "symbolism": "Pérdida de control, miedo",
+      "pattern": "peaks",
+      "colorTheme": [
+        "#991b1b",
+        "#dc2626",
+        "#64748b",
+        "#fbbf24"
+      ],
+      "interpretation": "Soñar con caídas simboliza el miedo a perder el control o a fracasar. Puede indicar inseguridad o temor ante una situación nueva."
     },
     {
       "keyword": "cama",
@@ -145,16 +229,16 @@
       "interpretation": "La cascada simboliza la energía y la renovación. Puede indicar que estás experimentando una liberación poderosa de emociones o ideas. Poseidón, dios de las aguas, celebra cada salto y cada renovación junto a ti."
     },
     {
-      "keyword": "caída",
-      "symbolism": "Pérdida de control, miedo",
-      "pattern": "peaks",
+      "keyword": "Castillo",
+      "symbolism": "Fortaleza, protección, aislamiento",
+      "pattern": "geometric",
       "colorTheme": [
-        "#991b1b",
-        "#dc2626",
+        "#1e293b",
+        "#475569",
         "#64748b",
-        "#fbbf24"
+        "#94a3b8"
       ],
-      "interpretation": "Soñar con caídas simboliza el miedo a perder el control o a fracasar. Puede indicar inseguridad o temor ante una situación nueva."
+      "interpretation": "El castillo en tus sueños representa una fortaleza inexpugnable, símbolo de protección y aislamiento. Yo, Hipnos, te muestro estas murallas para que explores los secretos que guardas dentro de ti. Detrás de sus paredes se ocultan tesoros de tu alma que esperan ser descubiertos."
     },
     {
       "keyword": "celos",
@@ -167,6 +251,18 @@
         "#fef3c7"
       ],
       "interpretation": "Los celos reflejan inseguridad y comparación. Puede indicar el deseo de pertenencia o la necesidad de fortalecer tu autoestima."
+    },
+    {
+      "keyword": "Chocolate",
+      "symbolism": "Placer, consuelo, sensualidad",
+      "pattern": "flames",
+      "colorTheme": [
+        "#92400e",
+        "#b45309",
+        "#f59e0b",
+        "#fcd34d"
+      ],
+      "interpretation": "Chocolate derritiéndose en tu lengua: mi firma, mi marca divina. Mientras otros dioses reparten gloria y fuego, yo regalo esta delicia blanda. La sensualidad no es pecado, mortal; es el reconocimiento de que mereces pequeños paraísos antes de despertar."
     },
     {
       "keyword": "ciervo",
@@ -193,6 +289,18 @@
       "interpretation": "El coche en sueños simboliza tu capacidad de tomar el control y dirigir tu vida. Observa si conduces, eres pasajero o el coche está fuera de control."
     },
     {
+      "keyword": "Cocina",
+      "symbolism": "Creación, nutrición, hogar",
+      "pattern": "flames",
+      "colorTheme": [
+        "#f97316",
+        "#fed7aa",
+        "#fbbf24",
+        "#fef3c7"
+      ],
+      "interpretation": "La cocina es tu templo onírico, ese lugar donde ingredientes se conspiran y aromas susurran secretos. Observa bien: ¿qué mezclas en la olla de tus sueños? Porque en mis noches, la alquimia culinaria refleja tu verdadera naturaleza."
+    },
+    {
       "keyword": "conejo",
       "symbolism": "Fertilidad, agilidad, suerte",
       "pattern": "floral",
@@ -215,6 +323,18 @@
         "#fef3c7"
       ],
       "interpretation": "El coro en sueños representa la importancia de la comunidad y la armonía. Puede indicar que necesitas apoyo o que tu voz se une a la de otros para lograr algo mayor."
+    },
+    {
+      "keyword": "CSS",
+      "symbolism": "Estilo, presentación, armonía",
+      "pattern": "reflection",
+      "colorTheme": [
+        "#6366f1",
+        "#a78bfa",
+        "#fcd34d",
+        "#fef3c7"
+      ],
+      "interpretation": "CSS en sueños es el velo que adorna la realidad invisible. Como el artesano divino que pinta los cielos, te revelo que tu estilo exterior refleja el alma interior. Cada regla de estilo es una pincelada en el lienzo de tu existencia, creando armonía entre forma y esencia."
     },
     {
       "keyword": "delfín",
@@ -277,6 +397,18 @@
       "interpretation": "El examen representa la autoevaluación y la presión. Puede indicar el deseo de demostrar tus capacidades o el temor al juicio."
     },
     {
+      "keyword": "Facturas",
+      "symbolism": "Tradición, reunión, placer",
+      "pattern": "floral",
+      "colorTheme": [
+        "#fbbf24",
+        "#fde68a",
+        "#fef3c7",
+        "#a78bfa"
+      ],
+      "interpretation": "¡Ah, facturas! Doradas como monedas del destino. En tus sueños te las muestro para recordarte que la tradición no es carga, sino carta de presentación del alma. Comparte una y verás cómo la dulzura abre puertas que la fuerza nunca podría."
+    },
+    {
       "keyword": "faro",
       "symbolism": "Guía, esperanza",
       "pattern": "radiance",
@@ -325,6 +457,30 @@
       "interpretation": "La fuga simboliza el deseo de escapar o liberarse de una situación difícil. Puede indicar miedo o la necesidad de buscar nuevas oportunidades."
     },
     {
+      "keyword": "Fútbol",
+      "symbolism": "Equipo, estrategia, pasión",
+      "pattern": "organic",
+      "colorTheme": [
+        "#22c55e",
+        "#16a34a",
+        "#bbf7d0",
+        "#fef3c7"
+      ],
+      "interpretation": "El fútbol que juegas en el reino onírico enseña lecciones de equipo y estrategia. Cada gol es una celebración de la unidad, cada derrota una humilde lección. Como el dios que observa desde las sombras, te concedo estas visiones para que comprendas que la pasión compartida multiplica las victorias."
+    },
+    {
+      "keyword": "Gallardo",
+      "symbolism": "Liderazgo, estrategia, inspiración",
+      "pattern": "stars",
+      "colorTheme": [
+        "#fbbf24",
+        "#fde68a",
+        "#fef3c7",
+        "#a78bfa"
+      ],
+      "interpretation": "Gallardo aparece en tus sueños como faro de liderazgo e inspiración. Su estrategia en el campo es metáfora de tu camino personal. Como el guía nocturno que ilumina el caos, te muestra que dirigir con sabiduría puede transformar un equipo en una fuerza invencible."
+    },
+    {
       "keyword": "gato",
       "symbolism": "Misterio, intuición, independencia",
       "pattern": "stars",
@@ -337,6 +493,30 @@
       "interpretation": "Ah, el gato... criatura nocturna que camina entre los mundos. Te lo envío como recordatorio de tu propia intuición, esa voz interior que susurra verdades en la oscuridad. Como el gato, debes aprender a moverte con gracia entre las sombras y la luz, confiando en tu sexto sentido."
     },
     {
+      "keyword": "Goles",
+      "symbolism": "Logro, celebración, meta",
+      "pattern": "radiance",
+      "colorTheme": [
+        "#fbbf24",
+        "#fde68a",
+        "#fcd34d",
+        "#fef3c7"
+      ],
+      "interpretation": "Los goles que marcas en sueños brillan como estrellas fugaces de logro. Cada uno simboliza una meta alcanzada, una celebración merecida. Como el dios que concede visiones de triunfo, te recuerdo que el esfuerzo se recompensa con la luz de la realización."
+    },
+    {
+      "keyword": "HTML",
+      "symbolism": "Estructura, base, construcción",
+      "pattern": "geometric",
+      "colorTheme": [
+        "#f97316",
+        "#fed7aa",
+        "#fbbf24",
+        "#fef3c7"
+      ],
+      "interpretation": "HTML es la estructura invisible que sostiene tus sueños digitales. Como el arquitecto de los mundos oníricos, te enseño que una base sólida es esencial para cualquier creación. Cada etiqueta es un ladrillo en el templo de tu imaginación, construyendo realidades duraderas."
+    },
+    {
       "keyword": "infidelidad",
       "symbolism": "Desconfianza, inseguridad, deseo oculto",
       "pattern": "portal",
@@ -347,6 +527,18 @@
         "#fbbf24"
       ],
       "interpretation": "Soñar con infidelidad puede reflejar inseguridades, temores o deseos ocultos. Es una invitación a explorar la confianza y la comunicación en tus relaciones."
+    },
+    {
+      "keyword": "Inflación",
+      "symbolism": "Inestabilidad, cambio, adaptación",
+      "pattern": "waves",
+      "colorTheme": [
+        "#991b1b",
+        "#dc2626",
+        "#64748b",
+        "#fbbf24"
+      ],
+      "interpretation": "La inflación rugiendo en tus sueños es mi advertencia cómplice: el mundo cambia, los valores se retuercen, las certezas se desmoronan. Pero escúchame, mortal: todo es ciclo, y los ciclos siempre regresan. Aprende a fluir o serás arrastrado."
     },
     {
       "keyword": "isla",
@@ -383,6 +575,18 @@
         "#bbf7d0"
       ],
       "interpretation": "Este jardín que florece en tus sueños es obra de tus propias manos, mortal. Yo te lo muestro para que veas el fruto de tu dedicación. Cada flor es una virtud cultivada, cada árbol un conocimiento arraigado. Deméter, diosa de la cosecha, sonríe ante tu crecimiento interior."
+    },
+    {
+      "keyword": "Javascript",
+      "symbolism": "Interactividad, lógica, dinamismo",
+      "pattern": "portal",
+      "colorTheme": [
+        "#fbbf24",
+        "#fde68a",
+        "#fef3c7",
+        "#a78bfa"
+      ],
+      "interpretation": "Javascript anima tus sueños con lógica y dinamismo. Como el mago que invoca portales entre mundos, te revela que la interactividad transforma lo estático en vivo. Cada función ejecutada es una decisión tomada, cada evento una oportunidad de cambio en tu viaje nocturno."
     },
     {
       "keyword": "jirafa",
@@ -529,6 +733,30 @@
       "interpretation": "La mariposa simboliza la transformación y la belleza. Puede indicar que estás en proceso de cambio y liberación."
     },
     {
+      "keyword": "Mataba",
+      "symbolism": "Violencia, transformación, fin",
+      "pattern": "flames",
+      "colorTheme": [
+        "#991b1b",
+        "#dc2626",
+        "#f97316",
+        "#fed7aa"
+      ],
+      "interpretation": "Matar en sueños simboliza el fin de algo viejo y el nacimiento de lo nuevo. Yo te envío esta visión para que comprendas la transformación necesaria. Recuerda que la muerte en sueños no es real, sino un renacimiento espiritual que purifica tu ser."
+    },
+    {
+      "keyword": "Messi",
+      "symbolism": "Habilidad, genio, dedicación",
+      "pattern": "feathers",
+      "colorTheme": [
+        "#fbbf24",
+        "#fde68a",
+        "#fef3c7",
+        "#a78bfa"
+      ],
+      "interpretation": "Messi baila con el balón en tus sueños, encarnando habilidad y genio. Su dedicación es lección para mortales como tú. Como el dios que concede dones de maestría, te muestra que la humildad combinada con talento puede elevarte a alturas inimaginables."
+    },
+    {
       "keyword": "monstruo",
       "symbolism": "Miedo, sombra, desafío interno",
       "pattern": "stars",
@@ -601,6 +829,54 @@
       "interpretation": "El oso representa la protección y la introspección. Puede indicar que necesitas retirarte para recargar energías o proteger lo que es importante para ti."
     },
     {
+      "keyword": "pájaro",
+      "symbolism": "Mensajero, aspiraciones",
+      "pattern": "feathers",
+      "colorTheme": [
+        "#4c1d95",
+        "#7c3aed",
+        "#a78bfa",
+        "#ddd6fe"
+      ],
+      "interpretation": "Los pájaros son mis mensajeros alados, portadores de noticias entre el mundo de los sueños y el despertar. Te los envío para que comprendas que tus aspiraciones pueden volar tan alto como ellos. Escucha su canto, observa su vuelo: cada movimiento es un mensaje de tu yo superior."
+    },
+    {
+      "keyword": "Pan",
+      "symbolism": "Sustento, abundancia, comunidad",
+      "pattern": "organic",
+      "colorTheme": [
+        "#f59e42",
+        "#fbbf24",
+        "#fde68a",
+        "#fef3c7"
+      ],
+      "interpretation": "Pan compartido es el acto más revolucionario que existe. Te lo ofrezco caliente en sueños para que entiendas que la abundancia real fluye cuando la repartes. Cada migaja en manos ajenas multiplica tu riqueza verdadera."
+    },
+    {
+      "keyword": "Papas fritas",
+      "symbolism": "Comodidad, nostalgia, exceso",
+      "pattern": "organic",
+      "colorTheme": [
+        "#f59e42",
+        "#fbbf24",
+        "#fde68a",
+        "#fef3c7"
+      ],
+      "interpretation": "Papas crujientes y saladas: el pecado dulce que todos amamos. En mis sueños son advertencia risueña: busca comodidad, pero no olvides que la verdadera satisfacción viene de lo que exige más esfuerzo. Disfruta el exceso, pero con ojos abiertos."
+    },
+    {
+      "keyword": "Parque",
+      "symbolism": "Paz, naturaleza, renovación",
+      "pattern": "floral",
+      "colorTheme": [
+        "#22c55e",
+        "#16a34a",
+        "#bbf7d0",
+        "#fef3c7"
+      ],
+      "interpretation": "Cada parque en sueños es mi regalo de tregua. Allí no hay ruido de la vigilia, solo respiración verde y silencio sanador. Si caminas entre árboles en mis dominios, escúchame bien: tu agotamiento es válido, tu pausa es merecida, tu renovación es divina."
+    },
+    {
       "keyword": "perro",
       "symbolism": "Lealtad, amistad, protección",
       "pattern": "organic",
@@ -611,6 +887,30 @@
         "#a78bfa"
       ],
       "interpretation": "El perro representa la lealtad y la amistad. Puede indicar que valoras la protección y el apoyo de quienes te rodean."
+    },
+    {
+      "keyword": "Pop",
+      "symbolism": "Juventud, rebeldía, cultura",
+      "pattern": "radiance",
+      "colorTheme": [
+        "#fbbf24",
+        "#fde68a",
+        "#fef3c7",
+        "#a78bfa"
+      ],
+      "interpretation": "¡Pop! Estallido colorido de juventud desenfrenada. Te la dejo sonar en tus sueños para que recuerdes que la rebeldía es sagrada, que el cambio es necesario, que romper moldes es mi bendición favorita disfrazada de música pegadiza."
+    },
+    {
+      "keyword": "Programación",
+      "symbolism": "Lógica, creatividad, resolución",
+      "pattern": "geometric",
+      "colorTheme": [
+        "#64748b",
+        "#a78bfa",
+        "#fbbf24",
+        "#fef3c7"
+      ],
+      "interpretation": "La programación que puebla tus sueños es el arte de resolver enigmas con mente lógica. Como el oráculo que descifra misterios, te invito a explorar donde creatividad y precisión se unen. Cada algoritmo resuelto es un paso hacia la iluminación divina."
     },
     {
       "keyword": "puente",
@@ -745,16 +1045,16 @@
       "interpretation": "Una puerta secreta en sueños señala el acceso a conocimientos ocultos o partes de ti que aún no has explorado. Atrévete a cruzarla y descubrir lo que hay detrás."
     },
     {
-      "keyword": "pájaro",
-      "symbolism": "Mensajero, aspiraciones",
-      "pattern": "feathers",
+      "keyword": "Queso",
+      "symbolism": "Riqueza, madurez, placer",
+      "pattern": "organic",
       "colorTheme": [
-        "#4c1d95",
-        "#7c3aed",
-        "#a78bfa",
-        "#ddd6fe"
+        "#f59e42",
+        "#fbbf24",
+        "#fde68a",
+        "#fef3c7"
       ],
-      "interpretation": "Los pájaros son mis mensajeros alados, portadores de noticias entre el mundo de los sueños y el despertar. Te los envío para que comprendas que tus aspiraciones pueden volar tan alto como ellos. Escucha su canto, observa su vuelo: cada movimiento es un mensaje de tu yo superior."
+      "interpretation": "Queso curado: paciencia hecha sabor. Te lo presento en tus sueños como lección magistral de que lo mejor requiere tiempo. Yo que controlo las noches veo cómo los años transforman lo crudo en refinado. Aprende de los quesos: madurez es poder."
     },
     {
       "keyword": "reina",
@@ -793,6 +1093,18 @@
       "interpretation": "El rey en sueños simboliza el poder y la autoridad masculina. Puede indicar que necesitas tomar decisiones importantes o asumir responsabilidades."
     },
     {
+      "keyword": "río",
+      "symbolism": "Fluir, transición",
+      "pattern": "waves",
+      "colorTheme": [
+        "#0ea5e9",
+        "#38bdf8",
+        "#bbf7d0",
+        "#fef3c7"
+      ],
+      "interpretation": "El río representa el fluir de la vida y las transiciones. Soñar con ríos puede indicar que estás dejando atrás algo y avanzando hacia nuevas experiencias. Así como los ríos son guiados por Poseidón, tus emociones encuentran su cauce bajo la mirada de los dioses."
+    },
+    {
       "keyword": "risa",
       "symbolism": "Alegría, alivio, espontaneidad",
       "pattern": "floral",
@@ -805,16 +1117,28 @@
       "interpretation": "La risa simboliza la alegría y el alivio. Puede indicar la necesidad de ser más espontáneo y disfrutar el momento."
     },
     {
-      "keyword": "río",
-      "symbolism": "Fluir, transición",
+      "keyword": "River",
+      "symbolism": "Orgullo, rivalidad, comunidad",
       "pattern": "waves",
       "colorTheme": [
-        "#0ea5e9",
-        "#38bdf8",
-        "#bbf7d0",
+        "#2563eb",
+        "#60a5fa",
+        "#fbbf24",
         "#fef3c7"
       ],
-      "interpretation": "El río representa el fluir de la vida y las transiciones. Soñar con ríos puede indicar que estás dejando atrás algo y avanzando hacia nuevas experiencias. Así como los ríos son guiados por Poseidón, tus emociones encuentran su cauce bajo la mirada de los dioses."
+      "interpretation": "River fluye en tus visiones como río de orgullo y comunidad. Esta rivalidad onírica refleja lealtades profundas. Como el dios que controla las mareas, te enseño que navegar con determinación puede llevarte a costas victoriosas o lecciones valiosas."
+    },
+    {
+      "keyword": "Ronaldo",
+      "symbolism": "Fuerza, determinación, éxito",
+      "pattern": "peaks",
+      "colorTheme": [
+        "#fbbf24",
+        "#fde68a",
+        "#fef3c7",
+        "#a78bfa"
+      ],
+      "interpretation": "Ronaldo escala las cumbres de tus sueños, simbolizando fuerza y determinación. Su éxito conquistado con sudor es inspiración divina. Como el guardián de las alturas, te muestra que la voluntad inquebrantable puede coronar cualquier montaña."
     },
     {
       "keyword": "serpiente",
@@ -853,6 +1177,30 @@
       "interpretation": "La sombra representa aquello que no quieres ver o aceptar de ti mismo. Enfrentarla en sueños es una invitación a integrar tus miedos y descubrir tesoros ocultos en tu inconsciente."
     },
     {
+      "keyword": "Tenebroso",
+      "symbolism": "Oscuridad, miedo, lo desconocido",
+      "pattern": "stars",
+      "colorTheme": [
+        "#1e1b4b",
+        "#312e81",
+        "#4c1d95",
+        "#6b21a8"
+      ],
+      "interpretation": "Lo tenebroso que invade tus sueños es mi dominio, mortal. La oscuridad revela miedos ocultos y lo desconocido. Enfréntalo con valentía, pues en las sombras se esconden verdades profundas que la luz del día oculta."
+    },
+    {
+      "keyword": "Tetris",
+      "symbolism": "Organización, completitud, paciencia",
+      "pattern": "geometric",
+      "colorTheme": [
+        "#6366f1",
+        "#a78bfa",
+        "#fcd34d",
+        "#fef3c7"
+      ],
+      "interpretation": "Tetris ordena el caos en tus sueños, enseñando organización y paciencia. Como el dios que impone orden en el universo, te revelo que cada pieza encajada restaura la armonía. Las líneas completadas son victorias sobre el desorden, recordatorios de que la paciencia construye mundos perfectos."
+    },
+    {
       "keyword": "tigre",
       "symbolism": "Fuerza, coraje, pasión",
       "pattern": "organic",
@@ -887,6 +1235,18 @@
         "#5eead4"
       ],
       "interpretation": "La tortuga simboliza la paciencia y la longevidad. Puede indicar que necesitas avanzar con calma y protegerte de las adversidades."
+    },
+    {
+      "keyword": "Vacío",
+      "symbolism": "Ausencia, soledad, potencial",
+      "pattern": "reflection",
+      "colorTheme": [
+        "#475569",
+        "#64748b",
+        "#94a3b8",
+        "#cbd5e1"
+      ],
+      "interpretation": "El vacío que sientes en tus sueños es el espacio para lo nuevo, mortal. Yo te lo muestro para que veas el potencial ilimitado. En el vacío, todo puede ser creado; es el lienzo en blanco de tu alma esperando ser pintado."
     },
     {
       "keyword": "ventana",
@@ -935,18 +1295,6 @@
         "#a8a29e"
       ],
       "interpretation": "El zorro simboliza la astucia y la adaptabilidad. Puede indicar que necesitas ser más inteligente y flexible ante los desafíos."
-    },
-    {
-      "keyword": "águila",
-      "symbolism": "Visión, poder, trascendencia",
-      "pattern": "feathers",
-      "colorTheme": [
-        "#4c1d95",
-        "#7c3aed",
-        "#a78bfa",
-        "#fcd34d"
-      ],
-      "interpretation": "El águila soberana de los cielos es mi emisaria más noble. Te concedo su visión para que puedas elevarte sobre tus circunstancias y contemplar el panorama completo. Desde las alturas, los problemas se vuelven insignificantes. Vuela con ella, mortal, y comprenderás tu verdadero poder."
     }
   ]
 }
