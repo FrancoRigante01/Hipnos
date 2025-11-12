@@ -179,6 +179,12 @@ import DreamGallery from '../components/DreamGallery.astro';
       letter-spacing: 2px;
       text-shadow: 0 0 24px #a390ff, 0 0 48px #ffd700;
       animation: titleMysticGlow 4s ease-in-out infinite;
+      transition: transform 0.5s ease;
+    }
+
+    .main-title:hover {
+      transform: skew(-5deg);
+      filter: blur(1px);
     }
 
     @keyframes titleMysticGlow {
@@ -196,6 +202,12 @@ import DreamGallery from '../components/DreamGallery.astro';
       font-weight: 400;
       font-style: italic;
       text-shadow: 0 0 8px #a390ff;
+      transition: transform 0.5s ease;
+    }
+
+    .subtitle:hover {
+      transform: skew(-5deg);
+      filter: blur(1px);
     }
 
     .main-content {
@@ -209,6 +221,12 @@ import DreamGallery from '../components/DreamGallery.astro';
       font-size: 1rem;
       font-weight: 400;
       text-shadow: 0 0 8px #ffd700;
+      transition: transform 0.5s ease;
+    }
+
+    .footer:hover {
+      transform: skew(-5deg);
+      filter: blur(1px);
     }
 
     /* Botones y campos místicos */
