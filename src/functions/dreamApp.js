@@ -17,7 +17,10 @@ function findInterpretation(dreamText) {
   const matches = [];
 
   for (const dream of dreamsData) {
-    if (lowerText.includes(dream.keyword.toLowerCase())) {
+    // Buscar la keyword como palabra completa usando regex con delimitadores de palabra
+    const keyword = dream.keyword.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const regex = new RegExp(`\\b${keyword}\\b`, 'i');
+    if (regex.test(lowerText)) {
       matches.push(dream);
     }
   }
