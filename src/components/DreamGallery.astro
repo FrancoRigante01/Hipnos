@@ -6,6 +6,13 @@
   <div class="gallery-header">
     <h2 class="gallery-title">Tu Archivo Onírico</h2>
     <button id="clearAllBtn" class="clear-all-btn">Borrar todo</button>
+    <div id="clearModal" class="modal hidden">
+      <div class="modal-content">
+        <p>¿Deseas borrar todos los sueños que he interpretado para ti?</p>
+        <button id="confirmClearBtn" class="modal-btn confirm">Sí, borrar todo</button>
+        <button id="cancelClearBtn" class="modal-btn cancel">Cancelar</button>
+      </div>
+    </div>
   </div>
   
   <div id="dreamGallery" class="dream-gallery">
@@ -14,6 +21,59 @@
 </div>
 
 <style>
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(30, 22, 60, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    transition: opacity 0.3s;
+  }
+  .modal.hidden {
+    display: none;
+  }
+  .modal-content {
+    background: rgba(44, 20, 90, 0.97);
+    border-radius: 16px;
+    padding: 2rem 2.5rem;
+    box-shadow: 0 8px 32px 0 rgba(44, 20, 90, 0.37);
+    border: 1px solid #a390ff;
+    color: #e9e6f6;
+    text-align: center;
+    min-width: 280px;
+  }
+  .modal-btn {
+    margin: 1rem 0.5rem 0 0.5rem;
+    padding: 0.5rem 1.2rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+  .modal-btn.confirm {
+    background: linear-gradient(90deg, #a390ff 0%, #ffd700 100%);
+    color: #1a1a40;
+  }
+  .modal-btn.cancel {
+    background: rgba(239, 68, 68, 0.2);
+    color: #fca5a5;
+  }
+  .modal-btn.cancel:hover {
+    background: rgba(239, 68, 68, 0.3);
+    color: #fecaca;
+  }
+  .modal-btn.confirm:hover {
+    box-shadow: 0 0 24px #ffd70099;
+    border-color: #a390ff;
+  }
   .dream-gallery-container {
     padding: 2rem;
     background: rgba(255, 255, 255, 0.02);

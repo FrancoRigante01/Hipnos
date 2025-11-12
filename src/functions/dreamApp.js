@@ -160,11 +160,20 @@ window.deleteDream = function(id) {
 };
 
 // Limpiar todos los sueños
+function showClearModal() {
+  const modal = document.getElementById('clearModal');
+  if (modal) modal.classList.remove('hidden');
+}
+
+function hideClearModal() {
+  const modal = document.getElementById('clearModal');
+  if (modal) modal.classList.add('hidden');
+}
+
 function clearAllDreams() {
-  if (confirm('¿Deseas borrar todos los sueños que he interpretado para ti?')) {
-    localStorage.removeItem('dreamscape_dreams');
-    loadGallery();
-  }
+  localStorage.removeItem('dreamscape_dreams');
+  loadGallery();
+  hideClearModal();
 }
 
 // Inicializar la aplicación
@@ -201,5 +210,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
   });
 
-  clearAllBtn.addEventListener('click', clearAllDreams);
+  clearAllBtn.addEventListener('click', showClearModal);
+  const confirmClearBtn = document.getElementById('confirmClearBtn');
+  const cancelClearBtn = document.getElementById('cancelClearBtn');
+  if (confirmClearBtn) confirmClearBtn.addEventListener('click', clearAllDreams);
+  if (cancelClearBtn) cancelClearBtn.addEventListener('click', hideClearModal);
 });
