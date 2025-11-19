@@ -3,7 +3,6 @@
     {
       "keyword": "agua",
       "symbolism": "Flujo emocional, inconsciente",
-      "pattern": "waves",
       "colorTheme": [
         "#1e3a8a",
         "#3b82f6",
@@ -15,7 +14,6 @@
     {
       "keyword": "águila",
       "symbolism": "Visión, poder, trascendencia",
-      "pattern": "feathers",
       "colorTheme": [
         "#4c1d95",
         "#7c3aed",
@@ -27,7 +25,6 @@
     {
       "keyword": "amor",
       "symbolism": "Unión, afecto, plenitud",
-      "pattern": "floral",
       "colorTheme": [
         "#f472b6",
         "#f9a8d4",
@@ -39,7 +36,6 @@
     {
       "keyword": "animal",
       "symbolism": "Instinto, energía vital",
-      "pattern": "organic",
       "colorTheme": [
         "#f59e42",
         "#fbbf24",
@@ -51,7 +47,6 @@
     {
       "keyword": "Argentina",
       "symbolism": "Patria, identidad, desafíos",
-      "pattern": "organic",
       "colorTheme": [
         "#22c55e",
         "#16a34a",
@@ -63,7 +58,6 @@
     {
       "keyword": "Basketball",
       "symbolism": "Competencia, agilidad, equipo",
-      "pattern": "organic",
       "colorTheme": [
         "#f59e42",
         "#fbbf24",
@@ -75,7 +69,6 @@
     {
       "keyword": "Boca",
       "symbolism": "Pasión, rivalidad, identidad",
-      "pattern": "flames",
       "colorTheme": [
         "#fbbf24",
         "#fde68a",
@@ -87,7 +80,6 @@
     {
       "keyword": "boda",
       "symbolism": "Unión, celebración, transición",
-      "pattern": "portal",
       "colorTheme": [
         "#fbbf24",
         "#fde68a",
@@ -99,7 +91,6 @@
     {
       "keyword": "bosque",
       "symbolism": "Lo desconocido, el inconsciente colectivo",
-      "pattern": "organic",
       "colorTheme": [
         "#14532d",
         "#15803d",
@@ -111,7 +102,6 @@
     {
       "keyword": "Brownie",
       "symbolism": "Indulgencia, dulzura, recompensa",
-      "pattern": "floral",
       "colorTheme": [
         "#92400e",
         "#b45309",
@@ -123,7 +113,6 @@
     {
       "keyword": "Buenos Aires",
       "symbolism": "Vida urbana, cultura, nostalgia",
-      "pattern": "geometric",
       "colorTheme": [
         "#64748b",
         "#a78bfa",
@@ -135,7 +124,6 @@
     {
       "keyword": "búho",
       "symbolism": "Sabiduría, intuición, misterio",
-      "pattern": "stars",
       "colorTheme": [
         "#1e1b4b",
         "#312e81",
@@ -147,7 +135,6 @@
     {
       "keyword": "caballo",
       "symbolism": "Libertad, energía, poder",
-      "pattern": "peaks",
       "colorTheme": [
         "#a8a29e",
         "#e7e5e4",
@@ -159,7 +146,6 @@
     {
       "keyword": "caída",
       "symbolism": "Pérdida de control, miedo",
-      "pattern": "peaks",
       "colorTheme": [
         "#991b1b",
         "#dc2626",
@@ -169,9 +155,85 @@
       "interpretation": "Soñar con caídas simboliza el miedo a perder el control o a fracasar. Puede indicar inseguridad o temor ante una situación nueva."
     },
     {
+      "keyword": "caer",
+      "symbolism": "Pérdida de control, miedo",
+      "colorTheme": [
+        "#991b1b",
+        "#dc2626",
+        "#64748b",
+        "#fbbf24"
+      ],
+      "interpretation": "Soñar con caídas simboliza el miedo a perder el control o a fracasar. Puede indicar inseguridad o temor ante una situación nueva."
+    },
+    {
+      "keyword": "caía",
+      "symbolism": "Pérdida de control, miedo",
+      "colorTheme": [
+        "#991b1b",
+        "#dc2626",
+        "#64748b",
+        "#fbbf24"
+      ],
+      "interpretation": "Soñar con caídas simboliza el miedo a perder el control o a fracasar. Puede indicar inseguridad o temor ante una situación nueva."
+    },
+    {
+      "keyword": "caía",
+      "symbolism": "Pérdida de control, miedo",
+      "colorTheme": [
+        "#991b1b",
+        "#dc2626",
+        "#64748b",
+        "#fbbf24"
+      ],
+      "interpretation": "Soñar con caídas simboliza el miedo a perder el control o a fracasar. Puede indicar inseguridad o temor ante una situación nueva."
+    },
+    {
+      "keyword": "perseguida",
+      "symbolism": "Ansiedad contenida, confrontación con la sombra interior",
+      "colorTheme": [
+        "#1e3a8a",
+        "#0f172a",
+        "#475569",
+        "#f59e0b"
+      ],
+      "interpretation": "Yo, Hipnos, te hablo desde el reino donde la mente se libera de sus máscaras. Cuando sueñas que eres perseguido, no huyes de un enemigo externo, sino de una parte de ti mismo que anhela ser escuchada. Aquello que te sigue es una forma nacida de tus miedos, deseos reprimidos o verdades que evitas mirar de frente. No temas a la figura que corre tras de ti; acércate a ella. Cuando dejas de escapar y observas aquello que tu sueño te revela, la sombra se disuelve y el descanso vuelve a encontrarte."
+    },
+    {
+      "keyword": "perseguían",
+      "symbolism": "Ansiedad contenida, confrontación con la sombra interior",
+      "colorTheme": [
+        "#1e3a8a",
+        "#0f172a",
+        "#475569",
+        "#f59e0b"
+      ],
+      "interpretation": "Yo, Hipnos, te hablo desde el reino donde la mente se libera de sus máscaras. Cuando sueñas que eres perseguido, no huyes de un enemigo externo, sino de una parte de ti mismo que anhela ser escuchada. Aquello que te sigue es una forma nacida de tus miedos, deseos reprimidos o verdades que evitas mirar de frente. No temas a la figura que corre tras de ti; acércate a ella. Cuando dejas de escapar y observas aquello que tu sueño te revela, la sombra se disuelve y el descanso vuelve a encontrarte."
+    },
+    {
+      "keyword": "persiguiendo",
+      "symbolism": "Ansiedad contenida, confrontación con la sombra interior",
+      "colorTheme": [
+        "#1e3a8a",
+        "#0f172a",
+        "#475569",
+        "#f59e0b"
+      ],
+      "interpretation": "Yo, Hipnos, te hablo desde el reino donde la mente se libera de sus máscaras. Cuando sueñas que eres perseguido, no huyes de un enemigo externo, sino de una parte de ti mismo que anhela ser escuchada. Aquello que te sigue es una forma nacida de tus miedos, deseos reprimidos o verdades que evitas mirar de frente. No temas a la figura que corre tras de ti; acércate a ella. Cuando dejas de escapar y observas aquello que tu sueño te revela, la sombra se disuelve y el descanso vuelve a encontrarte."
+    },
+    {
+      "keyword": "perseguido",
+      "symbolism": "Ansiedad contenida, confrontación con la sombra interior",
+      "colorTheme": [
+        "#1e3a8a",
+        "#0f172a",
+        "#475569",
+        "#f59e0b"
+      ],
+      "interpretation": "Yo, Hipnos, te hablo desde el reino donde la mente se libera de sus máscaras. Cuando sueñas que eres perseguido, no huyes de un enemigo externo, sino de una parte de ti mismo que anhela ser escuchada. Aquello que te sigue es una forma nacida de tus miedos, deseos reprimidos o verdades que evitas mirar de frente. No temas a la figura que corre tras de ti; acércate a ella. Cuando dejas de escapar y observas aquello que tu sueño te revela, la sombra se disuelve y el descanso vuelve a encontrarte."
+    },
+    {
       "keyword": "cama",
       "symbolism": "Descanso, intimidad, vulnerabilidad",
-      "pattern": "floral",
       "colorTheme": [
         "#fde68a",
         "#fbbf24",
@@ -183,7 +245,6 @@
     {
       "keyword": "camino",
       "symbolism": "Destino, búsqueda personal",
-      "pattern": "organic",
       "colorTheme": [
         "#065f46",
         "#10b981",
@@ -195,7 +256,6 @@
     {
       "keyword": "casa",
       "symbolism": "El yo interior, la psique",
-      "pattern": "geometric",
       "colorTheme": [
         "#92400e",
         "#b45309",
@@ -207,7 +267,6 @@
     {
       "keyword": "casamiento",
       "symbolism": "Compromiso, cambio, celebración",
-      "pattern": "portal",
       "colorTheme": [
         "#fbbf24",
         "#fde68a",
@@ -219,7 +278,6 @@
     {
       "keyword": "cascada",
       "symbolism": "Energía, renovación",
-      "pattern": "waves",
       "colorTheme": [
         "#0ea5e9",
         "#38bdf8",
@@ -231,7 +289,6 @@
     {
       "keyword": "Castillo",
       "symbolism": "Fortaleza, protección, aislamiento",
-      "pattern": "geometric",
       "colorTheme": [
         "#1e293b",
         "#475569",
@@ -243,7 +300,6 @@
     {
       "keyword": "celos",
       "symbolism": "Inseguridad, comparación, deseo de pertenencia",
-      "pattern": "stars",
       "colorTheme": [
         "#6b21a8",
         "#a78bfa",
@@ -255,7 +311,6 @@
     {
       "keyword": "Chocolate",
       "symbolism": "Placer, consuelo, sensualidad",
-      "pattern": "flames",
       "colorTheme": [
         "#92400e",
         "#b45309",
@@ -267,7 +322,6 @@
     {
       "keyword": "ciervo",
       "symbolism": "Gracia, sensibilidad, renovación",
-      "pattern": "floral",
       "colorTheme": [
         "#bbf7d0",
         "#4ade80",
@@ -279,7 +333,6 @@
     {
       "keyword": "coche",
       "symbolism": "Control, dirección",
-      "pattern": "geometric",
       "colorTheme": [
         "#f59e42",
         "#fbbf24",
@@ -291,7 +344,6 @@
     {
       "keyword": "Cocina",
       "symbolism": "Creación, nutrición, hogar",
-      "pattern": "flames",
       "colorTheme": [
         "#f97316",
         "#fed7aa",
@@ -303,7 +355,6 @@
     {
       "keyword": "conejo",
       "symbolism": "Fertilidad, agilidad, suerte",
-      "pattern": "floral",
       "colorTheme": [
         "#bbf7d0",
         "#fcd34d",
@@ -315,7 +366,6 @@
     {
       "keyword": "coro",
       "symbolism": "Comunidad, armonía",
-      "pattern": "stars",
       "colorTheme": [
         "#6b21a8",
         "#a78bfa",
@@ -327,7 +377,6 @@
     {
       "keyword": "CSS",
       "symbolism": "Estilo, presentación, armonía",
-      "pattern": "reflection",
       "colorTheme": [
         "#6366f1",
         "#a78bfa",
@@ -339,7 +388,6 @@
     {
       "keyword": "delfín",
       "symbolism": "Alegría, comunicación, inteligencia",
-      "pattern": "waves",
       "colorTheme": [
         "#38bdf8",
         "#bae6fd",
@@ -351,7 +399,6 @@
     {
       "keyword": "elefante",
       "symbolism": "Memoria, sabiduría, fortaleza",
-      "pattern": "organic",
       "colorTheme": [
         "#64748b",
         "#a8a29e",
@@ -363,7 +410,6 @@
     {
       "keyword": "escalera",
       "symbolism": "Ascenso, progreso",
-      "pattern": "peaks",
       "colorTheme": [
         "#a8a29e",
         "#e7e5e4",
@@ -375,7 +421,6 @@
     {
       "keyword": "espejo",
       "symbolism": "Autoconocimiento, reflejo del alma",
-      "pattern": "reflection",
       "colorTheme": [
         "#475569",
         "#64748b",
@@ -387,7 +432,6 @@
     {
       "keyword": "examen",
       "symbolism": "Prueba, autoevaluación, presión",
-      "pattern": "geometric",
       "colorTheme": [
         "#64748b",
         "#a78bfa",
@@ -399,7 +443,6 @@
     {
       "keyword": "Facturas",
       "symbolism": "Tradición, reunión, placer",
-      "pattern": "floral",
       "colorTheme": [
         "#fbbf24",
         "#fde68a",
@@ -411,7 +454,6 @@
     {
       "keyword": "faro",
       "symbolism": "Guía, esperanza",
-      "pattern": "radiance",
       "colorTheme": [
         "#fef3c7",
         "#fde68a",
@@ -423,7 +465,6 @@
     {
       "keyword": "flor",
       "symbolism": "Belleza, crecimiento, fragilidad",
-      "pattern": "floral",
       "colorTheme": [
         "#f472b6",
         "#f9a8d4",
@@ -435,7 +476,6 @@
     {
       "keyword": "fuego",
       "symbolism": "Transformación, pasión",
-      "pattern": "flames",
       "colorTheme": [
         "#991b1b",
         "#dc2626",
@@ -447,7 +487,6 @@
     {
       "keyword": "fuga",
       "symbolism": "Escape, liberación, miedo",
-      "pattern": "waves",
       "colorTheme": [
         "#0ea5e9",
         "#38bdf8",
@@ -459,7 +498,6 @@
     {
       "keyword": "Fútbol",
       "symbolism": "Equipo, estrategia, pasión",
-      "pattern": "organic",
       "colorTheme": [
         "#22c55e",
         "#16a34a",
@@ -471,7 +509,6 @@
     {
       "keyword": "Gallardo",
       "symbolism": "Liderazgo, estrategia, inspiración",
-      "pattern": "stars",
       "colorTheme": [
         "#fbbf24",
         "#fde68a",
@@ -483,7 +520,6 @@
     {
       "keyword": "gato",
       "symbolism": "Misterio, intuición, independencia",
-      "pattern": "stars",
       "colorTheme": [
         "#312e81",
         "#6b21a8",
@@ -495,7 +531,6 @@
     {
       "keyword": "Goles",
       "symbolism": "Logro, celebración, meta",
-      "pattern": "radiance",
       "colorTheme": [
         "#fbbf24",
         "#fde68a",
@@ -507,7 +542,6 @@
     {
       "keyword": "HTML",
       "symbolism": "Estructura, base, construcción",
-      "pattern": "geometric",
       "colorTheme": [
         "#f97316",
         "#fed7aa",
@@ -519,7 +553,6 @@
     {
       "keyword": "infidelidad",
       "symbolism": "Desconfianza, inseguridad, deseo oculto",
-      "pattern": "portal",
       "colorTheme": [
         "#991b1b",
         "#f59e42",
@@ -531,7 +564,6 @@
     {
       "keyword": "Inflación",
       "symbolism": "Inestabilidad, cambio, adaptación",
-      "pattern": "waves",
       "colorTheme": [
         "#991b1b",
         "#dc2626",
@@ -543,7 +575,6 @@
     {
       "keyword": "isla",
       "symbolism": "Aislamiento, refugio",
-      "pattern": "waves",
       "colorTheme": [
         "#0ea5e9",
         "#38bdf8",
@@ -555,7 +586,6 @@
     {
       "keyword": "isla",
       "symbolism": "Aislamiento, refugio, independencia",
-      "pattern": "waves",
       "colorTheme": [
         "#0ea5e9",
         "#38bdf8",
@@ -567,7 +597,6 @@
     {
       "keyword": "jardín",
       "symbolism": "Crecimiento personal, cultivo interior",
-      "pattern": "floral",
       "colorTheme": [
         "#166534",
         "#16a34a",
@@ -579,7 +608,6 @@
     {
       "keyword": "Javascript",
       "symbolism": "Interactividad, lógica, dinamismo",
-      "pattern": "portal",
       "colorTheme": [
         "#fbbf24",
         "#fde68a",
@@ -591,7 +619,6 @@
     {
       "keyword": "jirafa",
       "symbolism": "Perspectiva, elegancia, visión",
-      "pattern": "peaks",
       "colorTheme": [
         "#f59e42",
         "#fbbf24",
@@ -603,7 +630,6 @@
     {
       "keyword": "laberinto",
       "symbolism": "Confusión, búsqueda de sentido",
-      "pattern": "geometric",
       "colorTheme": [
         "#64748b",
         "#a78bfa",
@@ -615,7 +641,6 @@
     {
       "keyword": "laberinto",
       "symbolism": "Confusión, búsqueda, desafío",
-      "pattern": "geometric",
       "colorTheme": [
         "#64748b",
         "#a78bfa",
@@ -627,7 +652,6 @@
     {
       "keyword": "león",
       "symbolism": "Valor, liderazgo, nobleza",
-      "pattern": "organic",
       "colorTheme": [
         "#f59e42",
         "#fbbf24",
@@ -639,7 +663,6 @@
     {
       "keyword": "libro",
       "symbolism": "Conocimiento, revelación",
-      "pattern": "geometric",
       "colorTheme": [
         "#6366f1",
         "#a78bfa",
@@ -651,7 +674,6 @@
     {
       "keyword": "llanto",
       "symbolism": "Liberación, tristeza, sanación",
-      "pattern": "rain",
       "colorTheme": [
         "#1e40af",
         "#3b82f6",
@@ -663,7 +685,6 @@
     {
       "keyword": "llave",
       "symbolism": "Acceso, solución",
-      "pattern": "portal",
       "colorTheme": [
         "#fbbf24",
         "#fde68a",
@@ -675,7 +696,6 @@
     {
       "keyword": "lluvia",
       "symbolism": "Renovación, liberación emocional",
-      "pattern": "rain",
       "colorTheme": [
         "#1e40af",
         "#3b82f6",
@@ -687,7 +707,6 @@
     {
       "keyword": "lobo",
       "symbolism": "Instinto, liderazgo, protección",
-      "pattern": "organic",
       "colorTheme": [
         "#64748b",
         "#a8a29e",
@@ -699,7 +718,6 @@
     {
       "keyword": "luz",
       "symbolism": "Claridad, iluminación espiritual",
-      "pattern": "radiance",
       "colorTheme": [
         "#fef3c7",
         "#fde68a",
@@ -711,7 +729,6 @@
     {
       "keyword": "mar",
       "symbolism": "Profundidad emocional, vastedad",
-      "pattern": "waves",
       "colorTheme": [
         "#0c4a6e",
         "#0284c7",
@@ -723,7 +740,6 @@
     {
       "keyword": "mariposa",
       "symbolism": "Transformación, belleza, libertad",
-      "pattern": "floral",
       "colorTheme": [
         "#f472b6",
         "#f9a8d4",
@@ -735,7 +751,6 @@
     {
       "keyword": "Mataba",
       "symbolism": "Violencia, transformación, fin",
-      "pattern": "flames",
       "colorTheme": [
         "#991b1b",
         "#dc2626",
@@ -747,7 +762,6 @@
     {
       "keyword": "Messi",
       "symbolism": "Habilidad, genio, dedicación",
-      "pattern": "feathers",
       "colorTheme": [
         "#fbbf24",
         "#fde68a",
@@ -759,7 +773,6 @@
     {
       "keyword": "monstruo",
       "symbolism": "Miedo, sombra, desafío interno",
-      "pattern": "stars",
       "colorTheme": [
         "#1e1b4b",
         "#991b1b",
@@ -771,7 +784,6 @@
     {
       "keyword": "montaña",
       "symbolism": "Desafío, elevación espiritual",
-      "pattern": "peaks",
       "colorTheme": [
         "#44403c",
         "#78716c",
@@ -783,7 +795,6 @@
     {
       "keyword": "niño",
       "symbolism": "Inocencia, nuevos comienzos",
-      "pattern": "floral",
       "colorTheme": [
         "#fbbf24",
         "#fde68a",
@@ -795,7 +806,6 @@
     {
       "keyword": "noche",
       "symbolism": "Misterio, introspección",
-      "pattern": "stars",
       "colorTheme": [
         "#1e1b4b",
         "#312e81",
@@ -807,7 +817,6 @@
     {
       "keyword": "odio",
       "symbolism": "Conflicto, rechazo, energía bloqueada",
-      "pattern": "flames",
       "colorTheme": [
         "#991b1b",
         "#dc2626",
@@ -819,7 +828,6 @@
     {
       "keyword": "oso",
       "symbolism": "Protección, introspección, poder",
-      "pattern": "organic",
       "colorTheme": [
         "#92400e",
         "#b45309",
@@ -831,7 +839,6 @@
     {
       "keyword": "pájaro",
       "symbolism": "Mensajero, aspiraciones",
-      "pattern": "feathers",
       "colorTheme": [
         "#4c1d95",
         "#7c3aed",
@@ -843,7 +850,6 @@
     {
       "keyword": "Pan",
       "symbolism": "Sustento, abundancia, comunidad",
-      "pattern": "organic",
       "colorTheme": [
         "#f59e42",
         "#fbbf24",
@@ -855,7 +861,6 @@
     {
       "keyword": "Papas fritas",
       "symbolism": "Comodidad, nostalgia, exceso",
-      "pattern": "organic",
       "colorTheme": [
         "#f59e42",
         "#fbbf24",
@@ -867,7 +872,6 @@
     {
       "keyword": "Parque",
       "symbolism": "Paz, naturaleza, renovación",
-      "pattern": "floral",
       "colorTheme": [
         "#22c55e",
         "#16a34a",
@@ -879,7 +883,6 @@
     {
       "keyword": "perro",
       "symbolism": "Lealtad, amistad, protección",
-      "pattern": "organic",
       "colorTheme": [
         "#f59e42",
         "#bbf7d0",
@@ -891,7 +894,6 @@
     {
       "keyword": "Pop",
       "symbolism": "Juventud, rebeldía, cultura",
-      "pattern": "radiance",
       "colorTheme": [
         "#fbbf24",
         "#fde68a",
@@ -903,7 +905,6 @@
     {
       "keyword": "Programación",
       "symbolism": "Lógica, creatividad, resolución",
-      "pattern": "geometric",
       "colorTheme": [
         "#64748b",
         "#a78bfa",
@@ -915,7 +916,6 @@
     {
       "keyword": "puente",
       "symbolism": "Conexión, transición",
-      "pattern": "geometric",
       "colorTheme": [
         "#2563eb",
         "#60a5fa",
@@ -927,7 +927,6 @@
     {
       "keyword": "puente",
       "symbolism": "Conexión, transición, superación",
-      "pattern": "geometric",
       "colorTheme": [
         "#2563eb",
         "#60a5fa",
@@ -939,7 +938,6 @@
     {
       "keyword": "puente colgante",
       "symbolism": "Riesgo, aventura",
-      "pattern": "geometric",
       "colorTheme": [
         "#2563eb",
         "#60a5fa",
@@ -951,7 +949,6 @@
     {
       "keyword": "puerta",
       "symbolism": "Oportunidades, transiciones",
-      "pattern": "portal",
       "colorTheme": [
         "#713f12",
         "#a16207",
@@ -963,7 +960,6 @@
     {
       "keyword": "puerta",
       "symbolism": "Oportunidad, transición, cambio",
-      "pattern": "portal",
       "colorTheme": [
         "#713f12",
         "#a16207",
@@ -975,7 +971,6 @@
     {
       "keyword": "puerta abierta",
       "symbolism": "Oportunidad, bienvenida",
-      "pattern": "portal",
       "colorTheme": [
         "#713f12",
         "#a16207",
@@ -987,7 +982,6 @@
     {
       "keyword": "puerta antigua",
       "symbolism": "Historia, tradición",
-      "pattern": "portal",
       "colorTheme": [
         "#713f12",
         "#a16207",
@@ -999,7 +993,6 @@
     {
       "keyword": "puerta cerrada",
       "symbolism": "Obstáculo, protección",
-      "pattern": "portal",
       "colorTheme": [
         "#713f12",
         "#a16207",
@@ -1011,7 +1004,6 @@
     {
       "keyword": "puerta de cristal",
       "symbolism": "Transparencia, vulnerabilidad",
-      "pattern": "reflection",
       "colorTheme": [
         "#475569",
         "#64748b",
@@ -1023,7 +1015,6 @@
     {
       "keyword": "puerta giratoria",
       "symbolism": "Ciclo, repetición",
-      "pattern": "portal",
       "colorTheme": [
         "#713f12",
         "#a16207",
@@ -1035,7 +1026,6 @@
     {
       "keyword": "puerta secreta",
       "symbolism": "Descubrimiento, misterio",
-      "pattern": "portal",
       "colorTheme": [
         "#a21caf",
         "#f472b6",
@@ -1047,7 +1037,6 @@
     {
       "keyword": "Queso",
       "symbolism": "Riqueza, madurez, placer",
-      "pattern": "organic",
       "colorTheme": [
         "#f59e42",
         "#fbbf24",
@@ -1059,7 +1048,6 @@
     {
       "keyword": "reina",
       "symbolism": "Poder, autoridad femenina",
-      "pattern": "stars",
       "colorTheme": [
         "#fbbf24",
         "#fde68a",
@@ -1071,7 +1059,6 @@
     {
       "keyword": "reloj",
       "symbolism": "Tiempo, ciclos, urgencia",
-      "pattern": "geometric",
       "colorTheme": [
         "#f59e42",
         "#fbbf24",
@@ -1083,7 +1070,6 @@
     {
       "keyword": "rey",
       "symbolism": "Poder, autoridad masculina",
-      "pattern": "stars",
       "colorTheme": [
         "#6366f1",
         "#a78bfa",
@@ -1095,7 +1081,6 @@
     {
       "keyword": "río",
       "symbolism": "Fluir, transición",
-      "pattern": "waves",
       "colorTheme": [
         "#0ea5e9",
         "#38bdf8",
@@ -1107,7 +1092,6 @@
     {
       "keyword": "risa",
       "symbolism": "Alegría, alivio, espontaneidad",
-      "pattern": "floral",
       "colorTheme": [
         "#fbbf24",
         "#fde68a",
@@ -1119,7 +1103,6 @@
     {
       "keyword": "River",
       "symbolism": "Orgullo, rivalidad, comunidad",
-      "pattern": "waves",
       "colorTheme": [
         "#2563eb",
         "#60a5fa",
@@ -1131,7 +1114,6 @@
     {
       "keyword": "Ronaldo",
       "symbolism": "Fuerza, determinación, éxito",
-      "pattern": "peaks",
       "colorTheme": [
         "#fbbf24",
         "#fde68a",
@@ -1143,7 +1125,6 @@
     {
       "keyword": "serpiente",
       "symbolism": "Transformación, sabiduría ancestral",
-      "pattern": "scales",
       "colorTheme": [
         "#134e4a",
         "#0f766e",
@@ -1155,7 +1136,6 @@
     {
       "keyword": "serpiente",
       "symbolism": "Renovación, sabiduría ancestral",
-      "pattern": "scales",
       "colorTheme": [
         "#134e4a",
         "#0f766e",
@@ -1167,7 +1147,6 @@
     {
       "keyword": "sombra",
       "symbolism": "Aspectos ocultos, miedo",
-      "pattern": "stars",
       "colorTheme": [
         "#1e293b",
         "#64748b",
@@ -1179,7 +1158,6 @@
     {
       "keyword": "Tenebroso",
       "symbolism": "Oscuridad, miedo, lo desconocido",
-      "pattern": "stars",
       "colorTheme": [
         "#1e1b4b",
         "#312e81",
@@ -1191,7 +1169,6 @@
     {
       "keyword": "Tetris",
       "symbolism": "Organización, completitud, paciencia",
-      "pattern": "geometric",
       "colorTheme": [
         "#6366f1",
         "#a78bfa",
@@ -1203,7 +1180,6 @@
     {
       "keyword": "tigre",
       "symbolism": "Fuerza, coraje, pasión",
-      "pattern": "organic",
       "colorTheme": [
         "#991b1b",
         "#f97316",
@@ -1215,7 +1191,6 @@
     {
       "keyword": "tormenta",
       "symbolism": "Caos, liberación",
-      "pattern": "rain",
       "colorTheme": [
         "#1e40af",
         "#3b82f6",
@@ -1227,7 +1202,6 @@
     {
       "keyword": "tortuga",
       "symbolism": "Paciencia, longevidad, protección",
-      "pattern": "scales",
       "colorTheme": [
         "#134e4a",
         "#0f766e",
@@ -1239,7 +1213,6 @@
     {
       "keyword": "Vacío",
       "symbolism": "Ausencia, soledad, potencial",
-      "pattern": "reflection",
       "colorTheme": [
         "#475569",
         "#64748b",
@@ -1251,7 +1224,6 @@
     {
       "keyword": "ventana",
       "symbolism": "Perspectiva, oportunidad",
-      "pattern": "portal",
       "colorTheme": [
         "#38bdf8",
         "#bae6fd",
@@ -1263,7 +1235,6 @@
     {
       "keyword": "viaje",
       "symbolism": "Exploración, cambio, aprendizaje",
-      "pattern": "waves",
       "colorTheme": [
         "#0ea5e9",
         "#38bdf8",
@@ -1275,7 +1246,6 @@
     {
       "keyword": "volar",
       "symbolism": "Libertad, transcendencia",
-      "pattern": "clouds",
       "colorTheme": [
         "#7c3aed",
         "#a78bfa",
@@ -1287,7 +1257,6 @@
     {
       "keyword": "zorro",
       "symbolism": "Astucia, adaptabilidad, inteligencia",
-      "pattern": "organic",
       "colorTheme": [
         "#f97316",
         "#fed7aa",

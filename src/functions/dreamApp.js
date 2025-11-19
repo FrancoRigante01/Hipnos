@@ -69,11 +69,8 @@ function displayInterpretation(dreamText, interpretation) {
   resultInterpretation.textContent = interpretation.interpretation;
   resultDreamText.textContent = dreamText;
 
-  // Aplicar patrón de fondo
+  // Limpiar clases de fondo
   resultBackground.className = 'result-background';
-  if (interpretation.pattern) {
-    resultBackground.classList.add(interpretation.pattern);
-  }
 
   // Aplicar colores del tema
   if (interpretation.colorTheme && interpretation.colorTheme.length >= 2) {
@@ -104,11 +101,10 @@ function saveDream(dreamText, interpretation) {
     keyword: interpretation.keyword,
     symbolism: interpretation.symbolism,
     interpretation: interpretation.interpretation,
-    colorTheme: interpretation.colorTheme,
-    pattern: interpretation.pattern
+    colorTheme: interpretation.colorTheme
   };
 
-  savedDreams.unshift(dreamEntry); // Agregar al inicio
+  savedDreams.unshift(dreamEntry);
   localStorage.setItem('dreamscape_dreams', JSON.stringify(savedDreams));
 
   loadGallery();
@@ -233,7 +229,7 @@ function showSnackbar(message) {
     dreamTextArea.value = '';
   });
 
-  // Permitir interpretar con Enter (Ctrl+Enter o Cmd+Enter)
+  // Permitir interpretar con Enter
   dreamTextArea.addEventListener('keydown', (e) => {
     if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
       interpretBtn.click();
