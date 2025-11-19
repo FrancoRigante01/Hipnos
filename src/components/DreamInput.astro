@@ -18,6 +18,22 @@
       <span class="btn-text">Revelar significado</span>
       <span class="btn-icon">✨</span>
     </button>
+
+    <script>
+      // Reproduce el audio (solo si el textarea no está vacío)
+      const btn = document.getElementById('interpretBtn');
+      const textarea = document.getElementById('dreamText');
+      if (btn && textarea) {
+        btn.addEventListener('click', () => {
+          const dreamText = (textarea instanceof HTMLTextAreaElement ? textarea.value.trim() : "");
+          if (!dreamText) {
+            return;
+          }
+          const audio = new Audio('/dream.mp3');  
+          audio.play();
+        });
+      }
+    </script>
   </div>
 </div>
 
