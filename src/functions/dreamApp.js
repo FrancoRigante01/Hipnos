@@ -175,24 +175,6 @@ function clearAllDreams() {
   hideClearModal();
 }
 
-// Inicializar la aplicación
-document.addEventListener('DOMContentLoaded', async () => {
-  await loadDreamsData();
-  loadGallery();
-
-  const interpretBtn = document.getElementById('interpretBtn');
-  const dreamTextArea = document.getElementById('dreamText');
-  const clearAllBtn = document.getElementById('clearAllBtn');
-
-  if (!interpretBtn || !dreamTextArea || !clearAllBtn) return;
-
-  interpretBtn.addEventListener('click', () => {
-    const dreamText = dreamTextArea.value.trim();
-
-    if (!dreamText) {
-      showSnackbar('Mortal, debes relatarme tu sueño primero.');
-      return;
-    }
 // Snackbar para mostrar mensajes breves
 function showSnackbar(message) {
   let snackbar = document.getElementById('snackbar');
@@ -221,18 +203,54 @@ function showSnackbar(message) {
   }, 2500);
 }
 
+// Inicializar la aplicación
+document.addEventListener('DOMContentLoaded', async () => {
+  await loadDreamsData();
+  loadGallery();
+
+  // Inicializar reconocimiento de voz
+  const voiceSupported = initVoiceRecognition();
+  
+  // Mostrar advertencia si no hay soporte
+  const browserWarning = document.getElementById('browserWarning');
+  const voiceBtn = document.getElementById('voiceBtn');
+  
+  if (!voiceSupported && browserWarning && voiceBtn) {
+    browserWarning.classList.remove('hidden');
+    voiceBtn.disabled = true;
+    voiceBtn.style.opacity = '0.5';
+    voiceBtn.style.cursor = 'not-allowed';
+  }
+
+  const interpretBtn = document.getElementById('interpretBtn');
+  const clearAllBtn = document.getElementById('clearAllBtn');
+
+  if (!interpretBtn || !clearAllBtn) return;
+
+  interpretBtn.addEventListener('click', () => {
+    // Obtener texto de la transcripción de voz o del textarea
+    const dreamText = getTranscription();
+
+    if (!dreamText) {
+      showSnackbar('Mortal, debes relatarme tu sueño primero.');
+      return;
+    }
+
+    // Reproducir audio
+    try {
+      const audio = new Audio('/dream.mp3');  
+      audio.play();
+    } catch (error) {
+      console.log('No se pudo reproducir el audio:', error);
+    }
+
     const interpretation = findInterpretation(dreamText);
     displayInterpretation(dreamText, interpretation);
     saveDream(dreamText, interpretation);
 
-    // Limpiar textarea
-    dreamTextArea.value = '';
-  });
-
-  // Permitir interpretar con Enter
-  dreamTextArea.addEventListener('keydown', (e) => {
-    if ((e.ctrlKey || e.metaKey) && e.key === 'Enter') {
-      interpretBtn.click();
+    // Limpiar entrada después de interpretar
+    if (typeof clearCurrentInput === 'function') {
+      clearCurrentInput();
     }
   });
 
