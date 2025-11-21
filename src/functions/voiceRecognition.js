@@ -21,6 +21,19 @@ function initVoiceRecognition() {
       voiceModeBtn.style.display = 'none';
     }
     
+    // Mostrar mensaje informativo para móviles
+    const browserWarning = document.getElementById('browserWarning');
+    if (browserWarning) {
+      browserWarning.innerHTML = '<p>📱 En dispositivos móviles usa el teclado para escribir tu sueño.</p>';
+      browserWarning.classList.remove('hidden');
+      browserWarning.style.background = 'rgba(99, 102, 241, 0.1)';
+      browserWarning.style.borderColor = 'rgba(99, 102, 241, 0.3)';
+      const warningText = browserWarning.querySelector('p');
+      if (warningText) {
+        warningText.style.color = '#c7d2fe';
+      }
+    }
+    
     return false;
   }
 
