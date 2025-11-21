@@ -1,8 +1,5 @@
 ---
-import DreamInput from '../components/DreamInput.astro';
-import DreamResult from '../components/DreamResult.astro';
-import DreamGallery from '../components/DreamGallery.astro';
-import FloatingCollectionButton from '../components/FloatingCollectionButton.astro';
+import CardGallery from '../components/CardGallery.astro';
 ---
 
 <!DOCTYPE html>
@@ -10,7 +7,7 @@ import FloatingCollectionButton from '../components/FloatingCollectionButton.ast
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hipnos</title>
+  <title>Mi Colección - Hipnos</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z' fill='%23ffd700'/%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,14 +23,13 @@ import FloatingCollectionButton from '../components/FloatingCollectionButton.ast
 
   <div class="container">
     <header class="header">
-      <h1 class="main-title">Hipnos</h1>
-      <p class="subtitle">Yo, guardián de los sueños, interpreto tus visiones nocturnas</p>
+      <a href="/" class="back-link">← Volver a Hipnos</a>
+      <h1 class="main-title">Tu Colección de Cartas</h1>
+      <p class="subtitle">Las cartas que has desbloqueado en tus viajes oníricos</p>
     </header>
 
     <main class="main-content">
-      <DreamInput />
-      <DreamResult />
-      <DreamGallery />
+      <CardGallery />
     </main>
 
     <footer class="footer">
@@ -41,12 +37,8 @@ import FloatingCollectionButton from '../components/FloatingCollectionButton.ast
     </footer>
   </div>
 
-  <FloatingCollectionButton />
-
   <script>
-    import '../functions/voiceRecognition.js';
     import '../functions/collectibles.js';
-    import '../functions/dreamApp.js';
   </script>
 
   <style is:global>
@@ -92,7 +84,7 @@ import FloatingCollectionButton from '../components/FloatingCollectionButton.ast
       filter: blur(3px);
       animation-timing-function: linear;
     }
-    /* Formas SVG variadas para cada nube */
+    
     .cloud1 {
       top: 8vh;
       left: -600px;
@@ -127,6 +119,7 @@ import FloatingCollectionButton from '../components/FloatingCollectionButton.ast
       animation: cloudMove5 150s linear infinite;
       opacity: 0.25;
     }
+    
     @keyframes cloudMove1 {
       0% { left: -600px; }
       100% { left: 100vw; }
@@ -155,7 +148,7 @@ import FloatingCollectionButton from '../components/FloatingCollectionButton.ast
     }
 
     .container {
-      max-width: 900px;
+      max-width: 1200px;
       margin: 0 auto;
       padding: 2rem 1rem;
       position: relative;
@@ -164,17 +157,45 @@ import FloatingCollectionButton from '../components/FloatingCollectionButton.ast
       border-radius: 24px;
       box-shadow: 0 8px 32px 0 rgba(44, 20, 90, 0.37);
       border: 1px solid rgba(163, 148, 255, 0.15);
+      min-height: calc(100vh - 4rem);
     }
 
     .header {
       text-align: center;
       margin-bottom: 3rem;
       padding-top: 2rem;
+      position: relative;
+    }
+
+    .back-link {
+      position: absolute;
+      top: 1rem;
+      left: 0;
+      color: #a390ff;
+      text-decoration: none;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.3s ease;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      background: rgba(163, 148, 255, 0.1);
+      border: 1px solid rgba(163, 148, 255, 0.2);
+      z-index: 10;
+      cursor: pointer;
+    }
+
+    .back-link:hover {
+      background: rgba(163, 148, 255, 0.2);
+      border-color: rgba(163, 148, 255, 0.4);
+      transform: translateX(-5px);
+      color: #ffd700;
     }
 
     .main-title {
       font-family: 'Cinzel', serif;
-      font-size: 3.5rem;
+      font-size: 3rem;
       font-weight: 700;
       background: linear-gradient(90deg, #e9e6f6 0%, #a390ff 50%, #ffd700 100%);
       -webkit-background-clip: text;
@@ -215,8 +236,6 @@ import FloatingCollectionButton from '../components/FloatingCollectionButton.ast
       filter: blur(1px);
     }
 
-
-
     .main-content {
       margin-bottom: 3rem;
     }
@@ -236,42 +255,23 @@ import FloatingCollectionButton from '../components/FloatingCollectionButton.ast
       filter: blur(1px);
     }
 
-    /* Botones y campos místicos */
-    input, textarea, button {
-      font-family: 'Lato', sans-serif;
-      background: rgba(163, 148, 255, 0.08);
-      border: 1px solid #a390ff;
-      color: #e9e6f6;
-      border-radius: 12px;
-      padding: 0.7em 1em;
-      margin-bottom: 1em;
-      box-shadow: 0 0 8px #a390ff33;
-      transition: box-shadow 0.3s, border-color 0.3s;
-    }
-    input:focus, textarea:focus, button:focus {
-      outline: none;
-      border-color: #ffd700;
-      box-shadow: 0 0 16px #ffd70066;
-    }
-    button {
-      background: linear-gradient(90deg, #a390ff 0%, #ffd700 100%);
-      color: #1a1a40;
-      font-weight: 700;
-      cursor: pointer;
-      text-shadow: 0 0 8px #e9e6f6;
-    }
-    button:hover {
-      box-shadow: 0 0 24px #ffd70099;
-      border-color: #a390ff;
-    }
-
     @media (max-width: 768px) {
       .container {
         padding: 1rem;
       }
-      .main-title {
-        font-size: 2.5rem;
+      
+      .back-link {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 1rem;
+        display: inline-flex;
       }
+      
+      .main-title {
+        font-size: 2rem;
+      }
+      
       .subtitle {
         font-size: 1rem;
       }

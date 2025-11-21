@@ -1,0 +1,190 @@
+---
+// Componente de botón flotante para ir a la colección
+---
+
+<a href="/coleccion" class="fab-collection" id="fabCollection">
+  <span class="fab-icon">🎴</span>
+  <span class="fab-badge" id="fabBadge">0</span>
+</a>
+
+<style>
+  .fab-collection {
+    position: fixed !important;
+    top: 2rem !important;
+    right: 2rem !important;
+    bottom: auto !important;
+    left: auto !important;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 8px 24px rgba(139, 92, 246, 0.4);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    z-index: 10000;
+    text-decoration: none;
+    border: 3px solid rgba(167, 139, 250, 0.5);
+  }
+
+  .fab-collection::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    right: -3px;
+    bottom: -3px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, 
+      rgba(167, 139, 250, 0.3), 
+      rgba(139, 92, 246, 0.3),
+      rgba(99, 102, 241, 0.3)
+    );
+    background-size: 300% 300%;
+    animation: fabGlow 3s ease infinite;
+    z-index: -1;
+    opacity: 0.8;
+  }
+
+  @keyframes fabGlow {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+
+  .fab-collection:hover {
+    transform: scale(1.15) rotate(10deg);
+    box-shadow: 0 12px 32px rgba(139, 92, 246, 0.6);
+  }
+
+  .fab-collection:active {
+    transform: scale(1.05) rotate(5deg);
+  }
+
+  .fab-icon {
+    font-size: 2rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    animation: fabFloat 3s ease-in-out infinite;
+  }
+
+  @keyframes fabFloat {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-4px); }
+  }
+
+  .fab-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+    color: #1a1a40;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 0.25rem 0.5rem;
+    border-radius: 12px;
+    min-width: 24px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(251, 191, 36, 0.4);
+    border: 2px solid #fef3c7;
+    animation: badgePulse 2s ease-in-out infinite;
+  }
+
+  @keyframes badgePulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+  }
+
+  /* Animación de entrada */
+  .fab-collection {
+    animation: fabEnter 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+  }
+
+  @keyframes fabEnter {
+    0% {
+      transform: scale(0) rotate(-180deg);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1) rotate(0deg);
+      opacity: 1;
+    }
+  }
+
+  /* Tooltip al hover */
+  .fab-collection::after {
+    content: 'Ver Colección';
+    position: absolute;
+    right: 85px;
+    background: rgba(30, 22, 60, 0.95);
+    color: #e9e6f6;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    border: 1px solid rgba(167, 139, 250, 0.3);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .fab-collection:hover::after {
+    opacity: 1;
+    transform: translateX(-5px);
+  }
+
+  @media (max-width: 768px) {
+    .fab-collection {
+      width: 60px;
+      height: 60px;
+      top: 1.5rem !important;
+      right: 1.5rem !important;
+    }
+
+    .fab-icon {
+      font-size: 1.75rem;
+    }
+
+    .fab-badge {
+      font-size: 0.7rem;
+      padding: 0.2rem 0.4rem;
+      min-width: 20px;
+    }
+
+    .fab-collection::after {
+      display: none;
+    }
+  }
+</style>
+
+<script>
+  // Actualizar el badge con el número de cartas desbloqueadas
+  function updateFabBadge() {
+    const badge = document.getElementById('fabBadge');
+    if (!badge || !(window as any).cardSystem) return;
+
+    const progress = (window as any).cardSystem.getCollectionProgress();
+    badge.textContent = progress.unlocked;
+
+    // Animar el badge cuando cambie
+    badge.style.animation = 'none';
+    setTimeout(() => {
+      badge.style.animation = 'badgePulse 2s ease-in-out infinite';
+    }, 10);
+  }
+
+  // Actualizar al cargar la página
+  document.addEventListener('DOMContentLoaded', () => {
+    if ((window as any).cardSystem) {
+      updateFabBadge();
+    }
+  });
+
+  // Exportar función
+  (window as any).updateFabBadge = updateFabBadge;
+</script>
+
+<script>
+  import '../functions/collectibles.js';
+</script>

@@ -90,24 +90,53 @@ function displayInterpretation(dreamText, interpretation) {
 
 // Guardar sueño en LocalStorage
 function saveDream(dreamText, interpretation) {
-  if (!interpretation) return;
-
+  // Guardar el sueño
   const savedDreams = JSON.parse(localStorage.getItem('dreamscape_dreams') || '[]');
 
   const dreamEntry = {
     id: Date.now(),
     date: new Date().toISOString(),
     dreamText: dreamText,
-    keyword: interpretation.keyword,
-    symbolism: interpretation.symbolism,
-    interpretation: interpretation.interpretation,
-    colorTheme: interpretation.colorTheme
+    keyword: interpretation ? interpretation.keyword : 'Misterio Inexplorado',
+    symbolism: interpretation ? interpretation.symbolism : 'Visión desconocida',
+    interpretation: interpretation ? interpretation.interpretation : 'Mortal, has navegado por reinos oníricos que escapan incluso a mi comprensión divina. Tu sueño contiene símbolos que trascienden los arquetipos conocidos.',
+    colorTheme: interpretation ? interpretation.colorTheme : ['#6366f1', '#8b5cf6']
   };
 
   savedDreams.unshift(dreamEntry);
   localStorage.setItem('dreamscape_dreams', JSON.stringify(savedDreams));
 
   loadGallery();
+
+  // Verificar cartas nuevas desbloqueadas
+  if (window.cardSystem && dreamText) {
+    console.log('Verificando cartas para:', dreamText);
+    const newCards = window.cardSystem.checkForNewCards(dreamText);
+    console.log('Cartas encontradas:', newCards);
+    
+    if (newCards.length > 0) {
+      newCards.forEach(card => {
+        const unlocked = window.cardSystem.unlockCard(card.id);
+        console.log('Carta desbloqueada:', card.name, unlocked);
+        
+        if (window.showCardUnlockedAnimation) {
+          window.showCardUnlockedAnimation(card);
+        }
+      });
+      
+      // Actualizar galería de cartas
+      if (window.renderCardGallery) {
+        setTimeout(() => {
+          window.renderCardGallery();
+        }, 500);
+      }
+      if (window.updateFabBadge) {
+        setTimeout(() => {
+          window.updateFabBadge();
+        }, 600);
+      }
+    }
+  }
 }
 
 // Cargar galería de sueños guardados
@@ -207,6 +236,11 @@ function showSnackbar(message) {
 document.addEventListener('DOMContentLoaded', async () => {
   await loadDreamsData();
   loadGallery();
+
+  // Cargar galería de cartas
+  if (window.renderCardGallery) {
+    window.renderCardGallery();
+  }
 
   // Inicializar reconocimiento de voz
   const voiceSupported = initVoiceRecognition();
