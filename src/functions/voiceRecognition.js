@@ -4,6 +4,8 @@ let recognition = null;
 let isListening = false;
 let finalTranscript = '';
 let currentMode = 'voice'; // 'voice' o 'text'
+let restartAttempts = 0;
+let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 // Inicializar Web Speech API
 function initVoiceRecognition() {
@@ -22,7 +24,9 @@ function initVoiceRecognition() {
 
   recognition = new SpeechRecognition();
   recognition.lang = 'es-ES';
-  recognition.continuous = true;
+  
+  // En móviles, usar continuous = false es más estable
+  recognition.continuous = !isMobile;
   recognition.interimResults = true;
   recognition.maxAlternatives = 1;
 
@@ -44,6 +48,7 @@ function initVoiceRecognition() {
   recognition.onstart = () => {
     console.log('Reconocimiento de voz iniciado');
     isListening = true;
+    restartAttempts = 0;
     voiceBtn.classList.add('listening');
     voiceBtnText.textContent = 'Te escucho...';
     listeningIndicator?.classList.remove('hidden');
@@ -84,6 +89,25 @@ function initVoiceRecognition() {
   recognition.onerror = (event) => {
     console.error('Error en reconocimiento de voz:', event.error);
     
+    // No mostrar error si es 'no-speech' en móviles (es normal)
+    if (event.error === 'no-speech' && isMobile) {
+      // Reintentar automáticamente en móviles
+      if (isListening && restartAttempts < 3) {
+        console.log('Reintentando reconocimiento...');
+        restartAttempts++;
+        setTimeout(() => {
+          if (isListening) {
+            try {
+              recognition.start();
+            } catch (e) {
+              console.log('No se pudo reiniciar:', e);
+            }
+          }
+        }, 200);
+        return;
+      }
+    }
+    
     let errorMessage = 'Error al escuchar. Intenta de nuevo.';
     
     switch(event.error) {
@@ -99,6 +123,9 @@ function initVoiceRecognition() {
       case 'network':
         errorMessage = 'Error de red. Verifica tu conexión a internet.';
         break;
+      case 'aborted':
+        // Error silencioso, no mostrar mensaje
+        return;
     }
     
     if (typeof showSnackbar === 'function') {
@@ -111,7 +138,24 @@ function initVoiceRecognition() {
   // Fin de reconocimiento
   recognition.onend = () => {
     console.log('Reconocimiento de voz finalizado');
-    stopListening();
+    
+    // En móviles, reiniciar automáticamente si el usuario sigue con el botón activo
+    if (isListening && isMobile && restartAttempts < 5) {
+      console.log('Reiniciando reconocimiento automáticamente...');
+      restartAttempts++;
+      setTimeout(() => {
+        if (isListening) {
+          try {
+            recognition.start();
+          } catch (error) {
+            console.log('No se pudo reiniciar:', error);
+            stopListening();
+          }
+        }
+      }, 100);
+    } else {
+      stopListening();
+    }
   };
 
   // Click en botón de voz
@@ -119,6 +163,11 @@ function initVoiceRecognition() {
     if (isListening) {
       stopListening();
     } else {
+      // Limpiar transcripción anterior al iniciar nueva grabación
+      finalTranscript = '';
+      if (transcriptionText) {
+        transcriptionText.textContent = '';
+      }
       startListening();
     }
   });
@@ -239,10 +288,16 @@ function startListening() {
   if (!recognition) return;
   
   try {
-    finalTranscript = '';
+    // No limpiar finalTranscript aquí, permitir acumular
+    // finalTranscript = '';
+    restartAttempts = 0;
     recognition.start();
   } catch (error) {
     console.error('Error al iniciar reconocimiento:', error);
+    // Si ya está iniciado, no es un error crítico
+    if (error.message && error.message.includes('already started')) {
+      console.log('El reconocimiento ya estaba iniciado');
+    }
   }
 }
 
