@@ -32,6 +32,15 @@ function initVoiceRecognition() {
   
   if (!SpeechRecognition) {
     console.error('El navegador no soporta Web Speech API');
+    
+    // En escritorio, mostrar mensaje de incompatibilidad
+    if (!isMobile) {
+      const browserWarning = document.getElementById('browserWarning');
+      if (browserWarning) {
+        browserWarning.classList.remove('hidden');
+      }
+    }
+    
     // Cambiar automáticamente a modo texto
     switchToTextMode();
     return false;
