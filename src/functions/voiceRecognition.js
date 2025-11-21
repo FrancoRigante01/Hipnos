@@ -9,6 +9,21 @@ let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 // Inicializar Web Speech API
 function initVoiceRecognition() {
+  // En móviles, deshabilitar voz y usar solo texto
+  if (isMobile) {
+    console.log('Dispositivo móvil detectado, usando solo modo texto');
+    setupModeSelector();
+    switchToTextMode();
+    
+    // Ocultar el botón de modo voz en móviles
+    const voiceModeBtn = document.getElementById('voiceModeBtn');
+    if (voiceModeBtn) {
+      voiceModeBtn.style.display = 'none';
+    }
+    
+    return false;
+  }
+
   // Configurar selector de modo
   setupModeSelector();
 
