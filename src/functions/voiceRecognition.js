@@ -25,8 +25,8 @@ function initVoiceRecognition() {
   recognition = new SpeechRecognition();
   recognition.lang = 'es-ES';
   
-  // En móviles, usar continuous = false es más estable
-  recognition.continuous = !isMobile;
+  // Intentar modo continuo en móviles también, pero con mejor manejo
+  recognition.continuous = true;
   recognition.interimResults = true;
   recognition.maxAlternatives = 1;
 
@@ -89,31 +89,22 @@ function initVoiceRecognition() {
   recognition.onerror = (event) => {
     console.error('Error en reconocimiento de voz:', event.error);
     
-    // No mostrar error si es 'no-speech' en móviles (es normal)
-    if (event.error === 'no-speech' && isMobile) {
-      // Reintentar automáticamente en móviles
-      if (isListening && restartAttempts < 3) {
-        console.log('Reintentando reconocimiento...');
-        restartAttempts++;
-        setTimeout(() => {
-          if (isListening) {
-            try {
-              recognition.start();
-            } catch (e) {
-              console.log('No se pudo reiniciar:', e);
-            }
-          }
-        }, 200);
-        return;
-      }
+    // No reintentar automáticamente en caso de 'no-speech'
+    // Esto evita el molesto sonido de encendido/apagado constante
+    if (event.error === 'no-speech') {
+      console.log('No se detectó voz, pero manteniendo micrófono activo');
+      // No hacer nada, dejar que onend lo maneje con delay
+      return;
+    }
+    
+    // Para 'aborted', tampoco mostrar error
+    if (event.error === 'aborted') {
+      return;
     }
     
     let errorMessage = 'Error al escuchar. Intenta de nuevo.';
     
     switch(event.error) {
-      case 'no-speech':
-        errorMessage = 'No se detectó voz. Intenta hablar más cerca del micrófono.';
-        break;
       case 'audio-capture':
         errorMessage = 'No se pudo acceder al micrófono. Verifica los permisos.';
         break;
@@ -123,9 +114,6 @@ function initVoiceRecognition() {
       case 'network':
         errorMessage = 'Error de red. Verifica tu conexión a internet.';
         break;
-      case 'aborted':
-        // Error silencioso, no mostrar mensaje
-        return;
     }
     
     if (typeof showSnackbar === 'function') {
@@ -139,10 +127,14 @@ function initVoiceRecognition() {
   recognition.onend = () => {
     console.log('Reconocimiento de voz finalizado');
     
-    // En móviles, reiniciar automáticamente si el usuario sigue con el botón activo
-    if (isListening && isMobile && restartAttempts < 5) {
-      console.log('Reiniciando reconocimiento automáticamente...');
+    // Solo reiniciar en móviles si:
+    // 1. El usuario todavía tiene el botón activo
+    // 2. Han pasado al menos 2 segundos (evitar reinicios rápidos molestos)
+    // 3. No hemos superado el límite de intentos
+    if (isListening && isMobile && restartAttempts < 3) {
+      console.log('Reconocimiento finalizado, esperando para reiniciar...');
       restartAttempts++;
+      // Delay más largo para evitar sonidos repetitivos
       setTimeout(() => {
         if (isListening) {
           try {
@@ -152,7 +144,7 @@ function initVoiceRecognition() {
             stopListening();
           }
         }
-      }, 100);
+      }, 300);
     } else {
       stopListening();
     }
