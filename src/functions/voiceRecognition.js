@@ -21,6 +21,13 @@ function initVoiceRecognition() {
       voiceModeBtn.style.display = 'none';
     }
     
+    // Asegurarse de que el mensaje de incompatibilidad esté oculto en móviles
+    const browserWarning = document.getElementById('browserWarning');
+    if (browserWarning) {
+      browserWarning.classList.add('hidden');
+      browserWarning.style.display = 'none';
+    }
+    
     return false;
   }
 
