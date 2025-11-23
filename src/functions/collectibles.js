@@ -14,7 +14,7 @@ class AchievementSystem {
         keywords: ['agua', 'mar', 'océano', 'río', 'lluvia', 'nadar', 'piscina', 'lago', 'playa', 'ola'],
         rarity: 'común',
         description: 'Exploraste las profundidades acuáticas en tus sueños',
-        symbol: '◆',
+        symbol: '/water.svg',
         color: '#38bdf8'
       },
       {
@@ -23,7 +23,7 @@ class AchievementSystem {
         keywords: ['fuego', 'llama', 'calor', 'quemar', 'incendio', 'fogata', 'hoguera', 'ardor', 'brasa'],
         rarity: 'común',
         description: 'El fuego ardió en tus sueños sin quemarte',
-        symbol: '▲',
+        symbol: '/fire.svg',
         color: '#ef4444'
       },
       {
@@ -32,7 +32,7 @@ class AchievementSystem {
         keywords: ['viento', 'aire', 'brisa', 'tormenta', 'volar', 'cielo', 'nube', 'soplo', 'huracán', 'tornado'],
         rarity: 'común',
         description: 'Cabalgaste el viento en tu mundo onírico',
-        symbol: '◈',
+        symbol: '/wind.svg',
         color: '#a5f3fc'
       },
       {
@@ -41,7 +41,7 @@ class AchievementSystem {
         keywords: ['tierra', 'montaña', 'roca', 'arena', 'bosque', 'árbol', 'piedra', 'suelo', 'campo', 'valle'],
         rarity: 'común',
         description: 'La tierra te ancló firmemente en tus sueños',
-        symbol: '■',
+        symbol: '/earth.svg',
         color: '#92400e'
       },
       {
@@ -50,7 +50,7 @@ class AchievementSystem {
         keywords: ['noche', 'luna', 'estrella', 'oscuridad', 'medianoche', 'oscuro'],
         rarity: 'rara',
         description: 'La noche te reveló sus secretos más profundos',
-        symbol: '◉',
+        symbol: '/moon.svg',
         color: '#312e81'
       },
       {
@@ -59,7 +59,7 @@ class AchievementSystem {
         keywords: ['perro', 'gato', 'pájaro', 'lobo', 'serpiente', 'animal', 'pez', 'caballo', 'león', 'tigre'],
         rarity: 'rara',
         description: 'Un espíritu animal te eligió como compañero',
-        symbol: '◆',
+        symbol: '/animal.svg',
         color: '#fbbf24'
       },
       {
@@ -68,7 +68,7 @@ class AchievementSystem {
         keywords: ['luz', 'sol', 'brillo', 'resplandor', 'amanecer', 'día', 'rayo'],
         rarity: 'rara',
         description: 'Trajiste la luz a los rincones oscuros de tus sueños',
-        symbol: '✦',
+        symbol: '/light.svg',
         color: '#fde68a'
       },
       {
@@ -77,7 +77,7 @@ class AchievementSystem {
         keywords: ['sombra', 'oscuridad', 'negro', 'tiniebla', 'penumbra'],
         rarity: 'épica',
         description: 'Las sombras te revelaron sus misterios ancestrales',
-        symbol: '●',
+        symbol: '/dark.svg',
         color: '#1e293b'
       },
       {
@@ -86,7 +86,7 @@ class AchievementSystem {
         keywords: ['volar', 'vuelo', 'flotando', 'elevarse', 'alas', 'cielo'],
         rarity: 'épica',
         description: 'Conquistaste los cielos sin límites',
-        symbol: '★',
+        symbol: '/sky.svg',
         color: '#a5f3fc'
       },
       {
@@ -96,7 +96,7 @@ class AchievementSystem {
         requiredKeywords: 4,
         rarity: 'legendaria',
         description: '¡Dominaste todos los elementos en un solo sueño!',
-        symbol: '✧',
+        symbol: '/maestro.svg',
         color: '#fbbf24'
       },
       {
@@ -105,7 +105,7 @@ class AchievementSystem {
         keywords: ['espacio', 'cosmos', 'galaxia', 'planeta', 'estrella', 'universo', 'astronauta'],
         rarity: 'legendaria',
         description: 'Trascendiste las fronteras del universo conocido',
-        symbol: '✺',
+        symbol: '/space.svg',
         color: '#6366f1'
       },
       {
@@ -114,7 +114,7 @@ class AchievementSystem {
         keywords: ['tiempo', 'reloj', 'pasado', 'futuro', 'eternidad', 'edad'],
         rarity: 'legendaria',
         description: 'El tiempo se doblegó ante tu voluntad',
-        symbol: '◈',
+        symbol: '/time.svg',
         color: '#fde68a'
       }
     ];
@@ -259,13 +259,25 @@ function showAchievementUnlockedAnimation(achievement) {
   snackbar.style.color = 'white';
 
   // Contenido del snackbar
-  snackbar.innerHTML = `
-    <div style="font-size: 2rem; filter: drop-shadow(0 0 8px rgba(255,255,255,0.8));">${achievement.symbol}</div>
-    <div style="flex: 1;">
-      <div style="font-size: 0.75rem; opacity: 0.95; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.25rem;">¡Logro Desbloqueado!</div>
-      <div style="font-weight: 600; font-size: 1.1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">${achievement.name}</div>
-    </div>
+  const symbolDiv = document.createElement('div');
+  symbolDiv.style.cssText = 'font-size: 2rem; filter: drop-shadow(0 0 8px rgba(255,255,255,0.8)); width: 2rem; height: 2rem; display: flex; align-items: center; justify-content: center;';
+  
+  const img = document.createElement('img');
+  img.src = achievement.symbol;
+  img.alt = achievement.name;
+  img.style.cssText = 'width: 100%; height: 100%; object-fit: contain;';
+  symbolDiv.appendChild(img);
+  
+  snackbar.innerHTML = '';
+  snackbar.appendChild(symbolDiv);
+  
+  const textDiv = document.createElement('div');
+  textDiv.style.flex = '1';
+  textDiv.innerHTML = `
+    <div style="font-size: 0.75rem; opacity: 0.95; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.25rem;">¡Logro Desbloqueado!</div>
+    <div style="font-weight: 600; font-size: 1.1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">${achievement.name}</div>
   `;
+  snackbar.appendChild(textDiv);
 
   // Mostrar snackbar
   snackbar.style.opacity = '1';
@@ -304,24 +316,48 @@ function renderAchievementGallery() {
   }
 
   // Renderizar logros
-  gallery.innerHTML = allAchievements.map(achievement => {
+  gallery.innerHTML = '';
+  
+  allAchievements.forEach(achievement => {
     const achievementClass = achievement.unlocked ? 'unlocked' : 'locked';
     const rarityClass = `rarity-${achievement.rarity}`;
     
-    return `
-      <div class="achievement-item ${achievementClass} ${rarityClass}" style="border-left: 4px solid ${achievement.unlocked ? achievement.color : '#64748b'}; background: ${achievement.unlocked ? achievement.color + '11' : 'rgba(15,23,42,0.4)'}; padding-top: 1.6rem; padding-bottom: 1.6rem;">
-        <div class="achievement-inner" style="margin-left: 1.5rem;">
-          <div class="achievement-symbol" style="color: ${achievement.unlocked ? achievement.color : '#64748b'}; font-size: 2rem;">${achievement.unlocked ? achievement.symbol : '?'}</div>
-          <div class="achievement-info">
-            <div class="achievement-rarity-badge">${achievement.rarity.toUpperCase()}</div>
-            <h3 class="achievement-title">${achievement.unlocked ? achievement.name : 'Logro Bloqueado'}</h3>
-            <p class="achievement-description" style="margin-bottom: 0;">${achievement.unlocked ? achievement.description : 'Sigue explorando tus sueños para desbloquear este logro.'}</p>
-            ${!achievement.unlocked ? `<p class="achievement-hint">💡 Sueña con: ${achievement.keywords.slice(0, 3).join(', ')}...</p>` : ''}
-          </div>
-        </div>
-      </div>
+    const achievementItem = document.createElement('div');
+    achievementItem.className = `achievement-item ${achievementClass} ${rarityClass}`;
+    achievementItem.style.cssText = `border-left: 4px solid ${achievement.unlocked ? achievement.color : '#64748b'}; background: ${achievement.unlocked ? achievement.color + '11' : 'rgba(15,23,42,0.4)'}; padding-top: 1.6rem; padding-bottom: 1.6rem;`;
+    
+    const achievementInner = document.createElement('div');
+    achievementInner.className = 'achievement-inner';
+    achievementInner.style.marginLeft = '1.5rem';
+    
+    const achievementSymbol = document.createElement('div');
+    achievementSymbol.className = 'achievement-symbol';
+    achievementSymbol.style.cssText = `color: ${achievement.unlocked ? achievement.color : '#64748b'}; width: 2rem; height: 2rem; display: flex; align-items: center; justify-content: center;`;
+    
+    if (achievement.unlocked) {
+      const img = document.createElement('img');
+      img.src = achievement.symbol;
+      img.alt = achievement.name;
+      img.style.cssText = 'width: 100%; height: 100%; object-fit: contain;';
+      achievementSymbol.appendChild(img);
+    } else {
+      achievementSymbol.textContent = '?';
+    }
+    
+    const achievementInfo = document.createElement('div');
+    achievementInfo.className = 'achievement-info';
+    achievementInfo.innerHTML = `
+      <div class="achievement-rarity-badge">${achievement.rarity.toUpperCase()}</div>
+      <h3 class="achievement-title">${achievement.unlocked ? achievement.name : 'Logro Bloqueado'}</h3>
+      <p class="achievement-description" style="margin-bottom: 0;">${achievement.unlocked ? achievement.description : 'Sigue explorando tus sueños para desbloquear este logro.'}</p>
+      ${!achievement.unlocked ? `<p class="achievement-hint">💡 Sueña con: ${achievement.keywords.slice(0, 3).join(', ')}...</p>` : ''}
     `;
-  }).join('');
+    
+    achievementInner.appendChild(achievementSymbol);
+    achievementInner.appendChild(achievementInfo);
+    achievementItem.appendChild(achievementInner);
+    gallery.appendChild(achievementItem);
+  });
 }
 
 // Función para re-verificar todos los logros acumulativos manualmente
