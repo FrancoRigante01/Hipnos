@@ -3,7 +3,7 @@
 ---
 
 <a href="/coleccion" class="fab-collection" id="fabCollection">
-  <span class="fab-icon">🎴</span>
+  <span class="fab-icon">🏆</span>
   <span class="fab-badge" id="fabBadge">0</span>
 </a>
 
@@ -113,7 +113,7 @@
 
   /* Tooltip al hover */
   .fab-collection::after {
-    content: 'Ver Colección';
+    content: 'Ver Logros';
     position: absolute;
     right: 85px;
     background: rgba(30, 22, 60, 0.95);
@@ -159,12 +159,12 @@
 </style>
 
 <script>
-  // Actualizar el badge con el número de cartas desbloqueadas
+  // Actualizar el badge con el número de logros desbloqueados
   function updateFabBadge() {
     const badge = document.getElementById('fabBadge');
-    if (!badge || !(window as any).cardSystem) return;
+    if (!badge || !(window as any).achievementSystem) return;
 
-    const progress = (window as any).cardSystem.getCollectionProgress();
+    const progress = (window as any).achievementSystem.getCollectionProgress();
     badge.textContent = progress.unlocked;
 
     // Animar el badge cuando cambie
@@ -176,7 +176,7 @@
 
   // Actualizar al cargar la página
   document.addEventListener('DOMContentLoaded', () => {
-    if ((window as any).cardSystem) {
+    if ((window as any).achievementSystem) {
       updateFabBadge();
     }
   });

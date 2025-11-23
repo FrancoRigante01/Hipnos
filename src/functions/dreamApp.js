@@ -108,26 +108,35 @@ function saveDream(dreamText, interpretation) {
 
   loadGallery();
 
-  // Verificar cartas nuevas desbloqueadas
-  if (window.cardSystem && dreamText) {
-    console.log('Verificando cartas para:', dreamText);
-    const newCards = window.cardSystem.checkForNewCards(dreamText);
-    console.log('Cartas encontradas:', newCards);
+  // Verificar logros nuevos desbloqueados
+  if (window.achievementSystem && dreamText) {
+    const newAchievements = window.achievementSystem.checkForNewAchievements(dreamText);
     
-    if (newCards.length > 0) {
-      newCards.forEach(card => {
-        const unlocked = window.cardSystem.unlockCard(card.id);
-        console.log('Carta desbloqueada:', card.name, unlocked);
+    // También verificar logros acumulativos
+    const cumulativeAchievements = window.achievementSystem.checkCumulativeAchievements();
+    
+    // Combinar ambos arrays sin duplicados
+    const allNewAchievements = [...newAchievements];
+    cumulativeAchievements.forEach(cumAch => {
+      if (!allNewAchievements.find(a => a.id === cumAch.id)) {
+        allNewAchievements.push(cumAch);
+      }
+    });
+    
+    if (allNewAchievements.length > 0) {
+      allNewAchievements.forEach(achievement => {
+        const unlocked = window.achievementSystem.unlockAchievement(achievement.id);
+        console.log('Logro desbloqueado:', achievement.name, unlocked);
         
-        if (window.showCardUnlockedAnimation) {
-          window.showCardUnlockedAnimation(card);
+        if (window.showAchievementUnlockedAnimation) {
+          window.showAchievementUnlockedAnimation(achievement);
         }
       });
       
-      // Actualizar galería de cartas
-      if (window.renderCardGallery) {
+      // Actualizar galería de logros
+      if (window.renderAchievementGallery) {
         setTimeout(() => {
-          window.renderCardGallery();
+          window.renderAchievementGallery();
         }, 500);
       }
       if (window.updateFabBadge) {
@@ -237,9 +246,9 @@ document.addEventListener('DOMContentLoaded', async () => {
   await loadDreamsData();
   loadGallery();
 
-  // Cargar galería de cartas
-  if (window.renderCardGallery) {
-    window.renderCardGallery();
+  // Cargar galería de logros
+  if (window.renderAchievementGallery) {
+    window.renderAchievementGallery();
   }
 
   // Inicializar reconocimiento de voz
