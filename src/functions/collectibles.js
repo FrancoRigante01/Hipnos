@@ -11,7 +11,7 @@ class AchievementSystem {
       {
         id: 'achievement_water',
         name: 'Explorador de las Profundidades',
-        keywords: ['agua', 'mar', 'océano', 'río', 'lluvia', 'nadar', 'piscina', 'lago', 'playa', 'ola'],
+        keywords: ['agua', 'mar', 'océano', 'río', 'lluvia', 'nadar', 'pileta', 'lago', 'playa', 'ola'],
         rarity: 'común',
         description: 'Exploraste las profundidades acuáticas en tus sueños',
         symbol: '/water.svg',
@@ -20,7 +20,7 @@ class AchievementSystem {
       {
         id: 'achievement_fire',
         name: 'Dominador de las Llamas',
-        keywords: ['fuego', 'llama', 'calor', 'quemar', 'incendio', 'fogata', 'hoguera', 'ardor', 'brasa'],
+        keywords: ['fuego', 'llama', 'calor', 'quemar', 'incendio', 'fogata', 'hoguera', 'brasa'],
         rarity: 'común',
         description: 'El fuego ardió en tus sueños sin quemarte',
         symbol: '/fire.svg',

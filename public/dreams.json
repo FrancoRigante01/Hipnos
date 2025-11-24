@@ -12,6 +12,61 @@
       "interpretation": "Ah, mortal, has soñado con el agua... Yo, Hipnos, te revelo que las aguas de tus sueños son el espejo de tus emociones más profundas. Como los ríos que fluyen hacia el mar, tus sentimientos buscan su cauce. Las aguas tranquilas anuncian paz interior, mientras que las agitadas revelan turbulencia emocional. Recuerda que Poseidón, señor de los mares, observa el fluir de tus emociones desde las profundidades."
     },
     {
+      "keyword": "nadar",
+      "symbolism": "Fluidez, adaptación, inmersión emocional",
+      "colorTheme": [
+        "#0891b2",
+        "#06b6d4",
+        "#67e8f9",
+        "#cffafe"
+      ],
+      "interpretation": "Nadar en mis dominios revela tu capacidad de moverte con gracia a través de las corrientes emocionales. Cuando nadas en el sueño, Poseidón observa tu destreza: cada brazada es un acto de confianza, cada inmersión un encuentro con lo profundo de ti mismo. Si nadas con facilidad, fluyes armoniosamente; si luchas contra el agua, algo en tu interior resiste el cambio necesario."
+    },
+    {
+      "keyword": "pileta",
+      "symbolism": "Emociones contenidas, espacio controlado",
+      "colorTheme": [
+        "#0284c7",
+        "#38bdf8",
+        "#7dd3fc",
+        "#e0f2fe"
+      ],
+      "interpretation": "La pileta que aparece en tus sueños es un océano domado, mortal. Yo te la muestro para que comprendas que tus emociones tienen límites seguros. A diferencia del mar salvaje, esta agua está contenida, accesible. Es tu refugio personal donde puedes explorar sentimientos sin temor a perderte en su inmensidad."
+    },
+    {
+      "keyword": "lago",
+      "symbolism": "Calma profunda, reflexión interior",
+      "colorTheme": [
+        "#0c4a6e",
+        "#0369a1",
+        "#0ea5e9",
+        "#bae6fd"
+      ],
+      "interpretation": "El lago sereno en tus visiones nocturnas es mi espejo favorito para mostrarte tu alma en reposo. Sus aguas quietas reflejan verdades que el océano turbulento ocultaría. Acércate a sus orillas, mortal: lo que ves en su superficie es lo que llevas en lo más profundo. Poseidón mismo contempla estos lagos con reverencia, pues en su quietud habita la sabiduría."
+    },
+    {
+      "keyword": "playa",
+      "symbolism": "Frontera entre consciente e inconsciente, transición",
+      "colorTheme": [
+        "#fef3c7",
+        "#fde68a",
+        "#38bdf8",
+        "#0ea5e9"
+      ],
+      "interpretation": "La playa que piso en tus sueños es el umbral sagrado entre dos mundos: la arena firme de tu consciencia y las aguas infinitas de tu inconsciente. Caminar por esta orilla es habitar la transición, el punto donde lo conocido besa a lo misterioso. Yo, guardián del sueño, te invito a permanecer en este espacio liminal, donde las olas susurran secretos ancestrales."
+    },
+    {
+      "keyword": "ola",
+      "symbolism": "Fuerza emocional, ciclos naturales",
+      "colorTheme": [
+        "#164e63",
+        "#0891b2",
+        "#22d3ee",
+        "#a5f3fc"
+      ],
+      "interpretation": "Las olas que rompen en tus sueños son el pulso mismo de Poseidón, mortal. Cada cresta que se eleva y cae refleja los ciclos inevitables de tu existencia: alegría y tristeza, ganancia y pérdida. Si la ola te arrastra, algo en tu vida exige rendición; si la cabalgas con maestría, has aprendido a danzar con las fuerzas que no puedes controlar."
+    },
+    {
       "keyword": "águila",
       "symbolism": "Visión, poder, trascendencia",
       "colorTheme": [
@@ -760,6 +815,83 @@
       "interpretation": "¡Fuego! El elemento de la transformación divina. Yo te he enviado estas llamas para que comprendas: lo viejo debe arder para que nazca lo nuevo. El fuego purifica y revela la pasión que impulsa tu existencia. Recuerda a Hestia, diosa del fuego sagrado, y a Hefesto, el forjador, quienes vigilan cada chispa de tu transformación."
     },
     {
+      "keyword": "llama",
+      "symbolism": "Luz interior, pasión ardiente, guía espiritual",
+      "colorTheme": [
+        "#c2410c",
+        "#ea580c",
+        "#fb923c",
+        "#fed7aa"
+      ],
+      "interpretation": "La llama que danza en tus sueños es la chispa de Prometeo, mortal. Pequeña pero inextinguible, representa tu espíritu que se niega a apagarse. Hefesto, dios del fuego y la forja, observa cómo esta llama te ilumina en la oscuridad. Ella no destruye como el incendio; guía como el faro. Cuídala, pues es tu voluntad hecha luz."
+    },
+    {
+      "keyword": "calor",
+      "symbolism": "Intensidad emocional, vitalidad, proximidad",
+      "colorTheme": [
+        "#dc2626",
+        "#f97316",
+        "#fbbf24",
+        "#fef3c7"
+      ],
+      "interpretation": "El calor que sientes en el reino onírico no es accidente, viajero. Es mi forma de mostrarte la intensidad que habita en tu interior. Demasiado calor quema y agota; el justo equilibrio da vida y confort. Helios, dios del sol, sonríe cuando encuentras ese balance perfecto entre la pasión que enciende y la moderación que preserva."
+    },
+    {
+      "keyword": "quemar",
+      "symbolism": "Purificación radical, fin de ciclo, dolor transformador",
+      "colorTheme": [
+        "#7f1d1d",
+        "#991b1b",
+        "#dc2626",
+        "#f97316"
+      ],
+      "interpretation": "Quemar en sueños es el acto más violento y necesario de transformación. Lo que arde no puede volver a ser lo que era. Yo te muestro estas llamas destructoras para que comprendas: hay partes de ti que deben consumirse por completo para que lo nuevo emerja de las cenizas. El Fénix conoce este secreto mejor que nadie."
+    },
+    {
+      "keyword": "incendio",
+      "symbolism": "Crisis, transformación descontrolada, liberación caótica",
+      "colorTheme": [
+        "#7f1d1d",
+        "#dc2626",
+        "#f59e0b",
+        "#fbbf24"
+      ],
+      "interpretation": "El incendio que arrasa en tus visiones nocturnas no pide permiso, mortal. Es el cambio que no puedes detener, la transformación que llega aunque la temas. Hestia, guardiana del fuego sagrado, te recuerda que incluso el caos más ardiente puede purificar. Lo que el incendio se lleva ya estaba destinado a desaparecer; lo que sobrevive emerge más fuerte."
+    },
+    {
+      "keyword": "fogata",
+      "symbolism": "Comunidad, calidez compartida, ritual",
+      "colorTheme": [
+        "#c2410c",
+        "#ea580c",
+        "#fb923c",
+        "#fde68a"
+      ],
+      "interpretation": "La fogata que crepita en tus sueños convoca a los tuyos, viajero. Alrededor de este fuego antiguo se tejen historias, se forjan alianzas, se comparte el calor de la existencia. Yo te la muestro para recordarte que tu luz se multiplica cuando la compartes. Hestia bendice cada reunión alrededor del fuego compartido."
+    },
+    {
+      "keyword": "hoguera",
+      "symbolism": "Celebración, sacrificio ritual, punto de encuentro",
+      "colorTheme": [
+        "#92400e",
+        "#c2410c",
+        "#f97316",
+        "#fbbf24"
+      ],
+      "interpretation": "La hoguera que arde en tus visiones es más que fuego, mortal: es altar y testigo. En ella se queman ofrendas, se celebran victorias, se marcan los solsticios del alma. Hefesto y Hestia vigilan juntos estas llamas ceremoniales. Lo que entregas al fuego en estos sueños es lo que estás listo para soltar en la vigilia."
+    },
+    {
+      "keyword": "brasa",
+      "symbolism": "Potencial latente, calor persistente, memoria del fuego",
+      "colorTheme": [
+        "#991b1b",
+        "#dc2626",
+        "#78350f",
+        "#fed7aa"
+      ],
+      "interpretation": "La brasa que resplandece en tus sueños es fuego que ha aprendido paciencia. No flamea con arrogancia, pero su calor perdura cuando las llamas ya murieron. Yo te la muestro, soñador, para que veas tu propia resistencia: la pasión que no se apaga con el primer viento contrario. Una brasa puede reavivarse; nunca subestimes lo que aún arde bajo la ceniza."
+    },
+    {
       "keyword": "fuga",
       "symbolism": "Escape, liberación, miedo",
       "colorTheme": [
@@ -1011,6 +1143,17 @@
         "#bae6fd"
       ],
       "interpretation": "El mar infinito que se extiende ante ti en sueños es mi regalo, mortal. Sus profundidades guardan los misterios de tu alma, sus olas reflejan el ritmo de tu corazón. Navegar estas aguas es aprender a confiar en las mareas de la existencia y en la vastedad de tus emociones. Poseidón, dios de los océanos, también custodia estos misterios junto a mí."
+    },
+    {
+      "keyword": "océano",
+      "symbolism": "Profundidad emocional, vastedad",
+      "colorTheme": [
+        "#0c4a6e",
+        "#0284c7",
+        "#38bdf8",
+        "#bae6fd"
+      ],
+      "interpretation": "El océano infinito que se extiende ante ti en sueños es mi regalo, mortal. Sus profundidades guardan los misterios de tu alma, sus olas reflejan el ritmo de tu corazón. Navegar estas aguas es aprender a confiar en las mareas de la existencia y en la vastedad de tus emociones. Poseidón, dios de los océanos, también custodia estos misterios junto a mí."
     },
     {
       "keyword": "mariposa",
