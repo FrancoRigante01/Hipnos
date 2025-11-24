@@ -54,9 +54,7 @@ function initVoiceRecognition() {
 
   recognition = new SpeechRecognition();
   recognition.lang = 'es-ES';
-  
-  // Intentar modo continuo en móviles también, pero con mejor manejo
-  recognition.continuous = true;
+  recognition.continuous = false;
   recognition.interimResults = true;
   recognition.maxAlternatives = 1;
 
@@ -152,25 +150,8 @@ function initVoiceRecognition() {
 
   // Fin de reconocimiento
   recognition.onend = () => {
-    // Solo reiniciar en móviles si:
-    // 1. El usuario todavía tiene el botón activo
-    // 2. Han pasado al menos 2 segundos (evitar reinicios rápidos molestos)
-    // 3. No hemos superado el límite de intentos
-    if (isListening && isMobile && restartAttempts < 3) {
-      restartAttempts++;
-      // Delay más largo para evitar sonidos repetitivos
-      setTimeout(() => {
-        if (isListening) {
-          try {
-            recognition.start();
-          } catch (error) {
-            stopListening();
-          }
-        }
-      }, 300);
-    } else {
-      stopListening();
-    }
+    // No reiniciar automáticamente - el usuario debe presionar el botón nuevamente
+    stopListening();
   };
 
   // Click en botón de voz
