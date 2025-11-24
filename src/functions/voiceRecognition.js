@@ -1,4 +1,5 @@
 // Sistema de reconocimiento de voz
+import { DEEPGRAM_CONFIG, isDeepgramConfigured } from '../config/deepgram.js';
 
 let recognition = null;
 let isListening = false;
@@ -6,49 +7,47 @@ let finalTranscript = '';
 let currentMode = 'voice'; // 'voice' o 'text'
 let restartAttempts = 0;
 let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+let isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+
+// Variables para Deepgram
+let deepgramSocket = null;
+let mediaRecorder = null;
+let audioStream = null;
+let useDeepgram = false;
 
 // Inicializar Web Speech API
 function initVoiceRecognition() {
-  // En móviles, deshabilitar voz y usar solo texto
-  if (isMobile) {
-    console.log('Dispositivo móvil detectado, usando solo modo texto');
-    setupModeSelector();
-    switchToTextMode();
-    
-    // Ocultar el botón de modo voz en móviles
-    const voiceModeBtn = document.getElementById('voiceModeBtn');
-    if (voiceModeBtn) {
-      voiceModeBtn.style.display = 'none';
-    }
-    
-    // Asegurarse de que el mensaje de incompatibilidad esté oculto en móviles
-    const browserWarning = document.getElementById('browserWarning');
-    if (browserWarning) {
-      browserWarning.classList.add('hidden');
-      browserWarning.style.display = 'none';
-    }
-    
-    return false;
-  }
-
   // Configurar selector de modo
   setupModeSelector();
 
-  // Verificar compatibilidad
+  // Determinar si usar Deepgram o Web Speech API
+  const shouldUseDeepgram = (isMobile || isFirefox) && isDeepgramConfigured();
+  
+  if (shouldUseDeepgram) {
+    useDeepgram = true;
+    return initDeepgramRecognition();
+  }
+
+  useDeepgram = false;
+
+  // Verificar compatibilidad con Web Speech API
   const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
   
   if (!SpeechRecognition) {
     console.error('El navegador no soporta Web Speech API');
     
-    // En escritorio, mostrar mensaje de incompatibilidad
-    if (!isMobile) {
-      const browserWarning = document.getElementById('browserWarning');
-      if (browserWarning) {
-        browserWarning.classList.remove('hidden');
-      }
+    // Si Deepgram está disponible, usarlo como fallback
+    if (isDeepgramConfigured()) {
+      useDeepgram = true;
+      return initDeepgramRecognition();
     }
     
-    // Cambiar automáticamente a modo texto
+    // Si no hay ninguna opción, mostrar advertencia y usar solo texto
+    const browserWarning = document.getElementById('browserWarning');
+    if (browserWarning) {
+      browserWarning.classList.remove('hidden');
+    }
+    
     switchToTextMode();
     return false;
   }
@@ -77,7 +76,6 @@ function initVoiceRecognition() {
 
   // Inicio de reconocimiento
   recognition.onstart = () => {
-    console.log('Reconocimiento de voz iniciado');
     isListening = true;
     restartAttempts = 0;
     voiceBtn.classList.add('listening');
@@ -123,8 +121,6 @@ function initVoiceRecognition() {
     // No reintentar automáticamente en caso de 'no-speech'
     // Esto evita el molesto sonido de encendido/apagado constante
     if (event.error === 'no-speech') {
-      console.log('No se detectó voz, pero manteniendo micrófono activo');
-      // No hacer nada, dejar que onend lo maneje con delay
       return;
     }
     
@@ -156,14 +152,11 @@ function initVoiceRecognition() {
 
   // Fin de reconocimiento
   recognition.onend = () => {
-    console.log('Reconocimiento de voz finalizado');
-    
     // Solo reiniciar en móviles si:
     // 1. El usuario todavía tiene el botón activo
     // 2. Han pasado al menos 2 segundos (evitar reinicios rápidos molestos)
     // 3. No hemos superado el límite de intentos
     if (isListening && isMobile && restartAttempts < 3) {
-      console.log('Reconocimiento finalizado, esperando para reiniciar...');
       restartAttempts++;
       // Delay más largo para evitar sonidos repetitivos
       setTimeout(() => {
@@ -171,7 +164,6 @@ function initVoiceRecognition() {
           try {
             recognition.start();
           } catch (error) {
-            console.log('No se pudo reiniciar:', error);
             stopListening();
           }
         }
@@ -216,6 +208,188 @@ function initVoiceRecognition() {
   });
 
   return true;
+}
+
+// ============================================
+// DEEPGRAM RECOGNITION
+// ============================================
+
+function initDeepgramRecognition() {
+  const voiceBtn = document.getElementById('voiceBtn');
+  const voiceBtnText = document.getElementById('voiceBtnText');
+  const listeningIndicator = document.getElementById('listeningIndicator');
+  const transcriptionContainer = document.getElementById('transcriptionContainer');
+  const transcriptionText = document.getElementById('transcriptionText');
+  const clearTranscription = document.getElementById('clearTranscription');
+  const interpretBtn = document.getElementById('interpretBtn');
+
+  if (!voiceBtn || !transcriptionText) {
+    console.error('Elementos del DOM no encontrados');
+    return false;
+  }
+
+  // Click en botón de voz
+  voiceBtn.addEventListener('click', async () => {
+    if (isListening) {
+      stopDeepgramListening();
+    } else {
+      // Limpiar transcripción anterior
+      finalTranscript = '';
+      if (transcriptionText) {
+        transcriptionText.textContent = '';
+      }
+      await startDeepgramListening();
+    }
+  });
+
+  // Click en botón de limpiar transcripción
+  clearTranscription?.addEventListener('click', () => {
+    finalTranscript = '';
+    if (transcriptionText) {
+      transcriptionText.textContent = '';
+    }
+    transcriptionContainer?.classList.add('hidden');
+    interpretBtn?.classList.add('hidden');
+  });
+
+  // Detectar cambios manuales en la transcripción
+  transcriptionText?.addEventListener('input', () => {
+    const text = transcriptionText.textContent?.trim() || '';
+    if (text && interpretBtn) {
+      interpretBtn.classList.remove('hidden');
+    } else if (interpretBtn) {
+      interpretBtn.classList.add('hidden');
+    }
+  });
+
+  return true;
+}
+
+async function startDeepgramListening() {
+  const voiceBtn = document.getElementById('voiceBtn');
+  const voiceBtnText = document.getElementById('voiceBtnText');
+  const listeningIndicator = document.getElementById('listeningIndicator');
+  const transcriptionContainer = document.getElementById('transcriptionContainer');
+  const transcriptionText = document.getElementById('transcriptionText');
+  const interpretBtn = document.getElementById('interpretBtn');
+
+  try {
+    // Solicitar acceso al micrófono
+    audioStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+
+    // Actualizar UI
+    isListening = true;
+    voiceBtn.classList.add('listening');
+    voiceBtnText.textContent = 'Te escucho...';
+    listeningIndicator?.classList.remove('hidden');
+
+    // Crear WebSocket a Deepgram
+    const wsUrl = `wss://api.deepgram.com/v1/listen?model=${DEEPGRAM_CONFIG.model}&language=${DEEPGRAM_CONFIG.language}&smart_format=true&punctuate=true&interim_results=true&endpointing=300`;
+    
+    deepgramSocket = new WebSocket(wsUrl, ['token', DEEPGRAM_CONFIG.apiKey]);
+
+    deepgramSocket.onopen = () => {
+
+      // Configurar MediaRecorder para enviar audio
+      mediaRecorder = new MediaRecorder(audioStream, {
+        mimeType: 'audio/webm'
+      });
+
+      mediaRecorder.ondataavailable = (event) => {
+        if (event.data.size > 0 && deepgramSocket?.readyState === WebSocket.OPEN) {
+          deepgramSocket.send(event.data);
+        }
+      };
+
+      mediaRecorder.start(250); // Enviar chunks cada 250ms
+    };
+
+    deepgramSocket.onmessage = (message) => {
+      const data = JSON.parse(message.data);
+      
+      if (data.channel?.alternatives?.[0]) {
+        const transcript = data.channel.alternatives[0].transcript;
+        
+        if (transcript && transcript.trim().length > 0) {
+          const isFinal = data.is_final;
+          
+          if (isFinal) {
+            finalTranscript += transcript + ' ';
+          }
+
+          // Actualizar UI
+          const displayText = finalTranscript + (isFinal ? '' : transcript);
+          if (transcriptionText) {
+            transcriptionText.textContent = displayText.trim();
+          }
+
+          // Mostrar contenedor
+          if (displayText.trim() && transcriptionContainer) {
+            transcriptionContainer.classList.remove('hidden');
+          }
+
+          // Mostrar botón interpretar si hay texto final
+          if (finalTranscript.trim() && interpretBtn) {
+            interpretBtn.classList.remove('hidden');
+          }
+        }
+      }
+    };
+
+    deepgramSocket.onerror = (error) => {
+      console.error('Error en Deepgram WebSocket:', error);
+      if (typeof showSnackbar === 'function') {
+        showSnackbar('Error de conexión con el servicio de voz');
+      }
+      stopDeepgramListening();
+    };
+  } catch (error) {
+    let errorMessage = 'Error al acceder al micrófono';
+    if (error.name === 'NotAllowedError') {
+      errorMessage = 'Permiso de micrófono denegado. Habilítalo en la configuración del navegador.';
+    } else if (error.name === 'NotFoundError') {
+      errorMessage = 'No se encontró ningún micrófono en tu dispositivo.';
+    }
+    
+    if (typeof showSnackbar === 'function') {
+      showSnackbar(errorMessage);
+    }
+    
+    stopDeepgramListening();
+  }
+}
+
+function stopDeepgramListening() {
+  isListening = false;
+  
+  const voiceBtn = document.getElementById('voiceBtn');
+  const voiceBtnText = document.getElementById('voiceBtnText');
+  const listeningIndicator = document.getElementById('listeningIndicator');
+  
+  voiceBtn?.classList.remove('listening');
+  if (voiceBtnText) {
+    voiceBtnText.textContent = 'Invoca al oráculo';
+  }
+  listeningIndicator?.classList.add('hidden');
+
+  // Detener MediaRecorder
+  if (mediaRecorder && mediaRecorder.state !== 'inactive') {
+    mediaRecorder.stop();
+  }
+
+  // Cerrar WebSocket
+  if (deepgramSocket && deepgramSocket.readyState === WebSocket.OPEN) {
+    deepgramSocket.close();
+  }
+
+  // Detener stream de audio
+  if (audioStream) {
+    audioStream.getTracks().forEach(track => track.stop());
+    audioStream = null;
+  }
+
+  mediaRecorder = null;
+  deepgramSocket = null;
 }
 
 // Configurar selector de modo
@@ -308,24 +482,30 @@ function switchToTextMode() {
 
 // Iniciar escucha
 function startListening() {
+  if (useDeepgram) {
+    startDeepgramListening();
+    return;
+  }
+  
   if (!recognition) return;
   
   try {
-    // No limpiar finalTranscript aquí, permitir acumular
-    // finalTranscript = '';
     restartAttempts = 0;
     recognition.start();
   } catch (error) {
-    console.error('Error al iniciar reconocimiento:', error);
-    // Si ya está iniciado, no es un error crítico
     if (error.message && error.message.includes('already started')) {
-      console.log('El reconocimiento ya estaba iniciado');
+      return;
     }
   }
 }
 
 // Detener escucha
 function stopListening() {
+  if (useDeepgram) {
+    stopDeepgramListening();
+    return;
+  }
+  
   if (!recognition) return;
   
   isListening = false;

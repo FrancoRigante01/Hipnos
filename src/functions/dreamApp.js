@@ -126,7 +126,6 @@ function saveDream(dreamText, interpretation) {
     if (allNewAchievements.length > 0) {
       allNewAchievements.forEach(achievement => {
         const unlocked = window.achievementSystem.unlockAchievement(achievement.id);
-        console.log('Logro desbloqueado:', achievement.name, unlocked);
         
         if (window.showAchievementUnlockedAnimation) {
           window.showAchievementUnlockedAnimation(achievement);
@@ -284,7 +283,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       const audio = new Audio('/dream.mp3');  
       audio.play();
     } catch (error) {
-      console.log('No se pudo reproducir el audio:', error);
+      // Silenciar error de audio
     }
 
     const interpretation = findInterpretation(dreamText);

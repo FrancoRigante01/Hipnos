@@ -171,7 +171,6 @@ class AchievementSystem {
     this.achievements.forEach(achievement => {
       // Si ya tiene el logro, saltar
       if (this.userCollection.includes(achievement.id)) {
-        console.log(`⏭️ ${achievement.name} ya desbloqueado`);
         return;
       }
 
@@ -182,7 +181,6 @@ class AchievementSystem {
         );
         
         if (matchedKeywords.length >= achievement.requiredKeywords) {
-          console.log(`✨ ¡${achievement.name} desbloqueado!`);
           newAchievements.push(achievement);
         }
       }
@@ -364,11 +362,9 @@ function renderAchievementGallery() {
 function recheckAllAchievements() {
   if (!window.achievementSystem) return;
   
-  console.log('🔄 Re-verificando todos los logros...');
   const cumulativeAchievements = window.achievementSystem.checkCumulativeAchievements();
   
   if (cumulativeAchievements.length > 0) {
-    console.log('✅ Logros acumulativos encontrados:', cumulativeAchievements);
     cumulativeAchievements.forEach(achievement => {
       const unlocked = window.achievementSystem.unlockAchievement(achievement.id);
       if (unlocked && window.showAchievementUnlockedAnimation) {
@@ -383,8 +379,6 @@ function recheckAllAchievements() {
     if (window.updateFabBadge) {
       setTimeout(() => window.updateFabBadge(), 600);
     }
-  } else {
-    console.log('ℹ️ No hay nuevos logros acumulativos');
   }
 }
 
