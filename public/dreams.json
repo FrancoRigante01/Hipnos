@@ -1233,6 +1233,17 @@
       "interpretation": "¡Ah, la noche! Mi reino predilecto. Bajo mi manto oscuro es cuando más poder tengo sobre los mortales. Las estrellas que te muestro son verdades que solo brillan en la oscuridad. Nyx, diosa primordial de la noche, camina a mi lado y juntos te revelamos secretos que la luz del día ocultaría."
     },
     {
+      "keyword": "medianoche",
+      "symbolism": "Misterio, introspección",
+      "colorTheme": [
+        "#1e1b4b",
+        "#312e81",
+        "#4c1d95",
+        "#6b21a8"
+      ],
+      "interpretation": "¡Ah, la noche! Mi reino predilecto. Bajo mi manto oscuro es cuando más poder tengo sobre los mortales. Las estrellas que te muestro son verdades que solo brillan en la oscuridad. Nyx, diosa primordial de la noche, camina a mi lado y juntos te revelamos secretos que la luz del día ocultaría."
+    },
+    {
       "keyword": "odio",
       "symbolism": "Conflicto, rechazo, energía bloqueada",
       "colorTheme": [
@@ -1715,6 +1726,402 @@
         "#a8a29e"
       ],
       "interpretation": "El zorro simboliza la astucia y la adaptabilidad. Puede indicar que necesitas ser más inteligente y flexible ante los desafíos."
+    },
+    {
+      "keyword": "viento",
+      "symbolism": "Cambio, movimiento, fuerza invisible",
+      "colorTheme": [
+        "#e0f2fe",
+        "#bae6fd",
+        "#93c5fd",
+        "#60a5fa"
+      ],
+      "interpretation": "Invisible pero poderoso, el aliento de Eolo sopla en tus visiones nocturnas. Arrastra lo viejo y trae lo nuevo sin pedir permiso. Cuando sientas su fuerza, comprende que el cambio ya está en marcha. No puedes detenerlo, solo aprender a danzar con él mientras lleva lo que ya no necesitas y trae semillas de nuevas posibilidades."
+    },
+    {
+      "keyword": "aire",
+      "symbolism": "Libertad, pensamiento, inspiración",
+      "colorTheme": [
+        "#dbeafe",
+        "#bfdbfe",
+        "#93c5fd",
+        "#e0f2fe"
+      ],
+      "interpretation": "Respiras puro pensamiento en mis dominios, soñador. Yo te concedo este elemento para que comprendas la ligereza del ser. No se puede atrapar ni poseer, solo fluye libre y esencial. Así debe ser tu mente: libre de ataduras, capaz de elevarse y renovarse con cada respiración divina."
+    },
+    {
+      "keyword": "brisa",
+      "symbolism": "Sutileza, calma, susurro del alma",
+      "colorTheme": [
+        "#e0f2fe",
+        "#dbeafe",
+        "#cffafe",
+        "#bae6fd"
+      ],
+      "interpretation": "Mi toque más gentil acaricia tu rostro mientras duermes. No grita como la tormenta, sino que susurra verdades sutiles. Atiende a su mensaje delicado: los cambios más profundos llegan a veces sin estruendo, como esa brisa que mueve apenas las hojas pero refresca todo el jardín de tu alma."
+    },
+    {
+      "keyword": "cielo",
+      "symbolism": "Infinitud, aspiración, lo divino",
+      "colorTheme": [
+        "#93c5fd",
+        "#60a5fa",
+        "#3b82f6",
+        "#dbeafe"
+      ],
+      "interpretation": "Sobre ti se extiende el lienzo infinito de Zeus. Cambiante y vasto, refleja tus más altas aspiraciones. Mira hacia arriba: allí habita lo divino, lo inalcanzable que sin embargo te llama. Urano, el cielo primordial, observa cada mirada que elevas y bendice tu anhelo de trascendencia."
+    },
+    {
+      "keyword": "nube",
+      "symbolism": "Transformación, ilusión, paso entre mundos",
+      "colorTheme": [
+        "#f1f5f9",
+        "#e2e8f0",
+        "#cbd5e1",
+        "#94a3b8"
+      ],
+      "interpretation": "Formas sin forma flotan ante tus ojos dormidos. Hoy son dragón, mañana montaña, pasado mañana se disuelven en el aire. Te las muestro para que comprendas la naturaleza transitoria de todas las cosas. Así son también tus preocupaciones: reales pero cambiantes, presentes pero pasajeras. Obsérvalas y aprende a soltar."
+    },
+    {
+      "keyword": "tornado",
+      "symbolism": "Destrucción enfocada, giro del destino, cambio violento",
+      "colorTheme": [
+        "#71717a",
+        "#52525b",
+        "#3f3f46",
+        "#27272a"
+      ],
+      "interpretation": "Gira y señala con el dedo de Eolo lo que debe caer. Con precisión divina, arrastra solo aquello que ya estaba debilitado. No es crueldad sino necesidad: limpia el camino para lo que viene después. Si aparece en mis dominios, prepárate: un cambio rápido y total se aproxima, y resistirlo solo aumentaría el caos."
+    },
+    {
+      "keyword": "tierra",
+      "symbolism": "Fundamento, fertilidad, arraigo",
+      "colorTheme": [
+        "#92400e",
+        "#78350f",
+        "#451a03",
+        "#a16207"
+      ],
+      "interpretation": "Firme bajo tus pies, la tierra de Gea sostiene cada paso que das en tus visiones. Ella es origen y destino, la madre que todo lo acoge. Cuando pisas fuerte en mis reinos, reconoces tu conexión con lo tangible, con las raíces que te anclan. No temas este arraigo: sin tierra bajo tus pies, el vuelo más alto carece de sentido."
+    },
+    {
+      "keyword": "árbol",
+      "symbolism": "Crecimiento, conexión, sabiduría ancestral",
+      "colorTheme": [
+        "#166534",
+        "#14532d",
+        "#15803d",
+        "#16a34a"
+      ],
+      "interpretation": "Erguido entre dos mundos, sus raíces beben de las profundidades mientras sus ramas acarician las nubes. Yo te muestro este árbol ancestral para que comprendas tu propia naturaleza dual. Creces hacia la luz pero te nutres de la oscuridad. Deméter y las dríades susurran secretos milenarios a través de su corteza: escucha con atención."
+    },
+    {
+      "keyword": "suelo",
+      "symbolism": "Base, realidad, humildad",
+      "colorTheme": [
+        "#57534e",
+        "#44403c",
+        "#292524",
+        "#78716c"
+      ],
+      "interpretation": "Caminas sobre él sin pensarlo, pero en sueños cobra importancia divina. Es tu recordatorio de que toda construcción necesita cimientos sólidos. Cuando aparece en tus visiones nocturnas, pregúntate: ¿estoy pisando tierra firme o construyendo castillos en el aire? Gea te observa y espera tu respuesta."
+    },
+    {
+      "keyword": "campo",
+      "symbolism": "Expansión, potencial, trabajo fértil",
+      "colorTheme": [
+        "#84cc16",
+        "#65a30d",
+        "#4d7c0f",
+        "#a3e635"
+      ],
+      "interpretation": "Abierto y vasto se extiende ante ti, lleno de promesas sin cosechar. Los campos que pinto en tus sueños son lienzos de posibilidades donde cada semilla puede florecer. Deméter bendice esta tierra fértil, recordándote que el potencial sin acción queda estéril. Cultiva lo que deseas ver crecer."
+    },
+    {
+      "keyword": "valle",
+      "symbolism": "Refugio, introspección, fertilidad protegida",
+      "colorTheme": [
+        "#065f46",
+        "#047857",
+        "#059669",
+        "#10b981"
+      ],
+      "interpretation": "Entre montañas descansa este refugio verde que te ofrezco. Aquí fluyen arroyos de claridad y crecen jardines de paz interior. Descender al valle en sueños no es retroceso sino sabiduría: a veces necesitas alejarte de las cumbres para recuperar fuerzas. En su abrazo protector, encontrarás renovación que las alturas nunca podrían darte."
+    },
+    {
+      "keyword": "luna",
+      "symbolism": "Intuición, ciclos, misterio femenino",
+      "colorTheme": [
+        "#e2e8f0",
+        "#cbd5e1",
+        "#94a3b8",
+        "#f1f5f9"
+      ],
+      "interpretation": "Selene cabalga plateada sobre tus sueños, hermana de mi reino nocturno. Sus fases te recuerdan que todo cambia en ciclos perfectos: crecimiento y mengua, plenitud y vacío. Cuando ella ilumina tus visiones, despierta tu intuición más profunda. No busques respuestas en la lógica del día; la luna habla el idioma de los presentimientos y las mareas interiores."
+    },
+    {
+      "keyword": "estrella",
+      "symbolism": "Guía, esperanza, destino",
+      "colorTheme": [
+        "#fef3c7",
+        "#fde68a",
+        "#fcd34d",
+        "#fbbf24"
+      ],
+      "interpretation": "Puntos de luz eterna titilan en el manto de Nyx. Cada estrella es una promesa, un sueño aún no cumplido que brilla para guiarte. Los antiguos navegantes confiaban en ellas para encontrar su camino; tú también puedes. Cuando aparecen en mis dominios, señalan tu norte verdadero. Síguelas."
+    },
+    {
+      "keyword": "oscuridad",
+      "symbolism": "Lo desconocido, potencial, misterio",
+      "colorTheme": [
+        "#0f172a",
+        "#1e293b",
+        "#334155",
+        "#475569"
+      ],
+      "interpretation": "Nyx extiende su manto sobre ti, y temes lo que no puedes ver. Pero yo, guardián de estas sombras, te revelo su secreto: la oscuridad no es ausencia sino presencia. Aquí habita todo lo que aún no ha nacido, todo lo que espera ser descubierto. Abraza estas tinieblas sagradas; son el útero donde germinan tus transformaciones más profundas."
+    },
+    {
+      "keyword": "oscuro",
+      "symbolism": "Lo desconocido, potencial, misterio",
+      "colorTheme": [
+        "#0f172a",
+        "#1e293b",
+        "#334155",
+        "#475569"
+      ],
+      "interpretation": "Nyx extiende su manto sobre ti, y temes lo que no puedes ver. Pero yo, guardián de estas sombras, te revelo su secreto: la oscuridad no es ausencia sino presencia. Aquí habita todo lo que aún no ha nacido, todo lo que espera ser descubierto. Abraza estas tinieblas sagradas; son el útero donde germinan tus transformaciones más profundas."
+    },
+    {
+      "keyword": "pez",
+      "symbolism": "Fluidez emocional, fertilidad, profundidades del inconsciente",
+      "colorTheme": [
+        "#06b6d4",
+        "#0891b2",
+        "#0e7490",
+        "#22d3ee"
+      ],
+      "interpretation": "Nadan sin esfuerzo en las aguas profundas de tu psique. Poseidón los envía como mensajeros de las corrientes emocionales que fluyen bajo la superficie de tu consciencia. Cuando aparecen brillando en tus visiones, te invitan a sumergirte más hondo, a explorar esas profundidades donde habitan verdades que la mente despierta nunca alcanza."
+    },
+    {
+      "keyword": "sol",
+      "symbolism": "Vitalidad, claridad, consciencia plena",
+      "colorTheme": [
+        "#fbbf24",
+        "#f59e0b",
+        "#d97706",
+        "#fcd34d"
+      ],
+      "interpretation": "Helios conduce su carro dorado incluso en el reino de los sueños. Su luz es consciencia pura, verdad sin velos. Cuando el sol irrumpe en tus visiones nocturnas, algo está siendo iluminado que antes permanecía oculto. Apolo te concede su claridad: observa bien qué revela su resplandor implacable."
+    },
+    {
+      "keyword": "brillo",
+      "symbolism": "Revelación, belleza, atención divina",
+      "colorTheme": [
+        "#fef3c7",
+        "#fde68a",
+        "#fcd34d",
+        "#fed7aa"
+      ],
+      "interpretation": "Algo resplandece y captura tu mirada en la penumbra onírica. No es accidente: yo dirijo tu atención hacia aquello que merece ser contemplado. El brillo señala tesoros ocultos, verdades que exigen ser reconocidas. Cuando algo centellea en mis reinos, acércate sin temor. Los dioses marcan así lo sagrado."
+    },
+    {
+      "keyword": "resplandor",
+      "symbolism": "Gloria, manifestación divina, epifanía",
+      "colorTheme": [
+        "#fef9c3",
+        "#fef08a",
+        "#fde047",
+        "#facc15"
+      ],
+      "interpretation": "Más intenso que el brillo, más absoluto que la luz: es la presencia divina haciéndose visible. Cuando este resplandor inunda tus sueños, los dioses mismos se manifiestan. Atenea, Apolo, Afrodita... cualquiera de los inmortales podría estar bendiciendo tu visión. Arrodíllate en reverencia o álzate en gloria; el resplandor transforma todo lo que toca."
+    },
+    {
+      "keyword": "amanecer",
+      "symbolism": "Nuevo comienzo, esperanza, transición",
+      "colorTheme": [
+        "#fef3c7",
+        "#fed7aa",
+        "#fdba74",
+        "#fb923c"
+      ],
+      "interpretation": "Eos pinta el horizonte con dedos rosados, anunciando el fin de mi dominio nocturno. Pero incluso en sueños, el amanecer porta su mensaje de renovación. Lo que fue oscuro se vuelve visible; lo que parecía perdido encuentra camino. Este momento liminal entre noche y día te promete: siempre hay un nuevo comienzo esperando tras la oscuridad más larga."
+    },
+    {
+      "keyword": "día",
+      "symbolism": "Actividad, consciencia, claridad",
+      "colorTheme": [
+        "#fef3c7",
+        "#fef9c3",
+        "#fefce8",
+        "#fde68a"
+      ],
+      "interpretation": "Curioso que sueñes con el día, cuando habitas mi reino nocturno. Pero comprendo el mensaje: añoras claridad, acción, la certeza que trae la luz solar. Helios te escucha. Quizá sea momento de despertar de alguna larga noche del alma, de pasar de la contemplación a la acción. El día te llama desde más allá del sueño."
+    },
+    {
+      "keyword": "rayo",
+      "symbolism": "Poder súbito, revelación instantánea, ira divina",
+      "colorTheme": [
+        "#eab308",
+        "#ca8a04",
+        "#a16207",
+        "#facc15"
+      ],
+      "interpretation": "¡El rayo de Zeus parte el cielo de tus visiones! Poder absoluto e instantáneo que no puede ser ignorado ni resistido. Cuando cae en tus sueños, anuncia cambios súbitos y revelaciones fulminantes. Lo que el rayo destruye necesitaba ser eliminado; lo que ilumina en su destello merece toda tu atención. Tiembla o regocíjate: los dioses han hablado."
+    },
+    {
+      "keyword": "vuelo",
+      "symbolism": "Liberación, perspectiva superior, trascendencia",
+      "colorTheme": [
+        "#bae6fd",
+        "#7dd3fc",
+        "#38bdf8",
+        "#0ea5e9"
+      ],
+      "interpretation": "Alzarse sobre las limitaciones terrenales es el anhelo más antiguo de tu especie. En mis dominios te concedo este don: volar sin alas, flotar sin esfuerzo. Es tu espíritu recordando que no perteneces solo a la tierra. Ícaro voló demasiado cerca del sol, pero tú... tú puedes navegar estas corrientes oníricas con sabiduría que él nunca tuvo."
+    },
+    {
+      "keyword": "flotar",
+      "symbolism": "Ligereza, desapego, suspensión entre estados",
+      "colorTheme": [
+        "#e0f2fe",
+        "#dbeafe",
+        "#bfdbfe",
+        "#93c5fd"
+      ],
+      "interpretation": "Ni caes ni te elevas; simplemente existes en este estado de gracia suspendida. Flotar en sueños es rendirse al flujo sin resistencia ni afán. Te muestro esta ingravidez para que aprendas el arte del desapego. No todo requiere esfuerzo; a veces, la mayor maestría está en permitir que las corrientes te lleven."
+    },
+    {
+      "keyword": "alas",
+      "symbolism": "Libertad potencial, aspiración, herramientas de trascendencia",
+      "colorTheme": [
+        "#f1f5f9",
+        "#e2e8f0",
+        "#cbd5e1",
+        "#94a3b8"
+      ],
+      "interpretation": "Hermes las porta en sus sandalias, Nike las despliega en victoria. Cuando brotan de tus hombros en mis reinos, es señal clara: posees los medios para elevarte. Las alas no son solo para escapar sino para alcanzar nuevas alturas. ¿Las usarás para huir o para ascender? La elección, soñador, siempre fue tuya."
+    },
+    {
+      "keyword": "espacio",
+      "symbolism": "Vastedad, posibilidad infinita, vacío fértil",
+      "colorTheme": [
+        "#0f172a",
+        "#1e1b4b",
+        "#312e81",
+        "#3730a3"
+      ],
+      "interpretation": "Más allá del cielo de Urano se extiende la inmensidad cósmica. Cuando sueñas con el espacio infinito, tu alma reconoce su verdadera escala. No eres pequeño ante esta vastedad; eres parte de ella. Cada átomo tuyo fue forjado en el corazón de estrellas antiguas. El vacío no te asusta; te llama a casa."
+    },
+    {
+      "keyword": "cosmos",
+      "symbolism": "Orden universal, armonía cósmica, totalidad",
+      "colorTheme": [
+        "#1e1b4b",
+        "#312e81",
+        "#4c1d95",
+        "#5b21b6"
+      ],
+      "interpretation": "Orden perfecto emergiendo del caos primordial. El cosmos que contemplas en sueños es el gran tapiz donde cada hilo tiene sentido. Zeus y los olímpicos establecieron este orden, pero tú también eres tejedor. Cada acción tuya, cada sueño, cada pensamiento: todos son hebras en esta magnificencia cósmica."
+    },
+    {
+      "keyword": "galaxia",
+      "symbolism": "Comunidad cósmica, distancia y conexión, espiral evolutiva",
+      "colorTheme": [
+        "#6366f1",
+        "#4f46e5",
+        "#4338ca",
+        "#818cf8"
+      ],
+      "interpretation": "Espirales de luz y materia danzando en el vacío eterno. Miles de millones de estrellas unidas en ballet gravitacional. Cuando contemplas galaxias en tus visiones, comprendes que la soledad es ilusión. Todo está conectado en danzas tan vastas que los mortales apenas pueden concebirlas. Tú también giras en tu propia espiral evolutiva."
+    },
+    {
+      "keyword": "planeta",
+      "symbolism": "Hogar, mundo individual, ecosistema personal",
+      "colorTheme": [
+        "#22c55e",
+        "#16a34a",
+        "#15803d",
+        "#10b981"
+      ],
+      "interpretation": "Orbes suspendidos en el éter, cada uno un mundo completo con sus propias leyes. Soñar con planetas te recuerda que tú también eres un mundo: completo, autosuficiente, orbitando tu propia estrella interior. Gea te muestra que no necesitas ser universo entero para ser íntegro. Ser planeta basta."
+    },
+    {
+      "keyword": "universo",
+      "symbolism": "Totalidad absoluta, todo lo que existe, consciencia máxima",
+      "colorTheme": [
+        "#1e1b4b",
+        "#581c87",
+        "#6b21a8",
+        "#7c3aed"
+      ],
+      "interpretation": "Todo lo que fue, es y será contenido en un solo concepto imposible. Cuando el universo entero pulsa en tus sueños, has tocado el pensamiento de los dioses primordiales. Caos y Nyx conocen este secreto: tú no estás en el universo, tú eres el universo observándose a sí mismo. Despierta a esta verdad vertiginosa."
+    },
+    {
+      "keyword": "astronauta",
+      "symbolism": "Explorador de lo desconocido, valentía ante el vacío, pionero",
+      "colorTheme": [
+        "#e2e8f0",
+        "#cbd5e1",
+        "#94a3b8",
+        "#64748b"
+      ],
+      "interpretation": "Protegido apenas por frágil traje, flotas en la inmensidad que debería destruirte pero no lo hace. El astronauta en tus sueños eres tú mismo: explorador valiente de territorios interiores tan vastos y peligrosos como el espacio exterior. Cada noche que duermes, te aventuras donde pocos se atreven a mirar."
+    },
+    {
+      "keyword": "tiempo",
+      "symbolism": "Flujo inexorable, cambio, medida de existencia",
+      "colorTheme": [
+        "#64748b",
+        "#475569",
+        "#334155",
+        "#1e293b"
+      ],
+      "interpretation": "Cronos devora a sus hijos sin piedad ni pausa. El tiempo que sientes en sueños fluye diferente: un segundo puede ser eternidad, años pasan en un parpadeo. Te muestro esta fluidez para liberarte de su tiranía despierta. El tiempo es señor solo si le concedes ese poder. Aquí, en mis dominios, tú decides su velocidad."
+    },
+    {
+      "keyword": "pasado",
+      "symbolism": "Memoria, lecciones, raíces",
+      "colorTheme": [
+        "#78716c",
+        "#57534e",
+        "#44403c",
+        "#a8a29e"
+      ],
+      "interpretation": "Lo que fue sigue vivo en las cámaras de Mnemósine. Visitar el pasado en sueños no es nostalgia sino arqueología sagrada: excavas recuerdos buscando tesoros olvidados y lecciones sin aprender. No puedes cambiarlo pero sí puedes comprenderlo. El pasado no es prisión; es fundamento sobre el cual te eriges."
+    },
+    {
+      "keyword": "futuro",
+      "symbolism": "Posibilidad, esperanza, ansiedad por venir",
+      "colorTheme": [
+        "#a5f3fc",
+        "#67e8f9",
+        "#22d3ee",
+        "#06b6d4"
+      ],
+      "interpretation": "Las Moiras tejen destinos pero dejan hilos sueltos para tu libre albedrío. Soñar con el futuro no es profecía sino proyección: tus miedos y esperanzas pintando escenarios posibles. Apolo concede visiones a veces, pero recuerda: el futuro más poderoso es aquel que construyes despierto, acción tras acción, elección tras elección."
+    },
+    {
+      "keyword": "eternidad",
+      "symbolism": "Infinitud temporal, inmortalidad, trascendencia del tiempo",
+      "colorTheme": [
+        "#fef3c7",
+        "#fde68a",
+        "#fcd34d",
+        "#fef08a"
+      ],
+      "interpretation": "Los dioses conocemos este estado: existir fuera del flujo temporal que aprisiona a los mortales. Cuando sientes la eternidad en sueños, tocas nuestra naturaleza divina. No hay prisa aquí, ni urgencia. Solo el ahora perpetuo, el momento que nunca termina. Es aterrador y liberador a la vez: ser sin principio ni fin."
+    },
+    {
+      "keyword": "edad",
+      "symbolism": "Maduración, ciclo vital, sabiduría acumulada",
+      "colorTheme": [
+        "#92400e",
+        "#78350f",
+        "#a16207",
+        "#ca8a04"
+      ],
+      "interpretation": "Titán tras titán, era tras era, todo envejece. Pero envejecer no es solo decaer; es acumular capas de experiencia como corteza de roble milenario. Cuando sueñas con edades diferentes, exploras versiones temporales de ti mismo. Honra tanto al niño que fuiste como al anciano que serás. Ambos habitan en ti ahora."
     }
   ]
 }

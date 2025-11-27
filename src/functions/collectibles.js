@@ -10,110 +10,122 @@ class AchievementSystem {
     return [
       {
         id: 'achievement_water',
-        name: 'Explorador de las Profundidades',
+        name: 'Hijo de Poseidón',
         keywords: ['agua', 'mar', 'océano', 'río', 'lluvia', 'nadar', 'pileta', 'lago', 'playa', 'ola'],
         rarity: 'común',
-        description: 'Exploraste las profundidades acuáticas en tus sueños',
+        description: 'Las aguas profundas reconocieron en ti a un igual',
+        hint: 'Las corrientes llaman a quienes no temen sumergirse',
         symbol: '/water.svg',
         color: '#38bdf8'
       },
       {
         id: 'achievement_fire',
-        name: 'Dominador de las Llamas',
+        name: 'Llama Inextinguible',
         keywords: ['fuego', 'llama', 'calor', 'quemar', 'incendio', 'fogata', 'hoguera', 'brasa'],
         rarity: 'común',
-        description: 'El fuego ardió en tus sueños sin quemarte',
+        description: 'Hefesto reconoció tu espíritu ardiente',
+        hint: 'Solo quienes danzan con el calor conocen su secreto',
         symbol: '/fire.svg',
         color: '#ef4444'
       },
       {
         id: 'achievement_wind',
-        name: 'Jinete de las Tormentas',
-        keywords: ['viento', 'aire', 'brisa', 'tormenta', 'volar', 'cielo', 'nube', 'soplo', 'huracán', 'tornado'],
+        name: 'Elegido de Eolo',
+        keywords: ['viento', 'aire', 'brisa', 'tormenta', 'volar', 'cielo', 'nube', 'tornado', 'huracán'],
         rarity: 'común',
-        description: 'Cabalgaste el viento en tu mundo onírico',
+        description: 'Los vientos te aceptaron como uno de los suyos',
+        hint: 'Escucha el susurro invisible que mueve el mundo',
         symbol: '/wind.svg',
         color: '#a5f3fc'
       },
       {
         id: 'achievement_earth',
-        name: 'Guardián de la Tierra',
-        keywords: ['tierra', 'montaña', 'roca', 'arena', 'bosque', 'árbol', 'piedra', 'suelo', 'campo', 'valle'],
+        name: 'Bendecido por Gea',
+        keywords: ['tierra', 'montaña', 'bosque', 'árbol', 'suelo', 'campo', 'valle'],
         rarity: 'común',
-        description: 'La tierra te ancló firmemente en tus sueños',
+        description: 'La tierra madre te acogió en su abrazo eterno',
+        hint: 'Tus raíces se hunden más profundo de lo que imaginas',
         symbol: '/earth.svg',
         color: '#92400e'
       },
       {
         id: 'achievement_night',
-        name: 'Guardián de la Noche',
+        name: 'Discípulo de Nyx',
         keywords: ['noche', 'luna', 'estrella', 'oscuridad', 'medianoche', 'oscuro'],
         rarity: 'rara',
-        description: 'La noche te reveló sus secretos más profundos',
+        description: 'Las tinieblas sagradas te revelaron sus misterios ancestrales',
+        hint: 'Lo que brilla en la oscuridad solo se muestra a los valientes',
         symbol: '/moon.svg',
         color: '#312e81'
       },
       {
         id: 'achievement_animal',
-        name: 'Comunión Animal',
-        keywords: ['perro', 'gato', 'pájaro', 'lobo', 'serpiente', 'animal', 'pez', 'caballo', 'león', 'tigre'],
+        name: 'Espíritu Totémico',
+        keywords: ['perro', 'gato', 'pájaro', 'lobo', 'serpiente', 'animal', 'pez', 'caballo', 'león', 'tigre', 'águila', 'búho', 'conejo', 'ciervo', 'delfín', 'elefante', 'jirafa', 'oso', 'tortuga', 'zorro', 'mariposa'],
         rarity: 'rara',
-        description: 'Un espíritu animal te eligió como compañero',
+        description: 'Un guardián salvaje te eligió como hermano de manada',
+        hint: 'La sabiduría antigua habla con colmillos, garras y alas',
         symbol: '/animal.svg',
         color: '#fbbf24'
       },
       {
         id: 'achievement_light',
-        name: 'Portador de Luz',
+        name: 'Portador del Alba',
         keywords: ['luz', 'sol', 'brillo', 'resplandor', 'amanecer', 'día', 'rayo'],
         rarity: 'rara',
-        description: 'Trajiste la luz a los rincones oscuros de tus sueños',
+        description: 'Helios te concedió su resplandor divino',
+        hint: 'Donde todos ven oscuridad, tú traes el amanecer',
         symbol: '/light.svg',
         color: '#fde68a'
       },
       {
         id: 'achievement_shadow',
-        name: 'Caminante de Sombras',
-        keywords: ['sombra', 'oscuridad', 'negro', 'tiniebla', 'penumbra'],
+        name: 'Señor de las Sombras',
+        keywords: ['sombra', 'oscuridad', 'negro', 'tiniebla', 'penumbra', 'oscuro'],
         rarity: 'épica',
-        description: 'Las sombras te revelaron sus misterios ancestrales',
+        description: 'Caminaste por el reino donde la luz se rinde',
+        hint: 'Solo enfrentando tu propia sombra encontrarás este poder',
         symbol: '/dark.svg',
         color: '#1e293b'
       },
       {
         id: 'achievement_flight',
-        name: 'Maestro del Vuelo',
-        keywords: ['volar', 'vuelo', 'flotando', 'elevarse', 'alas', 'cielo'],
+        name: 'Alas de Ícaro Renovadas',
+        keywords: ['volar', 'vuelo', 'flotar', 'alas', 'cielo', 'volaba', 'volando', 'volé'],
         rarity: 'épica',
-        description: 'Conquistaste los cielos sin límites',
+        description: 'Conquistaste los cielos sin temer la caída',
+        hint: 'Ícaro cayó por arrogancia; tú ascenderás con sabiduría',
         symbol: '/sky.svg',
         color: '#a5f3fc'
       },
       {
         id: 'achievement_elements',
-        name: 'Maestro de los Elementos',
+        name: 'Avatar de los Cuatro Elementos',
         keywords: ['agua', 'fuego', 'viento', 'tierra'],
         requiredKeywords: 4,
         rarity: 'legendaria',
-        description: '¡Dominaste todos los elementos en un solo sueño!',
+        description: 'Los cuatro elementos se inclinaron ante tu dominio absoluto',
+        hint: 'Agua, fuego, tierra y aire... el equilibrio está en la unión',
         symbol: '/maestro.svg',
         color: '#fbbf24'
       },
       {
         id: 'achievement_cosmic',
-        name: 'Viajero Cósmico',
+        name: 'Habitante del Éter',
         keywords: ['espacio', 'cosmos', 'galaxia', 'planeta', 'estrella', 'universo', 'astronauta'],
         rarity: 'legendaria',
-        description: 'Trascendiste las fronteras del universo conocido',
+        description: 'Trascendiste los límites del mundo mortal',
+        hint: 'Más allá de las nubes yace la verdadera inmensidad',
         symbol: '/space.svg',
         color: '#6366f1'
       },
       {
         id: 'achievement_time',
-        name: 'Tejedor del Tiempo',
+        name: 'Liberado de Cronos',
         keywords: ['tiempo', 'reloj', 'pasado', 'futuro', 'eternidad', 'edad'],
         rarity: 'legendaria',
-        description: 'El tiempo se doblegó ante tu voluntad',
+        description: 'Escapaste de las cadenas del tiempo lineal',
+        hint: 'El pasado y el futuro son ilusiones; solo el ahora es eterno',
         symbol: '/time.svg',
         color: '#fde68a'
       }
@@ -348,7 +360,7 @@ function renderAchievementGallery() {
       <div class="achievement-rarity-badge">${achievement.rarity.toUpperCase()}</div>
       <h3 class="achievement-title">${achievement.unlocked ? achievement.name : 'Logro Bloqueado'}</h3>
       <p class="achievement-description" style="margin-bottom: 0;">${achievement.unlocked ? achievement.description : 'Sigue explorando tus sueños para desbloquear este logro.'}</p>
-      ${!achievement.unlocked ? `<p class="achievement-hint">💡 Sueña con: ${achievement.keywords.slice(0, 3).join(', ')}...</p>` : ''}
+      ${!achievement.unlocked ? `<p class="achievement-hint">💡 ${achievement.hint}</p>` : ''}
     `;
     
     achievementInner.appendChild(achievementSymbol);
