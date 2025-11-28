@@ -5,18 +5,18 @@
 ![Astro](https://img.shields.io/badge/Astro-4.0-orange?logo=astro)
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript)
 
-🌐 **[Ver Aplicación en Vivo](https://hipnos.netlify.app/)**
+**[Ver Aplicación en Vivo](https://hipnos.netlify.app/)**
 
-## ✨ Características
+## Características
 
-- **🎙️ Reconocimiento de Voz**: Narra tus sueños usando tu voz con integración de Deepgram y Web Speech API
-- **📖 Interpretación de Sueños**: Análisis automático basado en palabras clave y simbolismos
-- **💾 Archivo de Sueños**: Guarda y revisa tus interpretaciones anteriores
-- **🏆 Sistema de Logros**: Desbloquea logros mientras exploras diferentes arquetipos oníricos
-- **🎨 Interfaz Mística**: Diseño inmersivo con animaciones de nubes y efectos de niebla
-- **📱 Diseño Responsivo**: Experiencia optimizada para dispositivos móviles y desktop
+- ** Reconocimiento de Voz**: Narra tus sueños usando tu voz con integración de Deepgram y Web Speech API
+- ** Interpretación de Sueños**: Análisis automático basado en palabras clave y simbolismos
+- ** Archivo de Sueños**: Guarda y revisa tus interpretaciones anteriores
+- ** Sistema de Logros**: Desbloquea logros mientras exploras diferentes arquetipos oníricos
+- ** Interfaz Mística**: Diseño inmersivo con animaciones de nubes y efectos de niebla
+- ** Diseño Responsivo**: Experiencia optimizada para dispositivos móviles y desktop
 
-## 🎮 Uso
+## Uso
 
 ### Interpretación de Sueños
 
@@ -31,7 +31,7 @@
 - Visita la página de **"Logros"** para ver tu progreso
 - Cada logro tiene diferentes categorías temáticas (agua, fuego, animales, etc.)|   
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **[Astro](https://astro.build/)** - Framework web moderno
 - **[Deepgram SDK](https://deepgram.com/)** - Reconocimiento de voz
@@ -40,7 +40,7 @@
 - **LocalStorage** - Persistencia de datos
 - **CSS3** - Animaciones y estilos personalizados
 
-## 👤 Autor
+## Autor
 
 **Franco Rigante**
 
@@ -48,4 +48,4 @@
 
 ---
 
-*"Yo, guardián de los sueños, interpreto tus visiones nocturnas"* 🌙✨
+*"Yo, guardián de los sueños, interpreto tus visiones nocturnas"*
