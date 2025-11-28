@@ -1,4 +1,4 @@
-# 🌙 Hipnos
+# Hipnos
 
 **Hipnos** es una aplicación web artística e interactiva para explorar e interpretar sueños. Inspirada en el dios griego del sueño, esta aplicación te permite narrar tus visiones nocturnas y recibir interpretaciones místicas basadas en simbolismos antiguos.
 
