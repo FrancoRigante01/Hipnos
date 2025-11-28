@@ -7,6 +7,16 @@
 
 **[Ver Aplicación en Vivo](https://hipnos.netlify.app/)**
 
+## Capturas de Pantalla
+
+<div align="center">
+  <img src="public/Captura.PNG" alt="Interfaz principal de Hipnos" width="800"/>
+  <p><em>Interfaz principal para interpretar sueños</em></p>
+  
+  <img src="public/Captura2.PNG" alt="Galería de logros" width="800"/>
+  <p><em>Sistema de logros y colección de arquetipos</em></p>
+</div>
+
 ## Características
 
 - ** Reconocimiento de Voz**: Narra tus sueños usando tu voz con integración de Deepgram y Web Speech API
