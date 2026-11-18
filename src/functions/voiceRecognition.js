@@ -1,5 +1,5 @@
 // Sistema de reconocimiento de voz
-import { DEEPGRAM_CONFIG, isDeepgramConfigured } from '../config/deepgram.js';
+import { DEEPGRAM_CONFIG, getDeepgramToken } from '../config/deepgram.js';
 
 let recognition = null;
 let isListening = false;
@@ -21,7 +21,7 @@ function initVoiceRecognition() {
   setupModeSelector();
 
   // Determinar si usar Deepgram o Web Speech API
-  const shouldUseDeepgram = (isMobile || isFirefox) && isDeepgramConfigured();
+  const shouldUseDeepgram = isMobile || isFirefox;
   
   if (shouldUseDeepgram) {
     useDeepgram = true;
@@ -36,11 +36,9 @@ function initVoiceRecognition() {
   if (!SpeechRecognition) {
     console.error('El navegador no soporta Web Speech API');
     
-    // Si Deepgram está disponible, usarlo como fallback
-    if (isDeepgramConfigured()) {
-      useDeepgram = true;
-      return initDeepgramRecognition();
-    }
+    // Deepgram como fallback si el navegador no tiene Web Speech API
+    useDeepgram = true;
+    return initDeepgramRecognition();
     
     // Si no hay ninguna opción, mostrar advertencia y usar solo texto
     const browserWarning = document.getElementById('browserWarning');
@@ -254,6 +252,17 @@ async function startDeepgramListening() {
   const transcriptionText = document.getElementById('transcriptionText');
   const interpretBtn = document.getElementById('interpretBtn');
 
+  let accessToken;
+  try {
+    accessToken = await getDeepgramToken();
+  } catch (error) {
+    console.error('Error obteniendo token de Deepgram:', error);
+    if (typeof showSnackbar === 'function') {
+      showSnackbar('El servicio de voz no está disponible en este momento.');
+    }
+    return;
+  }
+
   try {
     // Solicitar acceso al micrófono
     audioStream = await navigator.mediaDevices.getUserMedia({ audio: true });
@@ -267,7 +276,7 @@ async function startDeepgramListening() {
     // Crear WebSocket a Deepgram
     const wsUrl = `wss://api.deepgram.com/v1/listen?model=${DEEPGRAM_CONFIG.model}&language=${DEEPGRAM_CONFIG.language}&smart_format=true&punctuate=true&interim_results=true&endpointing=300`;
     
-    deepgramSocket = new WebSocket(wsUrl, ['token', DEEPGRAM_CONFIG.apiKey]);
+    deepgramSocket = new WebSocket(wsUrl, ['bearer', accessToken]);
 
     deepgramSocket.onopen = () => {
 

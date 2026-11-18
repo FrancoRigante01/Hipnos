@@ -26,6 +26,66 @@
 - ** Interfaz Mística**: Diseño inmersivo con animaciones de nubes y efectos de niebla
 - ** Diseño Responsivo**: Experiencia optimizada para dispositivos móviles y desktop
 
+## Instalación y ejecución local
+
+### Requisitos
+
+- **Node.js 18.14.1 o superior** (recomendado: 20 LTS)
+- **npm** (incluido con Node.js)
+- **Netlify CLI** (opcional, solo para probar la búsqueda de voz de Deepgram en local)
+
+### 1. Clonar el repositorio
+
+```bash
+git clone https://github.com/FrancoRigante01/Hipnos.git
+cd Hipnos
+```
+
+### 2. Instalar dependencias
+
+```bash
+npm install
+```
+
+### 3. Configurar variables de entorno (opcional)
+
+Crea un archivo `.env` en la raíz del proyecto:
+
+```env
+DEEPGRAM_API_KEY=tu_api_key
+```
+
+La clave es **opcional**: sin ella la interpretación por texto y el reconocimiento de voz del navegador (Chrome, Edge) funcionan igual. Deepgram se usa en Firefox y en dispositivos móviles. La clave se usa solo en el servidor (función de Netlify) y nunca se envía al navegador. No la subas al repositorio: `.env` ya está en `.gitignore`.
+
+### 4. Levantar la aplicación
+
+Hay dos formas:
+
+**Desarrollo rápido** (interpretación por texto y voz del navegador):
+
+```bash
+npm run dev
+```
+
+Abre `http://localhost:4321` en el navegador.
+
+**Entorno completo con Netlify** (incluye la función que genera tokens de Deepgram):
+
+```bash
+npx netlify dev
+```
+
+Abre la URL que muestra la consola (por defecto `http://localhost:8888`). Este modo lee el `.env` automáticamente.
+
+> `npm run dev` no ejecuta las funciones de Netlify, así que el reconocimiento de voz con Deepgram no funcionará en ese modo.
+
+### Otros comandos
+
+```bash
+npm run build     # Genera la versión de producción en dist/
+npm run preview   # Sirve el build generado localmente
+```
+
 ## Uso
 
 ### Interpretación de Sueños

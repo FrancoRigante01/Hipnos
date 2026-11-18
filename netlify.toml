@@ -1,9 +1,10 @@
 [build]
   command = "npm run build"
   publish = "dist"
+  functions = "netlify/functions"
 
 [build.environment]
   NODE_VERSION = "18"
 
 # Variables de entorno (configurar en Netlify UI)
-# PUBLIC_DEEPGRAM_API_KEY = "tu_api_key"
+# DEEPGRAM_API_KEY = "tu_api_key"
