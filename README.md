@@ -10,6 +10,9 @@
 ## Capturas de Pantalla
 
 <div align="center">
+  <img src="public/Gif.gif" alt="Flujo de Hipnos: narrar un sueño, recibir la interpretación y desbloquear un logro" width="800"/>
+  <p><em>Flujo completo: narras tu sueño, recibes la interpretación y desbloqueas un logro</em></p>
+
   <img src="public/Captura.PNG" alt="Interfaz principal de Hipnos" width="800"/>
   <p><em>Interfaz principal para interpretar sueños</em></p>
   
@@ -109,6 +112,18 @@ npm run preview   # Sirve el build generado localmente
 - **Vanilla JavaScript** - Lógica de la aplicación
 - **LocalStorage** - Persistencia de datos
 - **CSS3** - Animaciones y estilos personalizados
+
+## Decisiones Técnicas
+
+### ¿Por qué Deepgram?
+
+El reconocimiento de voz del navegador (Web Speech API) funciona bien en Chrome y Edge, pero no es uniforme en el resto de los entornos: Firefox no la soporta y en móviles el comportamiento varía entre iOS y Android. Para que la narración de sueños funcione igual en todos los dispositivos, Hipnos usa un esquema híbrido:
+
+| Entorno | Motor de reconocimiento |
+|---|---|
+| Chrome / Edge (escritorio) | Web Speech API del navegador, sin dependencias externas |
+| Firefox y dispositivos móviles | Deepgram (streaming por WebSocket, modelo `nova-2` en español) |
+| Navegador sin Web Speech API | Deepgram como fallback |
 
 ## Autor
 
