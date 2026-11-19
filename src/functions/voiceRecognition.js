@@ -269,7 +269,9 @@ async function startDeepgramListening() {
     
     deepgramSocket = new WebSocket(wsUrl, ['bearer', accessToken]);
 
-    deepgramSocket.onopen = () => {
+    const socket = deepgramSocket;
+
+    socket.onopen = () => {
 
       // Configurar MediaRecorder para enviar audio
       mediaRecorder = new MediaRecorder(audioStream, {
@@ -277,8 +279,8 @@ async function startDeepgramListening() {
       });
 
       mediaRecorder.ondataavailable = (event) => {
-        if (event.data.size > 0 && deepgramSocket?.readyState === WebSocket.OPEN) {
-          deepgramSocket.send(event.data);
+        if (event.data.size > 0 && socket.readyState === WebSocket.OPEN) {
+          socket.send(event.data);
         }
       };
 
@@ -353,24 +355,30 @@ function stopDeepgramListening() {
   }
   listeningIndicator?.classList.add('hidden');
 
-  // Detener MediaRecorder
-  if (mediaRecorder && mediaRecorder.state !== 'inactive') {
-    mediaRecorder.stop();
-  }
-
-  // Cerrar WebSocket
-  if (deepgramSocket && deepgramSocket.readyState === WebSocket.OPEN) {
-    deepgramSocket.close();
-  }
-
-  // Detener stream de audio
-  if (audioStream) {
-    audioStream.getTracks().forEach(track => track.stop());
-    audioStream = null;
-  }
-
+  const recorder = mediaRecorder;
+  const socket = deepgramSocket;
+  const stream = audioStream;
   mediaRecorder = null;
   deepgramSocket = null;
+  audioStream = null;
+
+  const finish = () => {
+    stream?.getTracks().forEach(track => track.stop());
+    if (!socket) return;
+    if (socket.readyState === WebSocket.OPEN) {
+      socket.send(JSON.stringify({ type: 'CloseStream' }));
+      setTimeout(() => socket.close(), 3000);
+    } else {
+      socket.close();
+    }
+  };
+
+  if (recorder && recorder.state !== 'inactive') {
+    recorder.onstop = finish;
+    recorder.stop();
+  } else {
+    finish();
+  }
 }
 
 // Configurar selector de modo
