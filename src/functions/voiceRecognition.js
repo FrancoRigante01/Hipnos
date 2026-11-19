@@ -1,5 +1,5 @@
 // Sistema de reconocimiento de voz
-import { DEEPGRAM_CONFIG, getDeepgramToken } from '../config/deepgram.js';
+import { getDeepgramToken, getDeepgramWsUrl } from '../config/deepgram.js';
 
 let recognition = null;
 let isListening = false;
@@ -265,9 +265,7 @@ async function startDeepgramListening() {
     listeningIndicator?.classList.remove('hidden');
 
     // Crear WebSocket a Deepgram
-    const wsUrl = `wss://api.deepgram.com/v1/listen?model=${DEEPGRAM_CONFIG.model}&language=${DEEPGRAM_CONFIG.language}&smart_format=true&punctuate=true&interim_results=true&endpointing=300`;
-    
-    deepgramSocket = new WebSocket(wsUrl, ['bearer', accessToken]);
+    deepgramSocket = new WebSocket(getDeepgramWsUrl(), ['bearer', accessToken]);
 
     const socket = deepgramSocket;
 
