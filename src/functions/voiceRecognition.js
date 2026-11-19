@@ -39,15 +39,6 @@ function initVoiceRecognition() {
     // Deepgram como fallback si el navegador no tiene Web Speech API
     useDeepgram = true;
     return initDeepgramRecognition();
-    
-    // Si no hay ninguna opción, mostrar advertencia y usar solo texto
-    const browserWarning = document.getElementById('browserWarning');
-    if (browserWarning) {
-      browserWarning.classList.remove('hidden');
-    }
-    
-    switchToTextMode();
-    return false;
   }
 
   recognition = new SpeechRecognition();
