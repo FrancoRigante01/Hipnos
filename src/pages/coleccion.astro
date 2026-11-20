@@ -1,5 +1,7 @@
 ---
 import AchievementGallery from '../components/AchievementGallery.astro';
+
+const year = new Date().getFullYear();
 ---
 
 <!DOCTYPE html>
@@ -33,7 +35,7 @@ import AchievementGallery from '../components/AchievementGallery.astro';
     </main>
 
     <footer class="footer">
-      <small>© 2025 Franco Rigante</small>
+      <small>© {year} Franco Rigante</small>
     </footer>
   </div>
 

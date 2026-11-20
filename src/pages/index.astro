@@ -3,6 +3,8 @@ import DreamInput from '../components/DreamInput.astro';
 import DreamResult from '../components/DreamResult.astro';
 import DreamGallery from '../components/DreamGallery.astro';
 import FloatingCollectionButton from '../components/FloatingCollectionButton.astro';
+
+const year = new Date().getFullYear();
 ---
 
 <!DOCTYPE html>
@@ -38,7 +40,7 @@ import FloatingCollectionButton from '../components/FloatingCollectionButton.ast
     </main>
 
     <footer class="footer">
-      <small>© 2025 Franco Rigante</small>
+      <small>© {year} Franco Rigante</small>
     </footer>
   </div>
 
