@@ -1,5 +1,6 @@
 // Sistema de reconocimiento de voz
 import { getDeepgramToken, getDeepgramWsUrl } from '../config/deepgram.js';
+import { showSnackbar } from './ui.js';
 
 let recognition = null;
 let isListening = false;
@@ -130,9 +131,7 @@ function initVoiceRecognition() {
         break;
     }
     
-    if (typeof showSnackbar === 'function') {
-      showSnackbar(errorMessage);
-    }
+    showSnackbar(errorMessage);
     
     stopListening();
   };
@@ -248,9 +247,7 @@ async function startDeepgramListening() {
     accessToken = await getDeepgramToken();
   } catch (error) {
     console.error('Error obteniendo token de Deepgram:', error);
-    if (typeof showSnackbar === 'function') {
-      showSnackbar('El servicio de voz no está disponible en este momento.');
-    }
+    showSnackbar('El servicio de voz no está disponible en este momento.');
     return;
   }
 
@@ -319,9 +316,7 @@ async function startDeepgramListening() {
 
     deepgramSocket.onerror = (error) => {
       console.error('Error en Deepgram WebSocket:', error);
-      if (typeof showSnackbar === 'function') {
-        showSnackbar('Error de conexión con el servicio de voz');
-      }
+      showSnackbar('Error de conexión con el servicio de voz');
       stopDeepgramListening();
     };
   } catch (error) {
@@ -332,9 +327,7 @@ async function startDeepgramListening() {
       errorMessage = 'No se encontró ningún micrófono en tu dispositivo.';
     }
     
-    if (typeof showSnackbar === 'function') {
-      showSnackbar(errorMessage);
-    }
+    showSnackbar(errorMessage);
     
     stopDeepgramListening();
   }
