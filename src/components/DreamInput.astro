@@ -8,15 +8,15 @@
   
   <!-- Selector de modo -->
   <div class="mode-selector">
-    <button class="mode-btn active" id="voiceModeBtn" data-mode="voice">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <button class="mode-btn active" id="voiceModeBtn" data-mode="voice" aria-pressed="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M12 1C10.34 1 9 2.34 9 4V12C9 13.66 10.34 15 12 15C13.66 15 15 13.66 15 12V4C15 2.34 13.66 1 12 1Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M19 10V12C19 15.866 15.866 19 12 19C8.13401 19 5 15.866 5 12V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
       <span>Hablar</span>
     </button>
-    <button class="mode-btn" id="textModeBtn" data-mode="text">
-      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <button class="mode-btn" id="textModeBtn" data-mode="text" aria-pressed="false">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <path d="M17 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V7L17 3Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
         <path d="M9 9H15M9 13H15M9 17H13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </svg>
@@ -27,8 +27,8 @@
   <div class="input-wrapper">
     <!-- Botón de voz -->
     <button id="voiceBtn" class="voice-btn">
-      <div class="mystical-circle">
-        <div class="stars-container">
+      <div class="mystical-circle" aria-hidden="true">
+        <div class="stars-container" aria-hidden="true">
           <span class="star">✦</span>
           <span class="star">✧</span>
           <span class="star">✦</span>
@@ -38,7 +38,7 @@
         </div>
       </div>
       <div class="mic-icon-wrapper">
-        <svg class="mic-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="mic-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
           <path d="M12 1C10.34 1 9 2.34 9 4V12C9 13.66 10.34 15 12 15C13.66 15 15 13.66 15 12V4C15 2.34 13.66 1 12 1Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M19 10V12C19 15.866 15.866 19 12 19C8.13401 19 5 15.866 5 12V10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M12 19V23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -46,8 +46,8 @@
         </svg>
         <div class="ethereal-glow"></div>
       </div>
-      <span class="voice-btn-text" id="voiceBtnText">Narra tu sueño</span>
-      <div class="runes-circle">
+      <span class="voice-btn-text" id="voiceBtnText" aria-live="polite">Narra tu sueño</span>
+      <div class="runes-circle" aria-hidden="true">
         <span class="rune">◐</span>
         <span class="rune">☽</span>
         <span class="rune">◑</span>
@@ -72,7 +72,7 @@
       <textarea 
         id="dreamText" 
         class="dream-textarea" 
-        placeholder="Soñé que..."
+        placeholder="Soñé que..." aria-label="Escribe tu sueño"
         rows="6"
       ></textarea>
     </div>
@@ -81,19 +81,19 @@
     <div class="transcription-container hidden" id="transcriptionContainer">
       <div class="transcription-header">
         <span class="transcription-label">Tu relato</span>
-        <button class="clear-transcription" id="clearTranscription" title="Borrar">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <button class="clear-transcription" id="clearTranscription" title="Borrar" aria-label="Borrar transcripción">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
         </button>
       </div>
-      <div class="transcription-text" id="transcriptionText" contenteditable="true"></div>
+      <div class="transcription-text" id="transcriptionText" contenteditable="true" role="textbox" aria-multiline="true" aria-label="Relato del sueño"></div>
     </div>
     
     <!-- Botón de interpretación -->
     <button id="interpretBtn" class="interpret-btn hidden">
       <span class="btn-text">Revelar significado</span>
-      <span class="btn-icon">✨</span>
+      <span class="btn-icon" aria-hidden="true">✨</span>
     </button>
 
     <!-- Mensaje de compatibilidad -->

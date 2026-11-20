@@ -392,7 +392,9 @@ function setupModeSelector() {
     
     currentMode = 'voice';
     voiceModeBtn.classList.add('active');
+    voiceModeBtn.setAttribute('aria-pressed', 'true');
     textModeBtn.classList.remove('active');
+    textModeBtn.setAttribute('aria-pressed', 'false');
     
     // Mostrar/ocultar elementos
     voiceBtn?.classList.remove('hidden');
@@ -438,7 +440,9 @@ function switchToTextMode() {
   const interpretBtn = document.getElementById('interpretBtn');
   
   voiceModeBtn?.classList.remove('active');
+  voiceModeBtn?.setAttribute('aria-pressed', 'false');
   textModeBtn?.classList.add('active');
+  textModeBtn?.setAttribute('aria-pressed', 'true');
   
   // Detener reconocimiento si está activo
   if (isListening) {

@@ -4,6 +4,8 @@ export function showSnackbar(message) {
   if (!snackbar) {
     snackbar = document.createElement('div');
     snackbar.id = 'snackbar';
+    snackbar.setAttribute('role', 'status');
+    snackbar.setAttribute('aria-live', 'polite');
     snackbar.style.position = 'fixed';
     snackbar.style.bottom = '32px';
     snackbar.style.left = '50%';

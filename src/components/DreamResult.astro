@@ -2,12 +2,12 @@
 // Componente para mostrar el resultado de la interpretación
 ---
 
-<div id="dreamResult" class="dream-result-container hidden">
+<div id="dreamResult" class="dream-result-container hidden" role="region" aria-live="polite" aria-label="Resultado de la interpretación">
   <div class="result-background" id="resultBackground"></div>
   
   <div class="result-content">
     <div class="result-header">
-      <h3 class="result-keyword" id="resultKeyword"></h3>
+      <h3 class="result-keyword" id="resultKeyword" tabindex="-1"></h3>
       <p class="result-symbolism" id="resultSymbolism"></p>
     </div>
     
@@ -135,6 +135,10 @@
     margin-bottom: 1.5rem;
     padding-bottom: 1rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .result-keyword:focus {
+    outline: none;
   }
 
   .result-keyword {

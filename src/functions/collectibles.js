@@ -245,6 +245,8 @@ function showAchievementUnlockedAnimation(achievement) {
   if (!snackbar) {
     snackbar = document.createElement('div');
     snackbar.id = 'achievement-snackbar';
+    snackbar.setAttribute('role', 'status');
+    snackbar.setAttribute('aria-live', 'polite');
     snackbar.style.position = 'fixed';
     snackbar.style.bottom = '32px';
     snackbar.style.left = '50%';

@@ -58,6 +58,7 @@ function displayInterpretation(dreamText, interpretation) {
     // Aplicar estilo por defecto
     resultContainer.style.background = 'rgba(30, 41, 59, 0.5)';
     resultContainer.classList.remove('hidden');
+    resultKeyword.focus({ preventScroll: true });
 
     return null;
   }
@@ -78,6 +79,7 @@ function displayInterpretation(dreamText, interpretation) {
   }
 
   resultContainer.classList.remove('hidden');
+  resultKeyword.focus({ preventScroll: true });
 
   // Scroll suave al resultado
   setTimeout(() => {
