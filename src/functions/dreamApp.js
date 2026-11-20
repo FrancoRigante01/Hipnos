@@ -159,7 +159,9 @@ function loadGallery() {
     return;
   }
 
-  gallery.innerHTML = savedDreams.map(dream => {
+  gallery.replaceChildren();
+
+  savedDreams.forEach(dream => {
     const date = new Date(dream.date);
     const formattedDate = date.toLocaleDateString('es-ES', {
       day: 'numeric',
@@ -171,20 +173,43 @@ function loadGallery() {
       ? `linear-gradient(90deg, ${dream.colorTheme[0]}, ${dream.colorTheme[1]})`
       : 'linear-gradient(90deg, #6366f1, #8b5cf6)';
 
-    return `
-      <div class="dream-card" style="--card-color: ${gradient}">
-        <div class="card-header">
-          <h3 class="card-keyword">${dream.keyword}</h3>
-          <span class="card-date">${formattedDate}</span>
-        </div>
-        <p class="card-symbolism">${dream.symbolism}</p>
-        <p class="card-dream">${dream.dreamText}</p>
-        <div class="card-actions">
-          <button class="delete-btn" onclick="window.deleteDream(${dream.id})">Eliminar</button>
-        </div>
-      </div>
-    `;
-  }).join('');
+    const card = document.createElement('div');
+    card.className = 'dream-card';
+    card.style.setProperty('--card-color', gradient);
+
+    const header = document.createElement('div');
+    header.className = 'card-header';
+
+    const keyword = document.createElement('h3');
+    keyword.className = 'card-keyword';
+    keyword.textContent = dream.keyword;
+
+    const dateSpan = document.createElement('span');
+    dateSpan.className = 'card-date';
+    dateSpan.textContent = formattedDate;
+
+    header.append(keyword, dateSpan);
+
+    const symbolism = document.createElement('p');
+    symbolism.className = 'card-symbolism';
+    symbolism.textContent = dream.symbolism;
+
+    const dreamText = document.createElement('p');
+    dreamText.className = 'card-dream';
+    dreamText.textContent = dream.dreamText;
+
+    const actions = document.createElement('div');
+    actions.className = 'card-actions';
+
+    const deleteBtn = document.createElement('button');
+    deleteBtn.className = 'delete-btn';
+    deleteBtn.textContent = 'Eliminar';
+    deleteBtn.addEventListener('click', () => window.deleteDream(dream.id));
+
+    actions.appendChild(deleteBtn);
+    card.append(header, symbolism, dreamText, actions);
+    gallery.appendChild(card);
+  });
 }
 
 // Eliminar un sueño

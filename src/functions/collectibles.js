@@ -283,10 +283,16 @@ function showAchievementUnlockedAnimation(achievement) {
   
   const textDiv = document.createElement('div');
   textDiv.style.flex = '1';
-  textDiv.innerHTML = `
-    <div style="font-size: 0.75rem; opacity: 0.95; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.25rem;">¡Logro Desbloqueado!</div>
-    <div style="font-weight: 600; font-size: 1.1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.3);">${achievement.name}</div>
-  `;
+
+  const label = document.createElement('div');
+  label.style.cssText = 'font-size: 0.75rem; opacity: 0.95; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.25rem;';
+  label.textContent = '¡Logro Desbloqueado!';
+
+  const nameDiv = document.createElement('div');
+  nameDiv.style.cssText = 'font-weight: 600; font-size: 1.1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.3);';
+  nameDiv.textContent = achievement.name;
+
+  textDiv.append(label, nameDiv);
   snackbar.appendChild(textDiv);
 
   // Mostrar snackbar
@@ -356,12 +362,27 @@ function renderAchievementGallery() {
     
     const achievementInfo = document.createElement('div');
     achievementInfo.className = 'achievement-info';
-    achievementInfo.innerHTML = `
-      <div class="achievement-rarity-badge">${achievement.rarity.toUpperCase()}</div>
-      <h3 class="achievement-title">${achievement.unlocked ? achievement.name : 'Logro Bloqueado'}</h3>
-      <p class="achievement-description" style="margin-bottom: 0;">${achievement.unlocked ? achievement.description : 'Sigue explorando tus sueños para desbloquear este logro.'}</p>
-      ${!achievement.unlocked ? `<p class="achievement-hint">💡 ${achievement.hint}</p>` : ''}
-    `;
+    const rarityBadge = document.createElement('div');
+    rarityBadge.className = 'achievement-rarity-badge';
+    rarityBadge.textContent = achievement.rarity.toUpperCase();
+
+    const title = document.createElement('h3');
+    title.className = 'achievement-title';
+    title.textContent = achievement.unlocked ? achievement.name : 'Logro Bloqueado';
+
+    const description = document.createElement('p');
+    description.className = 'achievement-description';
+    description.style.marginBottom = '0';
+    description.textContent = achievement.unlocked ? achievement.description : 'Sigue explorando tus sueños para desbloquear este logro.';
+
+    achievementInfo.append(rarityBadge, title, description);
+
+    if (!achievement.unlocked) {
+      const hint = document.createElement('p');
+      hint.className = 'achievement-hint';
+      hint.textContent = `💡 ${achievement.hint}`;
+      achievementInfo.appendChild(hint);
+    }
     
     achievementInner.appendChild(achievementSymbol);
     achievementInner.appendChild(achievementInfo);
