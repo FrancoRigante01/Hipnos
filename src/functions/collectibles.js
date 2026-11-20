@@ -176,7 +176,7 @@ class AchievementSystem {
 
   // Verifica logros acumulativos basándose en el historial de sueños
   checkCumulativeAchievements() {
-    const savedDreams = JSON.parse(localStorage.getItem('dreamscape_dreams') || '[]');
+    const savedDreams = JSON.parse(localStorage.getItem('Hipnos_dreams') || '[]');
     const allDreamsText = savedDreams.map(d => d.dreamText.toLowerCase()).join(' ');
     const newAchievements = [];
 

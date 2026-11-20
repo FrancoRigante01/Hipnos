@@ -91,7 +91,7 @@ function displayInterpretation(dreamText, interpretation) {
 // Guardar sueño en LocalStorage
 function saveDream(dreamText, interpretation) {
   // Guardar el sueño
-  const savedDreams = JSON.parse(localStorage.getItem('dreamscape_dreams') || '[]');
+  const savedDreams = JSON.parse(localStorage.getItem('Hipnos_dreams') || '[]');
 
   const dreamEntry = {
     id: Date.now(),
@@ -104,7 +104,7 @@ function saveDream(dreamText, interpretation) {
   };
 
   savedDreams.unshift(dreamEntry);
-  localStorage.setItem('dreamscape_dreams', JSON.stringify(savedDreams));
+  localStorage.setItem('Hipnos_dreams', JSON.stringify(savedDreams));
 
   loadGallery();
 
@@ -152,7 +152,7 @@ function loadGallery() {
   const gallery = document.getElementById('dreamGallery');
   if (!gallery) return;
 
-  const savedDreams = JSON.parse(localStorage.getItem('dreamscape_dreams') || '[]');
+  const savedDreams = JSON.parse(localStorage.getItem('Hipnos_dreams') || '[]');
 
   if (savedDreams.length === 0) {
     gallery.innerHTML = '<p class="empty-message">Tu archivo está vacío, mortal. Comparte tus sueños conmigo y guardaré sus interpretaciones aquí.</p>';
@@ -189,9 +189,9 @@ function loadGallery() {
 
 // Eliminar un sueño
 window.deleteDream = function(id) {
-  const savedDreams = JSON.parse(localStorage.getItem('dreamscape_dreams') || '[]');
+  const savedDreams = JSON.parse(localStorage.getItem('Hipnos_dreams') || '[]');
   const filtered = savedDreams.filter(dream => dream.id !== id);
-  localStorage.setItem('dreamscape_dreams', JSON.stringify(filtered));
+  localStorage.setItem('Hipnos_dreams', JSON.stringify(filtered));
   loadGallery();
 };
 
@@ -207,7 +207,7 @@ function hideClearModal() {
 }
 
 function clearAllDreams() {
-  localStorage.removeItem('dreamscape_dreams');
+  localStorage.removeItem('Hipnos_dreams');
   loadGallery();
   hideClearModal();
 }
