@@ -1,4 +1,5 @@
 // Sistema de logros desbloqueables por palabras clave en sueños
+import { containsKeyword } from './keywordMatching.js';
 
 class AchievementSystem {
   constructor() {
@@ -155,7 +156,7 @@ class AchievementSystem {
       if (achievement.requiredKeywords) {
         // Logros especiales que necesitan múltiples keywords diferentes
         const matchedKeywords = achievement.keywords.filter(keyword => 
-          text.includes(keyword)
+          containsKeyword(text, keyword)
         );
         if (matchedKeywords.length >= achievement.requiredKeywords) {
           newAchievements.push(achievement);
@@ -163,7 +164,7 @@ class AchievementSystem {
       } else {
         // Logros normales (una keyword es suficiente)
         const hasKeyword = achievement.keywords.some(keyword => 
-          text.includes(keyword)
+          containsKeyword(text, keyword)
         );
         if (hasKeyword) {
           newAchievements.push(achievement);
@@ -189,7 +190,7 @@ class AchievementSystem {
       // Solo verificar logros que requieren múltiples keywords
       if (achievement.requiredKeywords) {
         const matchedKeywords = achievement.keywords.filter(keyword => 
-          allDreamsText.includes(keyword)
+          containsKeyword(allDreamsText, keyword)
         );
         
         if (matchedKeywords.length >= achievement.requiredKeywords) {

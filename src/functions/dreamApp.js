@@ -1,3 +1,5 @@
+import { containsKeyword } from './keywordMatching.js';
+
 // Cargar datos de sueños
 let dreamsData = [];
 
@@ -13,14 +15,10 @@ async function loadDreamsData() {
 
 // Buscar interpretación basada en keywords
 function findInterpretation(dreamText) {
-  const lowerText = dreamText.toLowerCase();
   const matches = [];
 
   for (const dream of dreamsData) {
-    // Buscar la keyword como palabra completa usando regex con delimitadores de palabra
-    const keyword = dream.keyword.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const regex = new RegExp(`\\b${keyword}\\b`, 'i');
-    if (regex.test(lowerText)) {
+    if (containsKeyword(dreamText, dream.keyword)) {
       matches.push(dream);
     }
   }
