@@ -75,6 +75,7 @@ const year = new Date().getFullYear();
         z-index: 0;
         background: radial-gradient(ellipse at 50% 20%, rgba(163, 148, 255, 0.15) 0%, rgba(0,0,0,0) 70%), radial-gradient(ellipse at 80% 80%, rgba(255, 215, 0, 0.08) 0%, rgba(0,0,0,0) 80%);
         opacity: 0.7;
+        will-change: opacity;
         animation: mistFloat 40s linear infinite alternate;
       }
 
@@ -90,67 +91,63 @@ const year = new Date().getFullYear();
         opacity: 0.7;
         filter: blur(3px);
         animation-timing-function: linear;
+        will-change: transform;
       }
       /* Formas SVG variadas para cada nube */
       .cloud1 {
         top: 8vh;
-        left: -600px;
         background: url('data:image/svg+xml;utf8,<svg width="600" height="220" xmlns="http://www.w3.org/2000/svg"><ellipse cx="150" cy="110" rx="120" ry="60" fill="white" opacity="0.13"/><ellipse cx="320" cy="90" rx="100" ry="50" fill="white" opacity="0.11"/><ellipse cx="480" cy="130" rx="110" ry="55" fill="white" opacity="0.09"/></svg>');
         animation: cloudMove1 70s linear infinite;
       }
       .cloud2 {
         top: 30vh;
-        left: -600px;
         background: url('data:image/svg+xml;utf8,<svg width="600" height="220" xmlns="http://www.w3.org/2000/svg"><ellipse cx="200" cy="100" rx="140" ry="70" fill="white" opacity="0.12"/><ellipse cx="400" cy="120" rx="90" ry="45" fill="white" opacity="0.10"/><ellipse cx="500" cy="80" rx="70" ry="35" fill="white" opacity="0.08"/></svg>');
         animation: cloudMove2 90s linear infinite;
         opacity: 0.5;
       }
       .cloud3 {
         top: 55vh;
-        left: -600px;
         background: url('data:image/svg+xml;utf8,<svg width="600" height="220" xmlns="http://www.w3.org/2000/svg"><ellipse cx="100" cy="120" rx="110" ry="55" fill="white" opacity="0.10"/><ellipse cx="300" cy="80" rx="130" ry="65" fill="white" opacity="0.09"/><ellipse cx="520" cy="140" rx="80" ry="40" fill="white" opacity="0.07"/></svg>');
         animation: cloudMove3 110s linear infinite;
         opacity: 0.4;
       }
       .cloud4 {
         top: 75vh;
-        left: -600px;
         background: url('data:image/svg+xml;utf8,<svg width="600" height="220" xmlns="http://www.w3.org/2000/svg"><ellipse cx="250" cy="100" rx="120" ry="60" fill="white" opacity="0.09"/><ellipse cx="400" cy="150" rx="100" ry="50" fill="white" opacity="0.07"/><ellipse cx="550" cy="80" rx="80" ry="40" fill="white" opacity="0.06"/></svg>');
         animation: cloudMove4 130s linear infinite;
         opacity: 0.3;
       }
       .cloud5 {
         top: 90vh;
-        left: -600px;
         background: url('data:image/svg+xml;utf8,<svg width="600" height="220" xmlns="http://www.w3.org/2000/svg"><ellipse cx="100" cy="110" rx="100" ry="50" fill="white" opacity="0.08"/><ellipse cx="300" cy="90" rx="120" ry="60" fill="white" opacity="0.07"/><ellipse cx="500" cy="130" rx="90" ry="45" fill="white" opacity="0.05"/></svg>');
         animation: cloudMove5 150s linear infinite;
         opacity: 0.25;
       }
       @keyframes cloudMove1 {
-        0% { left: -600px; }
-        100% { left: 100vw; }
+        0% { transform: translateX(-600px); }
+        100% { transform: translateX(100vw); }
       }
       @keyframes cloudMove2 {
-        0% { left: -600px; }
-        100% { left: 100vw; }
+        0% { transform: translateX(-600px); }
+        100% { transform: translateX(100vw); }
       }
       @keyframes cloudMove3 {
-        0% { left: -600px; }
-        100% { left: 100vw; }
+        0% { transform: translateX(-600px); }
+        100% { transform: translateX(100vw); }
       }
       @keyframes cloudMove4 {
-        0% { left: -600px; }
-        100% { left: 100vw; }
+        0% { transform: translateX(-600px); }
+        100% { transform: translateX(100vw); }
       }
       @keyframes cloudMove5 {
-        0% { left: -600px; }
-        100% { left: 100vw; }
+        0% { transform: translateX(-600px); }
+        100% { transform: translateX(100vw); }
       }
 
       @keyframes mistFloat {
-        0% { filter: blur(0px); }
-        50% { filter: blur(4px); }
-        100% { filter: blur(0px); }
+        0% { opacity: 0.7; }
+        50% { opacity: 0.5; }
+        100% { opacity: 0.7; }
       }
 
       .container {
@@ -288,9 +285,12 @@ const year = new Date().getFullYear();
           scroll-behavior: auto !important;
         }
 
-        .mist,
-        .cloud {
+        .mist {
           animation: none;
+        }
+
+        .cloud {
+          display: none;
         }
       }
     </style>
